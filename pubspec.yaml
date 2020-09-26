@@ -27,7 +27,7 @@ dependencies:
   #admob_flutter: ^1.0.0
 
   #UI
-  
+  font_awesome_flutter: ^8.8.1
 
   cupertino_icons: ^0.1.3
 

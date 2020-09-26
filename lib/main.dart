@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
 
         return supportedLocales.first;
       },
-      home: MyHomePage(title: "Agronomo"),
+      home: HomePage(),
     );
   }
 }

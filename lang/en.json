@@ -1,3 +1,7 @@
 {
-    "appName": "Agronomo"
+    "appName": "Agronomo",
+    
+    "detailTab1": "Generalità",
+    "detailTab2": "Sintomi",
+    "detailTab3": "Cure"
 }
