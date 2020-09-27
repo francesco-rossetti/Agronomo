@@ -1,25 +1,35 @@
 import 'package:agronomo/constants.dart';
-import 'package:agronomo/helpers/listMalattie.dart';
-import 'package:agronomo/helpers/pianteCard.dart';
+import 'package:agronomo/helpers/detailMalattie.dart';
+import 'package:agronomo/helpers/malattieCard.dart';
 import 'package:agronomo/helpers/searchbox.dart';
-import 'package:agronomo/models/pianta.dart';
+import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
-class HomePage extends StatefulWidget {
-  List<Pianta> myPiante = piante;
+class ListMalattie extends StatefulWidget {
+  final List<Malattia> malattie;
+
+  ListMalattie({Key key, @required this.malattie}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _ListMalattieState createState() => _ListMalattieState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ListMalattieState extends State<ListMalattie> {
+  List<Malattia> myMalattie;
+
+  @override
+  void initState() {
+    this.myMalattie = widget.malattie;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
-      backgroundColor: kPrimaryColor,
+      backgroundColor: kSecondaryColor,
       body: body(context),
     );
   }
@@ -27,9 +37,9 @@ class _HomePageState extends State<HomePage> {
   AppBar buildAppBar() {
     return AppBar(
         elevation: 0,
-        backgroundColor: kPrimaryColor,
+        backgroundColor: kSecondaryColor,
         centerTitle: false,
-        title: Text(AppLocalizations.of(context).translate("dashboard")));
+        title: Text(AppLocalizations.of(context).translate("malattie")));
   }
 
   body(BuildContext context) {
@@ -38,14 +48,14 @@ class _HomePageState extends State<HomePage> {
       child: Column(
         children: <Widget>[
           SearchBox(onChanged: (value) {
-            var elements = piante
+            var elements = widget.malattie
                 .where((element) => AppLocalizations.of(context)
                     .translate(element.nome)
                     .contains(value))
                 .toList();
 
             setState(() {
-              widget.myPiante = elements;
+              myMalattie = elements;
             });
           }),
           SizedBox(height: kDefaultPadding / 2),
@@ -63,16 +73,16 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 ListView.builder(
-                  itemCount: widget.myPiante.length,
-                  itemBuilder: (context, index) => PianteCard(
+                  itemCount: myMalattie.length,
+                  itemBuilder: (context, index) => MalattieCard(
                     itemIndex: index,
-                    pianta: widget.myPiante[index],
+                    malattia: myMalattie[index],
                     press: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                ListMalattie(malattie: piante[index].malattie)),
+                            builder: (context) => PaginaMalattia(
+                                malattia: widget.malattie[index])),
                       );
                     },
                   ),

@@ -1,22 +1,12 @@
+import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PaginaMalattia extends StatefulWidget {
-  final AssetImage fotoMalattia;
-  final String titolo;
-  final String testoGeneralita;
-  final String testoSintomi;
-  final String testoCure;
+  final Malattia malattia;
 
-  PaginaMalattia(
-      {Key key,
-      @required this.fotoMalattia,
-      @required this.titolo,
-      @required this.testoGeneralita,
-      @required this.testoSintomi,
-      @required this.testoCure})
-      : super(key: key);
+  PaginaMalattia({Key key, @required this.malattia}) : super(key: key);
 
   @override
   _PaginaMalattiaState createState() => _PaginaMalattiaState();
@@ -40,13 +30,13 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                     onPressed: () => Navigator.pop(context)),
                 flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
-                    title: Text(widget.titolo,
+                    title: Text(widget.malattia.nome,
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 16.0,
                         )),
                     background: Image(
-                      image: widget.fotoMalattia,
+                      image: widget.malattia.immagine,
                       fit: BoxFit.cover,
                     )),
               ),
@@ -77,11 +67,14 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
           },
           body: TabBarView(children: [
             Center(
-                child:
-                    Text(widget.testoGeneralita, textAlign: TextAlign.center)),
+                child: Text(widget.malattia.testoGen,
+                    textAlign: TextAlign.center)),
             Center(
-                child: Text(widget.testoSintomi, textAlign: TextAlign.center)),
-            Center(child: Text(widget.testoCure, textAlign: TextAlign.center)),
+                child: Text(widget.malattia.testoSin,
+                    textAlign: TextAlign.center)),
+            Center(
+                child:
+                    Text(widget.malattia.testCur, textAlign: TextAlign.center)),
           ]),
         ),
       ),

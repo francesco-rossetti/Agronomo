@@ -1,3 +1,4 @@
+import 'package:agronomo/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
 
       /// Impostazioni per il tema base per l'app
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: kPrimaryColor,
+        accentColor: kPrimaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 
