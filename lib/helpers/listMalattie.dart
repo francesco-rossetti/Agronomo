@@ -3,14 +3,24 @@ import 'package:agronomo/helpers/detailMalattie.dart';
 import 'package:agronomo/helpers/malattieCard.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class ListMalattie extends StatefulWidget {
+  final FirebaseAnalytics analytics;
+  final FirebaseAnalyticsObserver observer;
+
   final List<Malattia> malattie;
   final String nomePianta;
 
-  ListMalattie({Key key, @required this.malattie, @required this.nomePianta})
+  ListMalattie(
+      {Key key,
+      @required this.malattie,
+      @required this.nomePianta,
+      this.analytics,
+      this.observer})
       : super(key: key);
 
   @override
@@ -73,7 +83,9 @@ class _ListMalattieState extends State<ListMalattie> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PaginaMalattia(
-                                malattia: widget.malattie[index])),
+                                malattia: widget.malattie[index],
+                                analytics: widget.analytics,
+                                observer: widget.observer)),
                       );
                     },
                   ),

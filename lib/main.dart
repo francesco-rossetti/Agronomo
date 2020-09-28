@@ -1,4 +1,6 @@
 import 'package:agronomo/constants.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
@@ -9,6 +11,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  static FirebaseAnalytics analytics = FirebaseAnalytics();
+  static FirebaseAnalyticsObserver observer =
+      FirebaseAnalyticsObserver(analytics: analytics);
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -39,6 +45,7 @@ class MyApp extends StatelessWidget {
 
         return supportedLocales.first;
       },
+      navigatorObservers: <NavigatorObserver>[observer],
       home: HomePage(),
     );
   }

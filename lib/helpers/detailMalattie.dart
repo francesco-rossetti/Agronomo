@@ -1,12 +1,18 @@
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class PaginaMalattia extends StatefulWidget {
+  final FirebaseAnalytics analytics;
+  final FirebaseAnalyticsObserver observer;
   final Malattia malattia;
 
-  PaginaMalattia({Key key, @required this.malattia}) : super(key: key);
+  PaginaMalattia(
+      {Key key, @required this.malattia, this.analytics, this.observer})
+      : super(key: key);
 
   @override
   _PaginaMalattiaState createState() => _PaginaMalattiaState();
@@ -30,7 +36,9 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                     onPressed: () => Navigator.pop(context)),
                 flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
-                    title: Text(widget.malattia.nome,
+                    title: Text(
+                        AppLocalizations.of(context)
+                            .translate(widget.malattia.nome),
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 16.0,
@@ -67,14 +75,20 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
           },
           body: TabBarView(children: [
             Center(
-                child: Text(widget.malattia.testoGen,
+                child: Text(
+                    AppLocalizations.of(context)
+                        .translate(widget.malattia.testoGen),
                     textAlign: TextAlign.center)),
             Center(
-                child: Text(widget.malattia.testoSin,
+                child: Text(
+                    AppLocalizations.of(context)
+                        .translate(widget.malattia.testoSin),
                     textAlign: TextAlign.center)),
             Center(
-                child:
-                    Text(widget.malattia.testCur, textAlign: TextAlign.center)),
+                child: Text(
+                    AppLocalizations.of(context)
+                        .translate(widget.malattia.testCur),
+                    textAlign: TextAlign.center)),
           ]),
         ),
       ),

@@ -26,5 +26,14 @@ List<Pianta> piante = [
         testoSin: "testS1",
         testCur: "testC1",
         immagine: AssetImage("assets/images/icon.png"))
+  ]),
+  Pianta(nome: "pianta2", immagine: "assets/images/icon.png", malattie: [
+    Malattia(
+        nome: "malattiaPianta2-1",
+        immagine: AssetImage("assets/images/icon.png"),
+        nomePianta: "pianta2",
+        testoGen: "generalitaMP2_1",
+        testoSin: "sintomoMP2_1",
+        testCur: "cureMP2_1")
   ])
 ];

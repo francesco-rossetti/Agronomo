@@ -7,11 +7,18 @@ import 'package:agronomo/helpers/searchbox.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatefulWidget {
+  final FirebaseAnalytics analytics;
+  final FirebaseAnalyticsObserver observer;
+
   List<Widget> myWidget = new List<Widget>();
+
+  HomePage({Key key, this.analytics, this.observer}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -52,7 +59,10 @@ class _HomePageState extends State<HomePage> {
       context,
       MaterialPageRoute(
           builder: (context) => ListMalattie(
-              malattie: element.malattie, nomePianta: element.nome)),
+              malattie: element.malattie,
+              nomePianta: element.nome,
+              analytics: widget.analytics,
+              observer: widget.observer)),
     );
   }
 
@@ -60,7 +70,10 @@ class _HomePageState extends State<HomePage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-          builder: (context) => PaginaMalattia(malattia: element)),
+          builder: (context) => PaginaMalattia(
+              malattia: element,
+              analytics: widget.analytics,
+              observer: widget.observer)),
     );
   }
 
