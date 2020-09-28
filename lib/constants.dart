@@ -18,22 +18,14 @@ const kDefaultShadow = BoxShadow(
 );
 
 List<Pianta> piante = [
-  Pianta(nome: "testTitolo", immagine: "assets/images/icon.png", malattie: [
+  Pianta(nome: "actinidia", immagine: "assets/images/actinidia.png", malattie: [
     Malattia(
-        nome: "testMal1",
-        nomePianta: "testTitolo",
-        testoGen: "testG1",
-        testoSin: "testS1",
-        testCur: "testC1",
-        immagine: AssetImage("assets/images/icon.png"))
-  ]),
-  Pianta(nome: "pianta2", immagine: "assets/images/icon.png", malattie: [
-    Malattia(
-        nome: "malattiaPianta2-1",
-        immagine: AssetImage("assets/images/icon.png"),
-        nomePianta: "pianta2",
-        testoGen: "generalitaMP2_1",
-        testoSin: "sintomoMP2_1",
-        testCur: "cureMP2_1")
+        nome: "marciumeradicalefibroso",
+        nomePianta: "actinidia",
+        testoGen: "generalitaactinidia",
+        testoSin: "sintomiactinidia",
+        testCur: "cureactinidia",
+        immagine: AssetImage("assets/images/marciumeradicalefibroso.png"),
+        altImmagine: AssetImage("assets/images/Marciume-al-colletto.jpg"))
   ])
 ];

@@ -44,7 +44,9 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                           fontSize: 16.0,
                         )),
                     background: Image(
-                      image: widget.malattia.immagine,
+                      image: widget.malattia.altImmagine != null
+                          ? widget.malattia.altImmagine
+                          : widget.malattia.immagine,
                       fit: BoxFit.cover,
                     )),
               ),

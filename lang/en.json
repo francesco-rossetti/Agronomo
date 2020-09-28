@@ -10,16 +10,9 @@
     "detailTab2": "Sintomi",
     "detailTab3": "Cure",
 
-    "testTitolo": "TitoloTrad",
-    "testMal1": "testMal1",
-    "testGen1": "testGen1",
-    "testG1": "testG1",
-    "testS1": "testS1",
-    "testC1": "testC1",
-
-    "pianta2": "Nome Pianta Fighissimo",
-    "malattiaPianta2-1": "Nome Malattia",
-    "sintomoMP2_1": "Sintomi malattia 1 per la pianta 2",
-    "generalitaMP2_1": "Generaltà malattia 1 per la pianta 2",
-    "cureMP2_1": "Cura malattia 1 per la pianta 2"
+    "actinidia": "Actinidia",
+    "marciumeradicalefibroso": "Marciume Radicale Fibroso",
+    "sintomiactinidia": "Il marciume radicale fibroso si manifesta con marciumi diffusi su tutto l’apparato radicale, talvolta anche sul colletto della pianta. Le soluzioni a tale patologia non sono molte, se non quella di risolvere la causa principale dello stesso marciume.",
+    "generalitaactinidia": "Anche se non si può chiamare vera e propria malattia, il marciume radicale fibroso è un effetto di qualcosa che non è stato gestito al meglio. Il kiwi, infatti, non sopporta i ristagni d’acqua e spesso il marciume radicale è proprio sintomo di un’irrigazione mal gestita o addirittura eseguita a volumi troppo alti.\nIl kiwi, infatti, vuole terreni per lo più sabbiosi e ricchi di sostanza organica.\n\nRicorda sempre: quando vuoi piantare delle nuove colture, devi sempre far in modo che queste vivano in un ambiente più possibile simile a quello di cui è originaria la pianta stessa.\nMolto spesso, però, una delle cause principali del marciume può essere anche la pioggia abbondante che, su terreni tendenzialmente argillosi, non trova una via di fuga in breve tempo verso la falda acquifera e quindi rimane nel suolo oltre la capacità di campo.\nLa capacità di campo è proprio la quantità massima di acqua che un terreno può accumulare.\nSe l’acqua presente è superiore alla capacità di campo, allora si ha ristagno idrico.",
+    "cureactinidia": "cure"
 }
