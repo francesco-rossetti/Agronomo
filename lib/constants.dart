@@ -21,6 +21,7 @@ List<Pianta> piante = [
   Pianta(nome: "testTitolo", immagine: "assets/images/icon.png", malattie: [
     Malattia(
         nome: "testMal1",
+        nomePianta: "testTitolo",
         testoGen: "testG1",
         testoSin: "testS1",
         testCur: "testC1",

@@ -8,11 +8,13 @@ class MalattieCard extends StatelessWidget {
     Key key,
     this.itemIndex,
     @required this.malattia,
+    @required this.nomePianta,
     this.press,
   }) : super(key: key);
 
   final int itemIndex;
   final Malattia malattia;
+  final String nomePianta;
   final Function press;
 
   @override
@@ -75,7 +77,24 @@ class MalattieCard extends StatelessWidget {
                         style: Theme.of(context).textTheme.button,
                       ),
                     ),
-                    Spacer()
+                    Spacer(),
+                    Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: kDefaultPadding * 1.5, // 30 padding
+                        vertical: kDefaultPadding / 4, // 5 top and bottom
+                      ),
+                      decoration: BoxDecoration(
+                        color: kSecondaryColor,
+                        borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(22),
+                          topRight: Radius.circular(22),
+                        ),
+                      ),
+                      child: Text(
+                        AppLocalizations.of(context).translate(this.nomePianta),
+                        style: Theme.of(context).textTheme.button,
+                      ),
+                    ),
                   ],
                 ),
               ),

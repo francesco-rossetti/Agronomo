@@ -1,7 +1,6 @@
 import 'package:agronomo/constants.dart';
 import 'package:agronomo/helpers/detailMalattie.dart';
 import 'package:agronomo/helpers/malattieCard.dart';
-import 'package:agronomo/helpers/searchbox.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
@@ -9,8 +8,10 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class ListMalattie extends StatefulWidget {
   final List<Malattia> malattie;
+  final String nomePianta;
 
-  ListMalattie({Key key, @required this.malattie}) : super(key: key);
+  ListMalattie({Key key, @required this.malattie, @required this.nomePianta})
+      : super(key: key);
 
   @override
   _ListMalattieState createState() => _ListMalattieState();
@@ -47,17 +48,6 @@ class _ListMalattieState extends State<ListMalattie> {
       bottom: false,
       child: Column(
         children: <Widget>[
-          SearchBox(onChanged: (value) {
-            var elements = widget.malattie
-                .where((element) => AppLocalizations.of(context)
-                    .translate(element.nome)
-                    .contains(value))
-                .toList();
-
-            setState(() {
-              myMalattie = elements;
-            });
-          }),
           SizedBox(height: kDefaultPadding / 2),
           Expanded(
             child: Stack(
@@ -77,6 +67,7 @@ class _ListMalattieState extends State<ListMalattie> {
                   itemBuilder: (context, index) => MalattieCard(
                     itemIndex: index,
                     malattia: myMalattie[index],
+                    nomePianta: widget.nomePianta,
                     press: () {
                       Navigator.push(
                         context,
