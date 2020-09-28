@@ -1,5 +1,3 @@
-import 'package:agronomo/models/malattia.dart';
-import 'package:agronomo/models/pianta.dart';
 import 'package:flutter/material.dart';
 
 const kBackgroundColor = Color(0xFFF1EFF1);
@@ -16,16 +14,3 @@ const kDefaultShadow = BoxShadow(
   blurRadius: 27,
   color: Colors.black12,
 );
-
-List<Pianta> piante = [
-  Pianta(nome: "actinidia", immagine: "assets/images/actinidia.png", malattie: [
-    Malattia(
-        nome: "marciumeradicalefibroso",
-        nomePianta: "actinidia",
-        testoGen: "generalitaactinidia",
-        testoSin: "sintomiactinidia",
-        testCur: "cureactinidia",
-        immagine: AssetImage("assets/images/marciumeradicalefibroso.png"),
-        altImmagine: AssetImage("assets/images/Marciume-al-colletto.jpg"))
-  ])
-];

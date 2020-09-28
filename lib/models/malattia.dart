@@ -1,15 +1,18 @@
 import 'package:flutter/cupertino.dart';
 
 class Malattia {
-  String nome, nomePianta, testoGen, testoSin, testCur;
+  String nome, nomePianta;
+  Widget generalita, sintomi, cure, fonti;
   AssetImage immagine, altImmagine;
 
-  Malattia(
-      {@required this.nome,
-      @required this.nomePianta,
-      @required this.immagine,
-      this.altImmagine,
-      @required this.testoGen,
-      @required this.testoSin,
-      @required this.testCur});
+  Malattia({
+    @required this.nome,
+    @required this.nomePianta,
+    @required this.immagine,
+    this.altImmagine,
+    @required this.generalita,
+    @required this.sintomi,
+    @required this.cure,
+    @required this.fonti,
+  });
 }

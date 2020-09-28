@@ -40,7 +40,7 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                         AppLocalizations.of(context)
                             .translate(widget.malattia.nome),
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontSize: 16.0,
                         )),
                     background: Image(
@@ -76,21 +76,9 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
             ];
           },
           body: TabBarView(children: [
-            Center(
-                child: Text(
-                    AppLocalizations.of(context)
-                        .translate(widget.malattia.testoGen),
-                    textAlign: TextAlign.center)),
-            Center(
-                child: Text(
-                    AppLocalizations.of(context)
-                        .translate(widget.malattia.testoSin),
-                    textAlign: TextAlign.center)),
-            Center(
-                child: Text(
-                    AppLocalizations.of(context)
-                        .translate(widget.malattia.testCur),
-                    textAlign: TextAlign.center)),
+            Center(child: widget.malattia.generalita),
+            Center(child: widget.malattia.sintomi),
+            Center(child: widget.malattia.cure),
           ]),
         ),
       ),
@@ -112,6 +100,7 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
     return new Container(
+      color: Colors.white,
       child: _tabBar,
     );
   }

@@ -1,4 +1,5 @@
 import 'package:agronomo/constants.dart';
+import 'package:agronomo/contents/index/contents.dart';
 import 'package:agronomo/helpers/detailMalattie.dart';
 import 'package:agronomo/helpers/listMalattie.dart';
 import 'package:agronomo/helpers/malattieCard.dart';
