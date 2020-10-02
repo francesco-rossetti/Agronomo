@@ -1,7 +1,7 @@
-import 'package:agronomo/contents/marciumeradicalefibroso/cure.dart';
-import 'package:agronomo/contents/marciumeradicalefibroso/fonti.dart';
-import 'package:agronomo/contents/marciumeradicalefibroso/generalita.dart';
-import 'package:agronomo/contents/marciumeradicalefibroso/sintomi.dart';
+import 'package:agronomo/contents/malattie/marciumeradicalefibroso/cure.dart';
+import 'package:agronomo/contents/malattie/marciumeradicalefibroso/fonti.dart';
+import 'package:agronomo/contents/malattie/marciumeradicalefibroso/generalita.dart';
+import 'package:agronomo/contents/malattie/marciumeradicalefibroso/sintomi.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:flutter/material.dart';
