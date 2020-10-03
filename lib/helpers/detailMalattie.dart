@@ -1,3 +1,5 @@
+import 'package:agronomo/constants.dart';
+import 'package:agronomo/helpers/fontiMalattia.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -19,12 +21,44 @@ class PaginaMalattia extends StatefulWidget {
 }
 
 class _PaginaMalattiaState extends State<PaginaMalattia> {
+  ScrollController _scrollController;
+  bool appBarCollapsed = false;
+  double height = 200;
+
+  void _scrollListener() {
+    if (_isShrink != appBarCollapsed) {
+      setState(() {
+        appBarCollapsed = _isShrink;
+      });
+    }
+  }
+
+  bool get _isShrink {
+    return _scrollController.hasClients &&
+        _scrollController.offset > (height - kToolbarHeight);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+
+    _scrollController = ScrollController()..addListener(_scrollListener);
+  }
+
+  @override
+  void dispose() {
+    _scrollController.removeListener(_scrollListener);
+    _scrollController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: DefaultTabController(
         length: 3,
         child: NestedScrollView(
+          controller: _scrollController,
           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
             return <Widget>[
               SliverAppBar(
@@ -34,15 +68,26 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                 leading: IconButton(
                     icon: Icon(Icons.arrow_back),
                     onPressed: () => Navigator.pop(context)),
+                actions: [
+                  IconButton(
+                      icon: Icon(Icons.source),
+                      onPressed: () => {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => FontiMalattia(
+                                    fonti: widget.malattia.fonti)))
+                          })
+                ],
                 flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
                     title: Text(
                         AppLocalizations.of(context)
                             .translate(widget.malattia.nome),
                         style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 16.0,
-                        )),
+                            color: kBackgroundColor,
+                            fontSize: 16.0,
+                            backgroundColor: appBarCollapsed == false
+                                ? Colors.black.withOpacity(0.5)
+                                : Colors.transparent)),
                     background: Image(
                       image: widget.malattia.altImmagine != null
                           ? widget.malattia.altImmagine
@@ -53,8 +98,9 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
               SliverPersistentHeader(
                 delegate: _SliverAppBarDelegate(
                   TabBar(
-                    labelColor: Colors.black87,
-                    unselectedLabelColor: Colors.grey,
+                    labelColor: kTextColor,
+                    unselectedLabelColor: kDisactiveTabColor,
+                    indicatorWeight: 0.1,
                     tabs: [
                       Tab(
                           icon: Icon(FontAwesomeIcons.lightbulb),
@@ -100,7 +146,11 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
     return new Container(
-      color: Colors.white,
+      decoration: BoxDecoration(
+          color: kTabBarColor,
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(kDefaultRound),
+              bottomRight: Radius.circular(kDefaultRound))),
       child: _tabBar,
     );
   }

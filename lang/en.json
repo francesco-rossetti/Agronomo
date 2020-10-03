@@ -1,6 +1,14 @@
 {
     "appName": "Agronomo",
 
+    "info": "Info",
+    "versione": "Versione",
+    "creato_da": "Creato da: ",
+    "informativa_privacy": "Informativa Privacy",
+    "termini_di_servizio": "Termini di Servizio",
+    
+    "fonti": "Fonti",
+
     "dashboard": "Dashboard",
     "search": "Cerca",
 

@@ -35,13 +35,13 @@ class MalattieCard extends StatelessWidget {
               height: 136,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(22),
-                color: itemIndex.isEven ? kBlueColor : kSecondaryColor,
+                color: itemIndex.isEven ? kBlueColor : kOrangeColor,
                 boxShadow: [kDefaultShadow],
               ),
               child: Container(
                 margin: EdgeInsets.only(right: 10),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: kBackgroundColor,
                   borderRadius: BorderRadius.circular(22),
                 ),
               ),

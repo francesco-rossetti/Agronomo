@@ -1,10 +1,12 @@
 import 'package:agronomo/constants.dart';
 import 'package:agronomo/contents/index/contents.dart';
+import 'package:agronomo/contents/info/info.dart';
 import 'package:agronomo/helpers/detailMalattie.dart';
 import 'package:agronomo/helpers/listMalattie.dart';
 import 'package:agronomo/helpers/malattieCard.dart';
 import 'package:agronomo/helpers/pianteCard.dart';
 import 'package:agronomo/helpers/searchbox.dart';
+import 'package:agronomo/models/customPopupMenu.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
@@ -28,19 +30,41 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    List<CustomPopupMenu> choices = <CustomPopupMenu>[
+      CustomPopupMenu(
+          title: AppLocalizations.of(context).translate("info"), widget: null)
+    ];
+
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: AppBar(
+          elevation: 0,
+          backgroundColor: kPrimaryColor,
+          centerTitle: false,
+          actions: [
+            PopupMenuButton<CustomPopupMenu>(
+              elevation: 3.2,
+              onCanceled: () {},
+              onSelected: (item) {
+                String info = AppLocalizations.of(context).translate("info");
+
+                if (item.title == info)
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => InfoScreen()));
+              },
+              itemBuilder: (BuildContext context) {
+                return choices.map((CustomPopupMenu choice) {
+                  return PopupMenuItem<CustomPopupMenu>(
+                    value: choice,
+                    child: Text(choice.title),
+                  );
+                }).toList();
+              },
+            )
+          ],
+          title: Text(AppLocalizations.of(context).translate("dashboard"))),
       backgroundColor: kPrimaryColor,
       body: body(context),
     );
-  }
-
-  AppBar buildAppBar() {
-    return AppBar(
-        elevation: 0,
-        backgroundColor: kPrimaryColor,
-        centerTitle: false,
-        title: Text(AppLocalizations.of(context).translate("dashboard")));
   }
 
   @override
@@ -112,14 +136,14 @@ class _HomePageState extends State<HomePage> {
 
               elements.forEach((element) {
                 temp.add(PianteCard(
-                    itemIndex: elements.indexOf(element),
+                    itemIndex: temp.length,
                     pianta: element,
                     press: () => piantePress(element)));
               });
 
               malattieElements.forEach((element) {
                 temp.add(MalattieCard(
-                    itemIndex: malattieElements.indexOf(element),
+                    itemIndex: temp.length,
                     malattia: element,
                     nomePianta: element.nomePianta,
                     press: () => malattiePress(element)));

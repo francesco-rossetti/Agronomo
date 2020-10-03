@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
       /// Impostazioni per il tema base per l'app
       theme: ThemeData(
         primaryColor: kPrimaryColor,
-        accentColor: kPrimaryColor,
+        accentColor: kSecondaryColor,
         fontFamily: "Rubik",
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),

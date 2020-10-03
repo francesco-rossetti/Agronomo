@@ -28,6 +28,7 @@ dependencies:
   admob_flutter: ^1.0.0
 
   #UI
+  flutter_native_splash: ^0.1.9
   font_awesome_flutter: ^8.8.1
   intro_slider: ^2.3.3
   cupertino_icons: ^0.1.3
@@ -35,6 +36,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_native_splash:
+  image: assets/images/icon.png
+  color: "#1b5e20"
+  android_disable_fullscreen: false
 
 flutter_icons:
   android: true
