@@ -1,14 +1,12 @@
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 
-class MarciumeRadicaleFibrosoCure extends StatefulWidget {
+class OidioAlbicoccoFonti extends StatefulWidget {
   @override
-  _MarciumeRadicaleFibrosoCureState createState() =>
-      _MarciumeRadicaleFibrosoCureState();
+  _OidioAlbicoccoFontiState createState() => _OidioAlbicoccoFontiState();
 }
 
-class _MarciumeRadicaleFibrosoCureState
-    extends State<MarciumeRadicaleFibrosoCure> {
+class _OidioAlbicoccoFontiState extends State<OidioAlbicoccoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -18,13 +16,12 @@ class _MarciumeRadicaleFibrosoCureState
           children: [
             Text(
               AppLocalizations.of(context)
-                  .translate("curemarciumeradicalefibroso"),
+                  .translate("sintomimarciumeradicalefibroso"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/marciumecolletto.jpg"),
-            SizedBox(height: 20),
+            Image.asset("assets/images/icon.png")
           ]),
     );
   }
