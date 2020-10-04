@@ -9,7 +9,7 @@ class Malattia {
     @required this.nome,
     @required this.nomePianta,
     @required this.immagine,
-    this.altImmagine,
+    @required this.altImmagine,
     @required this.generalita,
     @required this.sintomi,
     @required this.cure,

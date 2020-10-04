@@ -1,12 +1,12 @@
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 
-class OidioMeloFonti extends StatefulWidget {
+class AfideMeloFonti extends StatefulWidget {
   @override
-  _OidioMeloFontiState createState() => _OidioMeloFontiState();
+  _AfideMeloFontiState createState() => _AfideMeloFontiState();
 }
 
-class _OidioMeloFontiState extends State<OidioMeloFonti> {
+class _AfideMeloFontiState extends State<AfideMeloFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

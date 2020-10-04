@@ -1,3 +1,11 @@
+import 'package:agronomo/contents/malattie/afide/cure.dart';
+import 'package:agronomo/contents/malattie/afide/fonti.dart';
+import 'package:agronomo/contents/malattie/afide/generalita.dart';
+import 'package:agronomo/contents/malattie/afide/sintomi.dart';
+import 'package:agronomo/contents/malattie/afidelanigero/cure.dart';
+import 'package:agronomo/contents/malattie/afidelanigero/fonti.dart';
+import 'package:agronomo/contents/malattie/afidelanigero/generalita.dart';
+import 'package:agronomo/contents/malattie/afidelanigero/sintomi.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/cure.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/fonti.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/generalita.dart';
@@ -10,6 +18,10 @@ import 'package:agronomo/contents/malattie/carenzenutrizionali/cure.dart';
 import 'package:agronomo/contents/malattie/carenzenutrizionali/fonti.dart';
 import 'package:agronomo/contents/malattie/carenzenutrizionali/generalita.dart';
 import 'package:agronomo/contents/malattie/carenzenutrizionali/sintomi.dart';
+import 'package:agronomo/contents/malattie/carpocapsamelo/cure.dart';
+import 'package:agronomo/contents/malattie/carpocapsamelo/fonti.dart';
+import 'package:agronomo/contents/malattie/carpocapsamelo/generalita.dart';
+import 'package:agronomo/contents/malattie/carpocapsamelo/sintomi.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/cure.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/fonti.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/generalita.dart';
@@ -27,8 +39,17 @@ import 'package:agronomo/contents/malattie/oidioalbicocco/fonti.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/generalita.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/sintomi.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/cure.dart';
+import 'package:agronomo/contents/malattie/oidiomelo/fonti.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/generalita.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/sintomi.dart';
+import 'package:agronomo/contents/malattie/oziorrinco/cure.dart';
+import 'package:agronomo/contents/malattie/oziorrinco/fonti.dart';
+import 'package:agronomo/contents/malattie/oziorrinco/generalita.dart';
+import 'package:agronomo/contents/malattie/oziorrinco/sintomi.dart';
+import 'package:agronomo/contents/malattie/ticchiolatura/cure.dart';
+import 'package:agronomo/contents/malattie/ticchiolatura/fonti.dart';
+import 'package:agronomo/contents/malattie/ticchiolatura/generalita.dart';
+import 'package:agronomo/contents/malattie/ticchiolatura/sintomi.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:flutter/material.dart';
@@ -104,11 +125,56 @@ List<Pianta> piante = [
     Malattia(
         nome: "afide",
         nomePianta: "melo",
+        immagine: AssetImage("assets/images/afide.png"),
+        altImmagine: AssetImage("assets/images/afideverde1.jpg"),
+        generalita: AfideMeloGeneralita(),
+        sintomi: AfideMeloSintomi(),
+        cure: AfideMeloCure(),
+        fonti: AfideMeloFonti()),
+    Malattia(
+        nome: "oidiomela",
+        nomePianta: "melo",
         immagine: AssetImage("assets/images/oidiomelo.png"),
         altImmagine: AssetImage("assets/images/oidiomelo2.jpg"),
         generalita: OidioMeloGeneralita(),
         sintomi: OidioMeloSintomi(),
         cure: OidioMeloCure(),
-        fonti: null)
+        fonti: OidioMeloFonti()),
+    Malattia(
+        nome: "oziorrinco",
+        nomePianta: "melo",
+        immagine: AssetImage("assets/images/oziorrinco.png"),
+        altImmagine: AssetImage("assets/images/oziorrinco1.jpg"),
+        generalita: OziorrincoMelaGeneralita(),
+        sintomi: OziorrincoMelaSintomi(),
+        cure: OziorrincoMelaCura(),
+        fonti: OziorrincoMeloFonti()),
+    Malattia(
+        nome: "afidelanigero",
+        nomePianta: "melo",
+        immagine: AssetImage("assets/images/afidelanigero.png"),
+        altImmagine: AssetImage("assets/images/afidelanigero1.jpg"),
+        generalita: AfideLanigeroMeloGeneralita(),
+        sintomi: AfideLanigeroMeloSintomi(),
+        cure: AfideLanigeroMeloCure(),
+        fonti: AfideLanigeroFonti()),
+    Malattia(
+        nome: "ticchiolaturamelo",
+        nomePianta: "melo",
+        immagine: AssetImage("assets/images/ticchiolatura.png"),
+        altImmagine: AssetImage("assets/images/ticchiolatura2.jpg"),
+        generalita: TicchiolaturaMeloGeneralita(),
+        sintomi: TicchiolaturaMeloSintomi(),
+        cure: TicchiolaturaMeloCure(),
+        fonti: TicchiolaturaMeloFonti()),
+    Malattia(
+        nome: "carpocapsamelo",
+        nomePianta: "melo",
+        immagine: AssetImage("assets/images/carpocapsa.png"),
+        altImmagine: AssetImage("assets/images/carpocapsa2.jpg"),
+        generalita: CarpocapsaMeloGeneralita(),
+        sintomi: CarpocapsaMeloSintomi(),
+        cure: CarpocapsaMeloCure(),
+        fonti: CarpocapsaMeloFonti())
   ])
 ];

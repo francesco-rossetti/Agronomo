@@ -1,12 +1,14 @@
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 
-class OidioMeloFonti extends StatefulWidget {
+class TicchiolaturaMeloGeneralita extends StatefulWidget {
   @override
-  _OidioMeloFontiState createState() => _OidioMeloFontiState();
+  _TicchiolaturaMeloGeneralitaState createState() =>
+      _TicchiolaturaMeloGeneralitaState();
 }
 
-class _OidioMeloFontiState extends State<OidioMeloFonti> {
+class _TicchiolaturaMeloGeneralitaState
+    extends State<TicchiolaturaMeloGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -16,12 +18,13 @@ class _OidioMeloFontiState extends State<OidioMeloFonti> {
           children: [
             Text(
               AppLocalizations.of(context)
-                  .translate("sintomimarciumeradicalefibroso"),
+                  .translate("ticchiolaturamelogeneralita"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/icon.png")
+            Image.asset("assets/images/ticchiolatura1.png"),
+            SizedBox(height: 20),
           ]),
     );
   }
