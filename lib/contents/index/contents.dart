@@ -6,6 +6,9 @@ import 'package:agronomo/contents/malattie/oidioalbicocco/cure.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/fonti.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/generalita.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/sintomi.dart';
+import 'package:agronomo/contents/malattie/oidiomelo/cure.dart';
+import 'package:agronomo/contents/malattie/oidiomelo/generalita.dart';
+import 'package:agronomo/contents/malattie/oidiomelo/sintomi.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:flutter/material.dart';
@@ -32,5 +35,16 @@ List<Pianta> piante = [
         sintomi: OidioAlbicoccoSintomi(),
         cure: OidioAlbicoccoCure(),
         fonti: OidioAlbicoccoFonti())
+  ]),
+  Pianta(nome: "melo", immagine: "assets/images/melo.png", malattie: [
+    Malattia(
+        nome: "afide",
+        nomePianta: "melo",
+        immagine: AssetImage("assets/images/oidiomelo.png"),
+        altImmagine: AssetImage("assets/images/oidiomelo2.jpg"),
+        generalita: OidioMeloGeneralita(),
+        sintomi: OidioMeloSintomi(),
+        cure: OidioMeloCure(),
+        fonti: null)
   ])
 ];
