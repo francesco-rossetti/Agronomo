@@ -45,7 +45,7 @@ List<Pianta> piante = [
         cure: MarciumeRadicaleFibrosoCure(),
         fonti: MarciumeRadicaleFibrosoFonti()),
     Malattia(
-        nome: "botrytis",
+        nome: "botrytisactinidia",
         nomePianta: "actinidia",
         immagine: AssetImage("assets/images/botrytiskiwi.png"),
         altImmagine: AssetImage("assets/images/botrytiskiwi4.jpg"),
@@ -54,7 +54,7 @@ List<Pianta> piante = [
         cure: BotrytisActinidiaCure(),
         fonti: BotrytisActinidiaFonti()),
     Malattia(
-        nome: "carenzenutrizionali",
+        nome: "carenze",
         nomePianta: "actinidia",
         immagine: AssetImage("assets/images/carenzakiwi.png"),
         generalita: CarenzeActinidiaGeneralita(),

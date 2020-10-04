@@ -22,7 +22,7 @@ class _MoscafruttaActinidiaGeneralitaState
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/moscamediterrranea3.jpg"),
+            Image.asset("assets/images/moscamediterranea3.jpg"),
             SizedBox(height: 20),
             Text(
               AppLocalizations.of(context).translate("generalitamosca2"),
@@ -30,7 +30,7 @@ class _MoscafruttaActinidiaGeneralitaState
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/moscamediterrranea4.jpg"),
+            Image.asset("assets/images/moscamediterranea4.jpg"),
             SizedBox(height: 20),
           ]),
     );

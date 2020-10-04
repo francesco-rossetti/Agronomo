@@ -22,7 +22,7 @@ class _BotrytisActinidiaSintomiState extends State<BotrytisActinidiaSintomi> {
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/botrytiskiwi1"),
+            Image.asset("assets/images/botrytiskiwi1.jpg"),
             SizedBox(height: 20),
             Text(
               AppLocalizations.of(context)
@@ -31,7 +31,7 @@ class _BotrytisActinidiaSintomiState extends State<BotrytisActinidiaSintomi> {
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/botrytiskiwi2"),
+            Image.asset("assets/images/botrytiskiwi2.jpg"),
             SizedBox(height: 20),
           ]),
     );

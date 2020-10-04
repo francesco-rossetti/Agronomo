@@ -20,7 +20,7 @@ class _BotrytisActinidiaCureState extends State<BotrytisActinidiaCure> {
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/botrytiskiwi4"),
+            Image.asset("assets/images/botrytiskiwi4.jpg"),
             SizedBox(height: 20),
           ]),
     );
