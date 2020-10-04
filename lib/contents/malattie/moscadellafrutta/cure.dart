@@ -1,14 +1,13 @@
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 
-class MarciumeRadicaleFibrosoCure extends StatefulWidget {
+class MoscafruttaActinidiaCure extends StatefulWidget {
   @override
-  _MarciumeRadicaleFibrosoCureState createState() =>
-      _MarciumeRadicaleFibrosoCureState();
+  _MoscafruttaActinidiaCureState createState() =>
+      _MoscafruttaActinidiaCureState();
 }
 
-class _MarciumeRadicaleFibrosoCureState
-    extends State<MarciumeRadicaleFibrosoCure> {
+class _MoscafruttaActinidiaCureState extends State<MoscafruttaActinidiaCure> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -17,13 +16,26 @@ class _MarciumeRadicaleFibrosoCureState
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context)
-                  .translate("curemarciumeradicalefibroso"),
+              AppLocalizations.of(context).translate("curemosca1"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/icon.png")
+            Image.asset("assets/images/moscamediterranea5.jpg"),
+            SizedBox(height: 20),
+            Text(
+              AppLocalizations.of(context).translate("curemosca2"),
+              textAlign: TextAlign.justify,
+              style: TextStyle(fontSize: 40),
+            ),
+            Text(
+              AppLocalizations.of(context).translate("curemosca3"),
+              textAlign: TextAlign.justify,
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(height: 20),
+            Image.asset("assets/images/moscamediterranea1.jpg"),
+            SizedBox(height: 20),
           ]),
     );
   }

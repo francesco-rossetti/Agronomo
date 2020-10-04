@@ -1,14 +1,13 @@
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 
-class MarciumeRadicaleFibrosoFonti extends StatefulWidget {
+class MoscafruttaActinidiaFonti extends StatefulWidget {
   @override
-  _MarciumeRadicaleFibrosoFontiState createState() =>
-      _MarciumeRadicaleFibrosoFontiState();
+  _MoscafruttaActinidiaFontiState createState() =>
+      _MoscafruttaActinidiaFontiState();
 }
 
-class _MarciumeRadicaleFibrosoFontiState
-    extends State<MarciumeRadicaleFibrosoFonti> {
+class _MoscafruttaActinidiaFontiState extends State<MoscafruttaActinidiaFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

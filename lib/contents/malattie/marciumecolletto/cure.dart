@@ -1,14 +1,14 @@
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 
-class MoscafruttaActinidiaSintomi extends StatefulWidget {
+class MarciumecollettoActinidiaCure extends StatefulWidget {
   @override
-  _MoscafruttaActinidiaSintomiState createState() =>
-      _MoscafruttaActinidiaSintomiState();
+  _MarciumecollettoActinidiaCureState createState() =>
+      _MarciumecollettoActinidiaCureState();
 }
 
-class _MoscafruttaActinidiaSintomiState
-    extends State<MoscafruttaActinidiaSintomi> {
+class _MarciumecollettoActinidiaCureState
+    extends State<MarciumecollettoActinidiaCure> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -17,12 +17,12 @@ class _MoscafruttaActinidiaSintomiState
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context).translate("sintomimosca"),
+              AppLocalizations.of(context).translate("curemarciumecolletto"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/moscamediterranea2.jpg"),
+            Image.asset("assets/images/marciumecolletto.jpg"),
             SizedBox(height: 20),
           ]),
     );
