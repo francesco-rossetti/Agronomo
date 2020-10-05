@@ -10,6 +10,10 @@ import 'package:agronomo/contents/malattie/afidenerociliegio/cure.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/fonti.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/generalita.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/sintomi.dart';
+import 'package:agronomo/contents/malattie/antracnosifragola/cure.dart';
+import 'package:agronomo/contents/malattie/antracnosifragola/fonti.dart';
+import 'package:agronomo/contents/malattie/antracnosifragola/generalita.dart';
+import 'package:agronomo/contents/malattie/antracnosifragola/sintomi.dart';
 import 'package:agronomo/contents/malattie/bolla/cure.dart';
 import 'package:agronomo/contents/malattie/bolla/fonti.dart';
 import 'package:agronomo/contents/malattie/bolla/generalita.dart';
@@ -18,6 +22,8 @@ import 'package:agronomo/contents/malattie/botrytisactinidia/cure.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/fonti.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/generalita.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/sintomi.dart';
+import 'package:agronomo/contents/malattie/botrytisfragola/generalita.dart';
+import 'package:agronomo/contents/malattie/botrytisfragola/sintomi.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/cure.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/fonti.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/generalita.dart';
@@ -66,6 +72,8 @@ import 'package:agronomo/contents/malattie/oidioalbicocco/cure.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/fonti.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/generalita.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/sintomi.dart';
+import 'package:agronomo/contents/malattie/oidiofragola/generalita.dart';
+import 'package:agronomo/contents/malattie/oidiofragola/sintomi.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/cure.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/fonti.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/generalita.dart';
@@ -82,6 +90,10 @@ import 'package:agronomo/contents/malattie/ticchiolatura/cure.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/fonti.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/generalita.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/sintomi.dart';
+import 'package:agronomo/contents/malattie/vaiolaturafragola/cure.dart';
+import 'package:agronomo/contents/malattie/vaiolaturafragola/fonti.dart';
+import 'package:agronomo/contents/malattie/vaiolaturafragola/generalita.dart';
+import 'package:agronomo/contents/malattie/vaiolaturafragola/sintomi.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:flutter/material.dart';
@@ -312,5 +324,43 @@ List<Pianta> piante = [
         sintomi: RuggineCiliegioSintomi(),
         cure: RuggineCiliegioCure(),
         fonti: RuggineCiliegioFonti()),
+  ]),
+  Pianta(nome: "fragola", immagine: "assets/images/fragola.png", malattie: [
+    Malattia(
+        nome: "antracnosifragola",
+        nomePianta: "fragola",
+        immagine: AssetImage("assets/images/antracnosi.png"),
+        altImmagine: AssetImage("assets/images/antracnosi3.jpg"),
+        generalita: AntracnosiFragolaGeneralita(),
+        sintomi: AntracnosiFragolaSintomi(),
+        cure: AntracnosiFragolaCure(),
+        fonti: AntracnosiFragolaFonti()),
+    Malattia(
+        nome: "botrytisfragola",
+        nomePianta: "fragola",
+        immagine: AssetImage("assets/images/botrytisfragola.png"),
+        altImmagine: AssetImage("assets/images/botrytisfragola1.jpg"),
+        generalita: BotrytisFragolaGeneralita(),
+        sintomi: BotrytisFragolaSintomi(),
+        cure: BotrytisActinidiaCure(),
+        fonti: BotrytisActinidiaFonti()),
+    Malattia(
+        nome: "oidiofragola",
+        nomePianta: "fragola",
+        immagine: AssetImage("assets/images/oidiofragola.png"),
+        altImmagine: AssetImage("assets/images/oidiofragola1.jpg"),
+        generalita: OidioFragolaGeneralita(),
+        sintomi: OidioFragolaSintomi(),
+        cure: OidioAlbicoccoCure(),
+        fonti: OidioAlbicoccoFonti()),
+    Malattia(
+        nome: "vaiolaturafragola",
+        nomePianta: "fragola",
+        immagine: AssetImage("assets/images/vaiolaturafragola.png"),
+        altImmagine: AssetImage("assets/images/vaiolaturafragola2.jpg"),
+        generalita: VaiolaturaFragolaGeneralita(),
+        sintomi: VaiolaturaFragolaSintomi(),
+        cure: VaiolaturaFragolaCure(),
+        fonti: VaiolaturaFragolaFonti())
   ])
 ];
