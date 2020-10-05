@@ -17,13 +17,18 @@ class _MaculaturarossaAlbicoccoGeneralitaState
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context).translate("generalitamaculatura"),
+              AppLocalizations.of(context).translate("generalitamaculatura1"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/maculaturarossa1.jpg"),
             SizedBox(height: 20),
+            Text(
+              AppLocalizations.of(context).translate("generalitamaculatura2"),
+              textAlign: TextAlign.justify,
+              style: TextStyle(fontSize: 20),
+            ),
           ]),
     );
   }
