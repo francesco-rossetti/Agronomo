@@ -6,6 +6,10 @@ import 'package:agronomo/contents/malattie/afidelanigero/cure.dart';
 import 'package:agronomo/contents/malattie/afidelanigero/fonti.dart';
 import 'package:agronomo/contents/malattie/afidelanigero/generalita.dart';
 import 'package:agronomo/contents/malattie/afidelanigero/sintomi.dart';
+import 'package:agronomo/contents/malattie/bolla/cure.dart';
+import 'package:agronomo/contents/malattie/bolla/fonti.dart';
+import 'package:agronomo/contents/malattie/bolla/generalita.dart';
+import 'package:agronomo/contents/malattie/bolla/sintomi.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/cure.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/fonti.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/generalita.dart';
@@ -14,6 +18,10 @@ import 'package:agronomo/contents/malattie/cancrobatterico/cure.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/fonti.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/generalita.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/sintomi.dart';
+import 'package:agronomo/contents/malattie/cancrobattericopesco/cure.dart';
+import 'package:agronomo/contents/malattie/cancrobattericopesco/fonti.dart';
+import 'package:agronomo/contents/malattie/cancrobattericopesco/generalita.dart';
+import 'package:agronomo/contents/malattie/cancrobattericopesco/sintomi.dart';
 import 'package:agronomo/contents/malattie/carenzenutrizionali/cure.dart';
 import 'package:agronomo/contents/malattie/carenzenutrizionali/fonti.dart';
 import 'package:agronomo/contents/malattie/carenzenutrizionali/generalita.dart';
@@ -22,6 +30,14 @@ import 'package:agronomo/contents/malattie/carpocapsamelo/cure.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/fonti.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/generalita.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/sintomi.dart';
+import 'package:agronomo/contents/malattie/corineopesco/cure.dart';
+import 'package:agronomo/contents/malattie/corineopesco/fonti.dart';
+import 'package:agronomo/contents/malattie/corineopesco/generalita.dart';
+import 'package:agronomo/contents/malattie/corineopesco/sintomi.dart';
+import 'package:agronomo/contents/malattie/maculaturarossa/cure.dart';
+import 'package:agronomo/contents/malattie/maculaturarossa/fonti.dart';
+import 'package:agronomo/contents/malattie/maculaturarossa/generalita.dart';
+import 'package:agronomo/contents/malattie/maculaturarossa/sintomi.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/cure.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/fonti.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/generalita.dart';
@@ -30,6 +46,10 @@ import 'package:agronomo/contents/malattie/marciumeradicalefibroso/cure.dart';
 import 'package:agronomo/contents/malattie/marciumeradicalefibroso/fonti.dart';
 import 'package:agronomo/contents/malattie/marciumeradicalefibroso/generalita.dart';
 import 'package:agronomo/contents/malattie/marciumeradicalefibroso/sintomi.dart';
+import 'package:agronomo/contents/malattie/monilia/cure.dart';
+import 'package:agronomo/contents/malattie/monilia/fonti.dart';
+import 'package:agronomo/contents/malattie/monilia/generalita.dart';
+import 'package:agronomo/contents/malattie/monilia/sintomi.dart';
 import 'package:agronomo/contents/malattie/moscadellafrutta/cure.dart';
 import 'package:agronomo/contents/malattie/moscadellafrutta/fonti.dart';
 import 'package:agronomo/contents/malattie/moscadellafrutta/generalita.dart';
@@ -119,7 +139,53 @@ List<Pianta> piante = [
         generalita: OidioAlbicoccoGeneralita(),
         sintomi: OidioAlbicoccoSintomi(),
         cure: OidioAlbicoccoCure(),
-        fonti: OidioAlbicoccoFonti())
+        fonti: OidioAlbicoccoFonti()),
+    Malattia(
+        nome: "maculaturarossa",
+        nomePianta: "albicocco",
+        immagine: AssetImage("assets/images/maculaturarossa.png"),
+        altImmagine: AssetImage("assets/images/maculaturarossa2.jpg"),
+        generalita: MaculaturarossaAlbicoccoGeneralita(),
+        sintomi: MaculaturarossaAlbicoccoSintomi(),
+        cure: MaculaturarossaAlbicoccoCure(),
+        fonti: MaculaturarossaAlbicoccoFonti()),
+    Malattia(
+        nome: "bolla",
+        nomePianta: "albicocco",
+        immagine: AssetImage("assets/images/bolladelpesco.png"),
+        altImmagine: AssetImage("assets/images/bolladelpesco4.jpg"),
+        generalita: BollaAlbicoccoGeneralita(),
+        sintomi: BollaAlbicoccoSintomi(),
+        cure: BollaAlbicoccoCure(),
+        fonti: BollaAlbicoccoFonti()),
+    Malattia(
+      nome: "corineopesco",
+      nomePianta: "albicocco",
+      immagine: AssetImage("assets/images/corineopesco.png"),
+      altImmagine: AssetImage("assets/images/corineopesco1.jpg"),
+      generalita: CorineopescoAlbicoccoGeneralita(),
+      sintomi: CorineopescoAlbicoccoSintomi(),
+      cure: CorineopescoAlbicoccoCure(),
+      fonti: CorineopescoAlbicoccoFonti(),
+    ),
+    Malattia(
+        nome: "monilia",
+        nomePianta: "albicocco",
+        immagine: AssetImage("assets/images/moniliapesco.png"),
+        altImmagine: AssetImage("assets/images/monilia1.jpg"),
+        generalita: MoniliaAlbicoccoGeneralita(),
+        sintomi: MoniliaAlbicoccoSintomi(),
+        cure: MoniliaAlbicoccoCure(),
+        fonti: MoniliaAlbicoccoFonti()),
+    Malattia(
+        nome: "cancrobattericopesco",
+        nomePianta: "albicocco",
+        immagine: AssetImage("assets/images/cancrobattericopesco.png"),
+        altImmagine: AssetImage("assets/images/cancrobattericopesco1.jpg"),
+        generalita: CancrobattericopescoAlbicoccoGeneralita(),
+        sintomi: CancrobattericopescoAlbicoccoSintomi(),
+        cure: CancrobattericopescoAlbicoccoCure(),
+        fonti: CancrobattericopescoAlbicoccoFonti())
   ]),
   Pianta(nome: "melo", immagine: "assets/images/melo.png", malattie: [
     Malattia(
