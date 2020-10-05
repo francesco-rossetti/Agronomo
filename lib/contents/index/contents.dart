@@ -6,6 +6,10 @@ import 'package:agronomo/contents/malattie/afidelanigero/cure.dart';
 import 'package:agronomo/contents/malattie/afidelanigero/fonti.dart';
 import 'package:agronomo/contents/malattie/afidelanigero/generalita.dart';
 import 'package:agronomo/contents/malattie/afidelanigero/sintomi.dart';
+import 'package:agronomo/contents/malattie/afidenerociliegio/cure.dart';
+import 'package:agronomo/contents/malattie/afidenerociliegio/fonti.dart';
+import 'package:agronomo/contents/malattie/afidenerociliegio/generalita.dart';
+import 'package:agronomo/contents/malattie/afidenerociliegio/sintomi.dart';
 import 'package:agronomo/contents/malattie/bolla/cure.dart';
 import 'package:agronomo/contents/malattie/bolla/fonti.dart';
 import 'package:agronomo/contents/malattie/bolla/generalita.dart';
@@ -50,6 +54,10 @@ import 'package:agronomo/contents/malattie/monilia/cure.dart';
 import 'package:agronomo/contents/malattie/monilia/fonti.dart';
 import 'package:agronomo/contents/malattie/monilia/generalita.dart';
 import 'package:agronomo/contents/malattie/monilia/sintomi.dart';
+import 'package:agronomo/contents/malattie/moscaciliegio/cure.dart';
+import 'package:agronomo/contents/malattie/moscaciliegio/fonti.dart';
+import 'package:agronomo/contents/malattie/moscaciliegio/generalita.dart';
+import 'package:agronomo/contents/malattie/moscaciliegio/sintomi.dart';
 import 'package:agronomo/contents/malattie/moscadellafrutta/cure.dart';
 import 'package:agronomo/contents/malattie/moscadellafrutta/fonti.dart';
 import 'package:agronomo/contents/malattie/moscadellafrutta/generalita.dart';
@@ -66,6 +74,10 @@ import 'package:agronomo/contents/malattie/oziorrinco/cure.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/fonti.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/generalita.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/sintomi.dart';
+import 'package:agronomo/contents/malattie/rugginecigliegio/cure.dart';
+import 'package:agronomo/contents/malattie/rugginecigliegio/fonti.dart';
+import 'package:agronomo/contents/malattie/rugginecigliegio/generalita.dart';
+import 'package:agronomo/contents/malattie/rugginecigliegio/sintomi.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/cure.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/fonti.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/generalita.dart';
@@ -98,6 +110,7 @@ List<Pianta> piante = [
         nome: "carenze",
         nomePianta: "actinidia",
         immagine: AssetImage("assets/images/carenzakiwi.png"),
+        altImmagine: AssetImage("assets/images/carenzakiwi.png"),
         generalita: CarenzeActinidiaGeneralita(),
         sintomi: CarenzeActinidiaSintomi(),
         cure: CarenzeActinidiaCure(),
@@ -242,5 +255,62 @@ List<Pianta> piante = [
         sintomi: CarpocapsaMeloSintomi(),
         cure: CarpocapsaMeloCure(),
         fonti: CarpocapsaMeloFonti())
+  ]),
+  Pianta(nome: "ciliegio", immagine: "assets/images/ciliegia.png", malattie: [
+    Malattia(
+        nome: "cancrobatterico",
+        nomePianta: "ciliegio",
+        immagine: AssetImage("assets/images/cancrobattericofragola.png"),
+        altImmagine: AssetImage("assets/images/cancrobattericofragola.png"),
+        generalita: CancrobattericopescoAlbicoccoGeneralita(),
+        sintomi: CancrobattericopescoAlbicoccoSintomi(),
+        cure: CancrobattericopescoAlbicoccoCure(),
+        fonti: CancrobattericopescoAlbicoccoFonti()),
+    Malattia(
+        nome: "afidenero",
+        nomePianta: "ciliegio",
+        immagine: AssetImage("assets/images/afidenero.png"),
+        altImmagine: AssetImage("assets/images/afidenero3.jpg"),
+        generalita: AfideNeroGeneralita(),
+        sintomi: AfideNeroSintomi(),
+        cure: AfideNeroCure(),
+        fonti: AfideNeroFonti()),
+    Malattia(
+      nome: "corineopesco",
+      nomePianta: "ciliegio",
+      immagine: AssetImage("assets/images/corineopesco.png"),
+      altImmagine: AssetImage("assets/images/corineopesco1.jpg"),
+      generalita: CorineopescoAlbicoccoGeneralita(),
+      sintomi: CorineopescoAlbicoccoSintomi(),
+      cure: CorineopescoAlbicoccoCure(),
+      fonti: CorineopescoAlbicoccoFonti(),
+    ),
+    Malattia(
+        nome: "monilia",
+        nomePianta: "ciliegio",
+        immagine: AssetImage("assets/images/moniliapesco.png"),
+        altImmagine: AssetImage("assets/images/monilia1.jpg"),
+        generalita: MoniliaAlbicoccoGeneralita(),
+        sintomi: MoniliaAlbicoccoSintomi(),
+        cure: MoniliaAlbicoccoCure(),
+        fonti: MoniliaAlbicoccoFonti()),
+    Malattia(
+        nome: "moscaciliegio",
+        nomePianta: "ciliegio",
+        immagine: AssetImage("assets/images/moscafrutta.png"),
+        altImmagine: AssetImage("assets/images/moscafrutta3.jpg"),
+        generalita: MoscaCiliegioGeneralita(),
+        sintomi: MoscaCiliegioSintomi(),
+        cure: MoscaCiliegioCure(),
+        fonti: MoscaCiliegioFonti()),
+    Malattia(
+        nome: "ruggineciliegio",
+        nomePianta: "ciliegio",
+        immagine: AssetImage("assets/images/ruggine.png"),
+        altImmagine: AssetImage("assets/images/ruggine3.jpg"),
+        generalita: RuggineCiliegioGeneralita(),
+        sintomi: RuggineCiliegioSintomi(),
+        cure: RuggineCiliegioCure(),
+        fonti: RuggineCiliegioFonti()),
   ])
 ];
