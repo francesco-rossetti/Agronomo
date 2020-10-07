@@ -10,6 +10,10 @@ import 'package:agronomo/contents/malattie/afidenerociliegio/cure.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/fonti.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/generalita.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/sintomi.dart';
+import 'package:agronomo/contents/malattie/antracnosi/cure.dart';
+import 'package:agronomo/contents/malattie/antracnosi/fonti.dart';
+import 'package:agronomo/contents/malattie/antracnosi/generalita.dart';
+import 'package:agronomo/contents/malattie/antracnosi/sintomi.dart';
 import 'package:agronomo/contents/malattie/antracnosifragola/cure.dart';
 import 'package:agronomo/contents/malattie/antracnosifragola/fonti.dart';
 import 'package:agronomo/contents/malattie/antracnosifragola/generalita.dart';
@@ -98,6 +102,10 @@ import 'package:agronomo/contents/malattie/rugginecigliegio/cure.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/fonti.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/generalita.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/sintomi.dart';
+import 'package:agronomo/contents/malattie/sesia/cure.dart';
+import 'package:agronomo/contents/malattie/sesia/fonti.dart';
+import 'package:agronomo/contents/malattie/sesia/generalita.dart';
+import 'package:agronomo/contents/malattie/sesia/sintomi.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/cure.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/fonti.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/generalita.dart';
@@ -434,5 +442,43 @@ List<Pianta> piante = [
         sintomi: VespeFicoSintomi(),
         cure: VespeFicoCure(),
         fonti: VespeFicoFonti())
+  ]),
+  Pianta(nome: "kaki", immagine: "assets/images/kaki.png", malattie: [
+    Malattia(
+        nome: "moscadellafrutta",
+        nomePianta: "kaki",
+        immagine: AssetImage("assets/images/moscamediterranea.png"),
+        altImmagine: AssetImage("assets/images/moscamediterranea1.jpg"),
+        generalita: MoscafruttaActinidiaGeneralita(),
+        sintomi: MoscafruttaActinidiaSintomi(),
+        cure: MoscafruttaActinidiaCure(),
+        fonti: MoscafruttaActinidiaFonti()),
+    Malattia(
+        nome: "antracnosi",
+        nomePianta: "kaki",
+        immagine: AssetImage("assets/images/antracnosikako.png"),
+        altImmagine: AssetImage("assets/images/antracnosikako1.jpg"),
+        generalita: AntracnosiKakiGeneralita(),
+        sintomi: AntracnosiKakiSintomi(),
+        cure: AntracnosiKakiCure(),
+        fonti: AntracnosiKakiFonti()),
+    Malattia(
+        nome: "sesia",
+        nomePianta: "kaki",
+        immagine: AssetImage("assets/images/sesiakako.png"),
+        altImmagine: AssetImage("assets/images/sesia2.jpg"),
+        generalita: SesiaKakiGeneralita(),
+        sintomi: SesiaKakiSintomi(),
+        cure: SesiaKakiCure(),
+        fonti: SesiaKakiFonti()),
+    Malattia(
+        nome: "coccinigliafico",
+        nomePianta: "kaki",
+        immagine: AssetImage("assets/images/coccinigliafico.png"),
+        altImmagine: AssetImage("assets/images/coccinigliafico2.jpg"),
+        generalita: CoccinigliaficoFicoGeneralita(),
+        sintomi: CoccinigliaficoFicoSintomi(),
+        cure: CoccinigliaficoFicoCure(),
+        fonti: CoccinigliaficoFicoFonti()),
   ])
 ];
