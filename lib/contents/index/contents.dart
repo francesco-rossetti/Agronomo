@@ -379,7 +379,7 @@ List<Pianta> piante = [
         cure: VaiolaturaFragolaCure(),
         fonti: VaiolaturaFragolaFonti())
   ]),
-  Pianta(nome: "Fico", immagine: "assets/images/fico.png", malattie: [
+  Pianta(nome: "fico", immagine: "assets/images/fico.png", malattie: [
     Malattia(
         nome: "marciumeradicalefibroso",
         nomePianta: "Fico",

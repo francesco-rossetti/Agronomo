@@ -20,7 +20,7 @@ class _PunteruoloneroFicoCureState extends State<PunteruoloneroFicoCure> {
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/punteruolonero3.jpg"),
+            Image.asset("assets/images/punteruolonerofico3.jpg"),
             SizedBox(height: 20),
             Text(
               AppLocalizations.of(context).translate("curepunteruolonero2"),
