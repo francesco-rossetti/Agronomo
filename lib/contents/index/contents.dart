@@ -22,6 +22,10 @@ import 'package:agronomo/contents/malattie/botrytisactinidia/cure.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/fonti.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/generalita.dart';
 import 'package:agronomo/contents/malattie/botrytisactinidia/sintomi.dart';
+import 'package:agronomo/contents/malattie/botrytisfico/cure.dart';
+import 'package:agronomo/contents/malattie/botrytisfico/fonti.dart';
+import 'package:agronomo/contents/malattie/botrytisfico/generalita.dart';
+import 'package:agronomo/contents/malattie/botrytisfico/sintomi.dart';
 import 'package:agronomo/contents/malattie/botrytisfragola/generalita.dart';
 import 'package:agronomo/contents/malattie/botrytisfragola/sintomi.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/cure.dart';
@@ -40,6 +44,10 @@ import 'package:agronomo/contents/malattie/carpocapsamelo/cure.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/fonti.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/generalita.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/sintomi.dart';
+import 'package:agronomo/contents/malattie/coccinigliafico/cure.dart';
+import 'package:agronomo/contents/malattie/coccinigliafico/fonti.dart';
+import 'package:agronomo/contents/malattie/coccinigliafico/generalita.dart';
+import 'package:agronomo/contents/malattie/coccinigliafico/sintomi.dart';
 import 'package:agronomo/contents/malattie/corineopesco/cure.dart';
 import 'package:agronomo/contents/malattie/corineopesco/fonti.dart';
 import 'package:agronomo/contents/malattie/corineopesco/generalita.dart';
@@ -82,6 +90,10 @@ import 'package:agronomo/contents/malattie/oziorrinco/cure.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/fonti.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/generalita.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/sintomi.dart';
+import 'package:agronomo/contents/malattie/punteruolonerofico/cure.dart';
+import 'package:agronomo/contents/malattie/punteruolonerofico/fonti.dart';
+import 'package:agronomo/contents/malattie/punteruolonerofico/generalita.dart';
+import 'package:agronomo/contents/malattie/punteruolonerofico/sintomi.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/cure.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/fonti.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/generalita.dart';
@@ -94,6 +106,10 @@ import 'package:agronomo/contents/malattie/vaiolaturafragola/cure.dart';
 import 'package:agronomo/contents/malattie/vaiolaturafragola/fonti.dart';
 import 'package:agronomo/contents/malattie/vaiolaturafragola/generalita.dart';
 import 'package:agronomo/contents/malattie/vaiolaturafragola/sintomi.dart';
+import 'package:agronomo/contents/malattie/vespe/cure.dart';
+import 'package:agronomo/contents/malattie/vespe/fonti.dart';
+import 'package:agronomo/contents/malattie/vespe/generalita.dart';
+import 'package:agronomo/contents/malattie/vespe/sintomi.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:flutter/material.dart';
@@ -362,5 +378,61 @@ List<Pianta> piante = [
         sintomi: VaiolaturaFragolaSintomi(),
         cure: VaiolaturaFragolaCure(),
         fonti: VaiolaturaFragolaFonti())
+  ]),
+  Pianta(nome: "Fico", immagine: "assets/images/fico.png", malattie: [
+    Malattia(
+        nome: "marciumeradicalefibroso",
+        nomePianta: "Fico",
+        immagine: AssetImage("assets/images/marciumeradicalefibroso.png"),
+        altImmagine: AssetImage("assets/images/Marciume-al-colletto.jpg"),
+        generalita: MarciumeRadicaleFibrosoGeneralita(),
+        sintomi: MarciumeRadicaleFibrosoSintomi(),
+        cure: MarciumeRadicaleFibrosoCure(),
+        fonti: MarciumeRadicaleFibrosoFonti()),
+    Malattia(
+        nome: "botrytisfico",
+        nomePianta: "fico",
+        immagine: AssetImage("assets/images/botrytisfico.png"),
+        altImmagine: AssetImage("assets/images/botrytisfico1.jpg"),
+        generalita: BotrytisficoFicoGeneralita(),
+        sintomi: BotrytisficoFicoSintomi(),
+        cure: BotrytisficoFicoCure(),
+        fonti: BotrytisficoFicoFonti()),
+    Malattia(
+        nome: "coccinigliafico",
+        nomePianta: "fico",
+        immagine: AssetImage("assets/images/coccinigliafico.png"),
+        altImmagine: AssetImage("assets/images/coccinigliafico2.jpg"),
+        generalita: CoccinigliaficoFicoGeneralita(),
+        sintomi: CoccinigliaficoFicoSintomi(),
+        cure: CoccinigliaficoFicoCure(),
+        fonti: CoccinigliaficoFicoFonti()),
+    Malattia(
+        nome: "punteruolonero",
+        nomePianta: "fico",
+        immagine: AssetImage("assets/images/punteruolonerofico.png"),
+        altImmagine: AssetImage("assets/images/punteruolonerofico2.jpg"),
+        generalita: PunteruoloneroFicoGeneralita(),
+        sintomi: PunteruoloneroFicoSintomi(),
+        cure: PunteruoloneroFicoCure(),
+        fonti: PunteruoloneroFicoFonti()),
+    Malattia(
+        nome: "moscadellafrutta",
+        nomePianta: "fico",
+        immagine: AssetImage("assets/images/moscamediterranea.png"),
+        altImmagine: AssetImage("assets/images/moscamediterranea1.jpg"),
+        generalita: MoscafruttaActinidiaGeneralita(),
+        sintomi: MoscafruttaActinidiaSintomi(),
+        cure: MoscafruttaActinidiaCure(),
+        fonti: MoscafruttaActinidiaFonti()),
+    Malattia(
+        nome: "vespe",
+        nomePianta: "fico",
+        immagine: AssetImage("assets/images/vespe.png"),
+        altImmagine: AssetImage("assets/images/vespe4.jpg"),
+        generalita: VespeFicoGeneralita(),
+        sintomi: VespeFicoSintomi(),
+        cure: VespeFicoCure(),
+        fonti: VespeFicoFonti())
   ])
 ];
