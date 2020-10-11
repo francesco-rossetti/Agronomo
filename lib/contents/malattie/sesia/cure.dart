@@ -15,17 +15,17 @@ class _SesiaKakiCureState extends State<SesiaKakiCure> {
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context).translate("sesiacure1"),
+              AppLocalizations.of(context).translate("curesesia1"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
             Text(
-              AppLocalizations.of(context).translate("sesiacure2"),
+              AppLocalizations.of(context).translate("curesesia2"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             Text(
-              AppLocalizations.of(context).translate("sesiacure3"),
+              AppLocalizations.of(context).translate("curesesia3"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),

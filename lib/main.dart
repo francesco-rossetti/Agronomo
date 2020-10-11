@@ -1,10 +1,9 @@
-import 'dart:io';
-
-import 'package:admob_flutter/admob_flutter.dart';
 import 'package:agronomo/constants.dart';
 import 'package:agronomo/contents/intro/introScreen.dart';
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
@@ -12,10 +11,16 @@ import 'package:agronomo/home.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   await checkFirstSeen();
+
+  Firebase.initializeApp();
+
   runApp(MyApp());
-  Admob.initialize();
-  if (Platform.isIOS) await Admob.requestTrackingAuthorization();
+
+  await FirebaseAdMob.instance
+      .initialize(appId: "ca-app-pub-3318650813130043~3615453717");
 }
 
 Widget home = IntroScreen();
