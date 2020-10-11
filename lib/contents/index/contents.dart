@@ -32,6 +32,10 @@ import 'package:agronomo/contents/malattie/botrytisfico/generalita.dart';
 import 'package:agronomo/contents/malattie/botrytisfico/sintomi.dart';
 import 'package:agronomo/contents/malattie/botrytisfragola/generalita.dart';
 import 'package:agronomo/contents/malattie/botrytisfragola/sintomi.dart';
+import 'package:agronomo/contents/malattie/botrytisvite/cure.dart';
+import 'package:agronomo/contents/malattie/botrytisvite/fonti.dart';
+import 'package:agronomo/contents/malattie/botrytisvite/generalita.dart';
+import 'package:agronomo/contents/malattie/botrytisvite/sintomi.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/cure.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/fonti.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/generalita.dart';
@@ -56,10 +60,21 @@ import 'package:agronomo/contents/malattie/corineopesco/cure.dart';
 import 'package:agronomo/contents/malattie/corineopesco/fonti.dart';
 import 'package:agronomo/contents/malattie/corineopesco/generalita.dart';
 import 'package:agronomo/contents/malattie/corineopesco/sintomi.dart';
+import 'package:agronomo/contents/malattie/escoriosivite/cure.dart';
+import 'package:agronomo/contents/malattie/escoriosivite/fonti.dart';
+import 'package:agronomo/contents/malattie/escoriosivite/generalita.dart';
+import 'package:agronomo/contents/malattie/escoriosivite/sintomi.dart';
+import 'package:agronomo/contents/malattie/fillossera/cure.dart';
+import 'package:agronomo/contents/malattie/fillossera/fonti.dart';
+import 'package:agronomo/contents/malattie/fillossera/generalita.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/cure.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/fonti.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/generalita.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/sintomi.dart';
+import 'package:agronomo/contents/malattie/maldellesca/cure.dart';
+import 'package:agronomo/contents/malattie/maldellesca/fonti.dart';
+import 'package:agronomo/contents/malattie/maldellesca/generalita.dart';
+import 'package:agronomo/contents/malattie/maldellesca/sintomi.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/cure.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/fonti.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/generalita.dart';
@@ -94,6 +109,10 @@ import 'package:agronomo/contents/malattie/oziorrinco/cure.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/fonti.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/generalita.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/sintomi.dart';
+import 'package:agronomo/contents/malattie/peronospora/cure.dart';
+import 'package:agronomo/contents/malattie/peronospora/fonti.dart';
+import 'package:agronomo/contents/malattie/peronospora/generalita.dart';
+import 'package:agronomo/contents/malattie/peronospora/sintomi.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/cure.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/fonti.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/generalita.dart';
@@ -480,5 +499,52 @@ List<Pianta> piante = [
         sintomi: CoccinigliaficoFicoSintomi(),
         cure: CoccinigliaficoFicoCure(),
         fonti: CoccinigliaficoFicoFonti()),
+  ]),
+  Pianta(nome: "vite", immagine: "assets/images/uva.png", malattie: [
+    Malattia(
+        nome: "fillossera",
+        nomePianta: "vite",
+        immagine: AssetImage("assets/images/fillossera.png"),
+        altImmagine: AssetImage("assets/images/fillossera4.jpg"),
+        generalita: FillosseraViteGeneralita(),
+        sintomi: FillosseraViteFonti(),
+        cure: FillosseraViteCure(),
+        fonti: FillosseraViteFonti()),
+    Malattia(
+        nome: "escoriosivite",
+        nomePianta: "vite",
+        immagine: AssetImage("assets/images/escoriosivite.png"),
+        altImmagine: AssetImage("assets/images/escoriosivite2.jpg"),
+        generalita: EscoriosiviteViteGeneralita(),
+        sintomi: EscoriosiviteViteSintomi(),
+        cure: EscoriosiviteViteCure(),
+        fonti: EscoriosiviteViteFonti()),
+    Malattia(
+        nome: "botrytisvite",
+        nomePianta: "vite",
+        immagine: AssetImage("assets/images/botrytisvite.png"),
+        altImmagine: AssetImage("assets/images/botrytisvite3.jpg"),
+        generalita: BotrytisviteViteGeneralita(),
+        sintomi: BotrytisviteViteSintomi(),
+        cure: BotrytisviteViteCure(),
+        fonti: BotrytisviteViteFonti()),
+    Malattia(
+        nome: "peronospora",
+        nomePianta: "vite",
+        immagine: AssetImage("assets/images/peronospora.png"),
+        altImmagine: AssetImage("assets/images/peronospora5.jpg"),
+        generalita: PeronosporaViteGeneralita(),
+        sintomi: PeronosporaViteSintomi(),
+        cure: PeronosporaViteCure(),
+        fonti: PeronosporaViteFonti()),
+    Malattia(
+        nome: "maldellesca",
+        nomePianta: "vite",
+        immagine: AssetImage("assets/images/maldellesca.png"),
+        altImmagine: AssetImage("assets/images/maldellesca3.jpg"),
+        generalita: MaldellescaViteGeneralita(),
+        sintomi: MaldellescaViteSintomi(),
+        cure: MaldellescaViteCure(),
+        fonti: MaldellescaViteFonti())
   ])
 ];
