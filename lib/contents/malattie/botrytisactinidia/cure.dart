@@ -21,7 +21,7 @@ class _BotrytisActinidiaCureState extends State<BotrytisActinidiaCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/botrytiskiwi4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

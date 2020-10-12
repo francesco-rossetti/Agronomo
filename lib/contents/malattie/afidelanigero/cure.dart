@@ -23,7 +23,7 @@ class _AfideLanigeroMeloCureState extends State<AfideLanigeroMeloCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/afidelanigero4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

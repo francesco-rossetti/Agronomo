@@ -37,7 +37,7 @@ class _CarenzeActinidiaSintomiState extends State<CarenzeActinidiaSintomi> {
             SizedBox(height: 20),
             SizedBox(height: 20),
             Image.asset("assets/images/fogliegialle5.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

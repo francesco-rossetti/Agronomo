@@ -19,6 +19,7 @@ class _CarenzeActinidiaCureState extends State<CarenzeActinidiaCure> {
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
+            SizedBox(height: 100),
           ]),
     );
   }

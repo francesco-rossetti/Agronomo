@@ -31,7 +31,7 @@ class _MaculaturarossaAlbicoccoSintomiState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/maculaturarossa4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

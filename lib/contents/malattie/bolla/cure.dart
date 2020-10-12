@@ -21,7 +21,7 @@ class _BollaAlbicoccoCureState extends State<BollaAlbicoccoCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/bolladelpesco4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

@@ -21,7 +21,8 @@ class _MaldellescaViteFontiState extends State<MaldellescaViteFonti> {
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/icon.png")
+            Image.asset("assets/images/icon.png"),
+            SizedBox(height: 100),
           ]),
     );
   }

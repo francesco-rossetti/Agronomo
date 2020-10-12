@@ -35,7 +35,7 @@ class _MoscafruttaActinidiaCureState extends State<MoscafruttaActinidiaCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/moscamediterranea1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

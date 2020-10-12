@@ -21,7 +21,7 @@ class _OidioAlbicoccoCureState extends State<OidioAlbicoccoCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/oidiopesco3.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

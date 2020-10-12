@@ -37,7 +37,7 @@ class _OziorrincoMelaSintomiState extends State<OziorrincoMelaSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/oziorrinco4.png"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

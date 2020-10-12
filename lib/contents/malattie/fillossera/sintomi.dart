@@ -44,7 +44,7 @@ class _FillosseraViteSintomiState extends State<FillosseraViteSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/fillossera4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

@@ -29,7 +29,7 @@ class _AfideMeloSintomiState extends State<AfideMeloSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/afideverde3.png"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

@@ -21,7 +21,7 @@ class _MoscaCiliegioSintomiState extends State<MoscaCiliegioSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/moscafrutta2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

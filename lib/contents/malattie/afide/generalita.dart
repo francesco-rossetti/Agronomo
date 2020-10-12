@@ -21,7 +21,7 @@ class _AfideMeloGeneralitaState extends State<AfideMeloGeneralita> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/afideverde1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

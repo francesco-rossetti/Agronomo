@@ -1,4 +1,6 @@
+import 'package:agronomo/constants.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
 
 class FontiMalattia extends StatefulWidget {
@@ -11,6 +13,27 @@ class FontiMalattia extends StatefulWidget {
 }
 
 class _FontiMalattiaState extends State<FontiMalattia> {
+  BannerAd myBanner;
+
+  @override
+  void initState() {
+    super.initState();
+
+    myBanner = BannerAd(
+      adUnitId: kBannerAds,
+      size: AdSize.leaderboard,
+      listener: (MobileAdEvent event) {
+        print("BannerAd event is $event");
+      },
+    );
+
+    myBanner
+      ..load()
+      ..show(
+        anchorType: AnchorType.bottom,
+      );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -24,7 +24,7 @@ class _TicchiolaturaMeloGeneralitaState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/ticchiolatura1.png"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

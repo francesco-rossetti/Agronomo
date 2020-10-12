@@ -27,7 +27,7 @@ class _CancrobattericopescoAlbicoccoSintomiState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/cancrobattericopesco1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

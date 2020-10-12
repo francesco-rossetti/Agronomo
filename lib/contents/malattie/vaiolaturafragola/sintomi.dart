@@ -23,7 +23,7 @@ class _VaiolaturaFragolaSintomiState extends State<VaiolaturaFragolaSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/vaiolaturafragola3.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

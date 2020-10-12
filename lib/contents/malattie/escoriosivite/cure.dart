@@ -29,7 +29,7 @@ class _EscoriosiviteViteCureState extends State<EscoriosiviteViteCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/escoriosivite4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

@@ -23,7 +23,7 @@ class _RuggineCiliegioGeneralitaState extends State<RuggineCiliegioGeneralita> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/ruggine1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

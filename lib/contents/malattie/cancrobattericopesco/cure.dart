@@ -24,7 +24,7 @@ class _CancrobattericopescoAlbicoccoCureState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/cancrobattericopesco4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

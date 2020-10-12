@@ -29,7 +29,7 @@ class _RuggineCiliegioSintomiState extends State<RuggineCiliegioSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/ruggine3.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

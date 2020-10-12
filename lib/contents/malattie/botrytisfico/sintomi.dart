@@ -22,7 +22,7 @@ class _BotrytisficoFicoSintomiState extends State<BotrytisficoFicoSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/botrytisfico1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

@@ -15,14 +15,13 @@ class _OidioFragolaGeneralitaState extends State<OidioFragolaGeneralita> {
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context)
-                  .translate("oidiofragolageneralita"),
+              AppLocalizations.of(context).translate("oidiofragolageneralita"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/oidiofragola1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

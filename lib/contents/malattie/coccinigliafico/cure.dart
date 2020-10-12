@@ -73,6 +73,7 @@ class _CoccinigliaficoFicoCureState extends State<CoccinigliaficoFicoCure> {
                 fontSize: 20,
               ),
             ),
+            SizedBox(height: 100),
           ]),
     );
   }

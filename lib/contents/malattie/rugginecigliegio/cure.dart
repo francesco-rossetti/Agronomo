@@ -41,7 +41,7 @@ class _RuggineCiliegioCureState extends State<RuggineCiliegioCure> {
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

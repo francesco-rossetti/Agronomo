@@ -26,7 +26,7 @@ class _MarciumecollettoActinidiaSintomiState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/marciumecolletto3.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

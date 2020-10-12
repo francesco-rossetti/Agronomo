@@ -21,7 +21,7 @@ class _BotrytisFragolaSintomiState extends State<BotrytisFragolaSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/botrytisfragola2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

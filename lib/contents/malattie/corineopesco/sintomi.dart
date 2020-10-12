@@ -39,7 +39,7 @@ class _CorineopescoAlbicoccoSintomiState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/corineopesco3.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

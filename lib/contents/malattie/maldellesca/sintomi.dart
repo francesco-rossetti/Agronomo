@@ -32,7 +32,7 @@ class _MaldellescaViteSintomiState extends State<MaldellescaViteSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/maldellesca4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

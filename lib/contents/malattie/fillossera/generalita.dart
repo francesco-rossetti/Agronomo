@@ -30,7 +30,7 @@ class _FillosseraViteGeneralitaState extends State<FillosseraViteGeneralita> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/fillossera2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

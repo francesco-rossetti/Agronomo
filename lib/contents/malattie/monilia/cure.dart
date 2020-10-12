@@ -29,7 +29,7 @@ class _MoniliaAlbicoccoCureState extends State<MoniliaAlbicoccoCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/monilia3.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

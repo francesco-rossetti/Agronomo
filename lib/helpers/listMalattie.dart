@@ -3,6 +3,7 @@ import 'package:agronomo/helpers/detailMalattie.dart';
 import 'package:agronomo/helpers/malattieCard.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:firebase_admob/firebase_admob.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
@@ -28,12 +29,28 @@ class ListMalattie extends StatefulWidget {
 }
 
 class _ListMalattieState extends State<ListMalattie> {
+  BannerAd myBanner;
   List<Malattia> myMalattie;
 
   @override
   void initState() {
     this.myMalattie = widget.malattie;
+
     super.initState();
+
+    myBanner = BannerAd(
+      adUnitId: kBannerAds,
+      size: AdSize.leaderboard,
+      listener: (MobileAdEvent event) {
+        print("BannerAd event is $event");
+      },
+    );
+
+    myBanner
+      ..load()
+      ..show(
+        anchorType: AnchorType.bottom,
+      );
   }
 
   @override
@@ -93,6 +110,7 @@ class _ListMalattieState extends State<ListMalattie> {
               ],
             ),
           ),
+          SizedBox(height: 100),
         ],
       ),
     );

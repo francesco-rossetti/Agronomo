@@ -95,6 +95,7 @@ class _PeronosporaViteCureState extends State<PeronosporaViteCure> {
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
+            SizedBox(height: 100),
           ]),
     );
   }

@@ -22,7 +22,7 @@ class _CorineopescoAlbicoccoCureState extends State<CorineopescoAlbicoccoCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/corineopesco4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

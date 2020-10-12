@@ -81,7 +81,7 @@ class _MoscaCiliegioCureState extends State<MoscaCiliegioCure> {
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

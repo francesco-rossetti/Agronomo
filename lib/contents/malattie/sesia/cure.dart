@@ -31,7 +31,7 @@ class _SesiaKakiCureState extends State<SesiaKakiCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/sesia2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

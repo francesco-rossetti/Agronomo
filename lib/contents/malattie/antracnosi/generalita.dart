@@ -22,7 +22,7 @@ class _AntracnosiKakiGeneralitaState extends State<AntracnosiKakiGeneralita> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/antracnosikako2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

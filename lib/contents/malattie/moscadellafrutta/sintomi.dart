@@ -23,7 +23,7 @@ class _MoscafruttaActinidiaSintomiState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/moscamediterranea2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

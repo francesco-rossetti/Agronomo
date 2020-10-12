@@ -24,7 +24,7 @@ class _MarciumeRadicaleFibrosoSintomiState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/marciumeradicalefibroso2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

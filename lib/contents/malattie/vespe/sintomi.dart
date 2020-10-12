@@ -28,7 +28,7 @@ class _VespeFicoSintomiState extends State<VespeFicoSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/vespe3.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

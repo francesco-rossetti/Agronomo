@@ -43,6 +43,7 @@ class _AfideNeroSintomiState extends State<AfideNeroSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/afidenero4.jpg"),
+            SizedBox(height: 100),
           ]),
     );
   }

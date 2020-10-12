@@ -23,7 +23,7 @@ class _MarciumecollettoActinidiaCureState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/marciumecolletto.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

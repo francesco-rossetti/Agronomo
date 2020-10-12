@@ -30,7 +30,7 @@ class _PeronosporaViteGeneralitaState extends State<PeronosporaViteGeneralita> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/peronospora2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

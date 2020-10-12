@@ -24,7 +24,7 @@ class _PunteruoloneroFicoGeneralitaState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/punteruolonerofico1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

@@ -18,7 +18,8 @@ class _OidioMeloCureState extends State<OidioMeloCure> {
               AppLocalizations.of(context).translate("oidiomelacure"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
-            )
+            ),
+            SizedBox(height: 100),
           ]),
     );
   }

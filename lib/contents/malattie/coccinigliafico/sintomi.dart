@@ -31,7 +31,7 @@ class _CoccinigliaficoFicoSintomiState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/coccinigliafico4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

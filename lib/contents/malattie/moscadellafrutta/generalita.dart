@@ -31,7 +31,7 @@ class _MoscafruttaActinidiaGeneralitaState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/moscamediterranea4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

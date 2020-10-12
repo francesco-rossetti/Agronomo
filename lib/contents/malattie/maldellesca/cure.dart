@@ -21,7 +21,7 @@ class _MaldellescaViteCureState extends State<MaldellescaViteCure> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/maldellesca5.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

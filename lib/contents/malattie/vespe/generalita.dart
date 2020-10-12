@@ -24,7 +24,7 @@ class _VespeFicoGeneralitaState extends State<VespeFicoGeneralita> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/vespe1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

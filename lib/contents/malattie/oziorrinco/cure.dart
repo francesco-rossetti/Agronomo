@@ -21,7 +21,7 @@ class _OziorrincoMelaCuraState extends State<OziorrincoMelaCura> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/oziorrinco5.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

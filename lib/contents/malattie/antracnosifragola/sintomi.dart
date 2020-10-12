@@ -32,7 +32,7 @@ class _AntracnosiFragolaSintomiState extends State<AntracnosiFragolaSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/antracnosi4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

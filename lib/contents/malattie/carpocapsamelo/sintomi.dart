@@ -29,7 +29,7 @@ class _CarpocapsaMeloSintomiState extends State<CarpocapsaMeloSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/carpocapsa4.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

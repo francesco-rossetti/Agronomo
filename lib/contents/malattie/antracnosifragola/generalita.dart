@@ -33,7 +33,7 @@ class _AntracnosiFragolaGeneralitaState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/antracnosi2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

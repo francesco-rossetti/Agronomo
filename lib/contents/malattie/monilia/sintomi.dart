@@ -22,7 +22,7 @@ class _MoniliaAlbicoccoSintomiState extends State<MoniliaAlbicoccoSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/monilia.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

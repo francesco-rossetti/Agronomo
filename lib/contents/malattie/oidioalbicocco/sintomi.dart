@@ -29,7 +29,7 @@ class _OidioAlbicoccoSintomiState extends State<OidioAlbicoccoSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/oidiopesco1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

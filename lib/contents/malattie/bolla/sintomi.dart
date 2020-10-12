@@ -29,7 +29,7 @@ class _BollaAlbicoccoSintomiState extends State<BollaAlbicoccoSintomi> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/bolladelpesco3.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

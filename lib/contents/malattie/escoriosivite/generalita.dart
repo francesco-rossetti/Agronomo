@@ -23,7 +23,7 @@ class _EscoriosiviteViteGeneralitaState
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/escoriosivite1.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }

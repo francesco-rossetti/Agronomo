@@ -32,7 +32,7 @@ class _MoscaCiliegioGeneralitaState extends State<MoscaCiliegioGeneralita> {
             ),
             SizedBox(height: 20),
             Image.asset("assets/images/moscafrutta2.jpg"),
-            SizedBox(height: 20),
+            SizedBox(height: 100),
           ]),
     );
   }
