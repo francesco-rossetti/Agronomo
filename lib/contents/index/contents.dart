@@ -409,7 +409,7 @@ List<Pianta> piante = [
   Pianta(nome: "fico", immagine: "assets/images/fico.png", malattie: [
     Malattia(
         nome: "marciumeradicalefibroso",
-        nomePianta: "Fico",
+        nomePianta: "fico",
         immagine: AssetImage("assets/images/marciumeradicalefibroso.png"),
         altImmagine: AssetImage("assets/images/Marciume-al-colletto.jpg"),
         generalita: MarciumeRadicaleFibrosoGeneralita(),

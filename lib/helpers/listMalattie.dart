@@ -30,6 +30,7 @@ class ListMalattie extends StatefulWidget {
 
 class _ListMalattieState extends State<ListMalattie> {
   BannerAd myBanner;
+  bool bannerLoaded = false;
   List<Malattia> myMalattie;
 
   @override
@@ -43,6 +44,11 @@ class _ListMalattieState extends State<ListMalattie> {
       size: AdSize.leaderboard,
       listener: (MobileAdEvent event) {
         print("BannerAd event is $event");
+
+        if (event == MobileAdEvent.loaded)
+          setState(() {
+            bannerLoaded = true;
+          });
       },
     );
 

@@ -30,6 +30,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   BannerAd myBanner;
+  bool bannerLoaded = false;
 
   @override
   Widget build(BuildContext context) {
@@ -86,6 +87,11 @@ class _HomePageState extends State<HomePage> {
       size: AdSize.leaderboard,
       listener: (MobileAdEvent event) {
         print("BannerAd event is $event");
+
+        if (event == MobileAdEvent.loaded)
+          setState(() {
+            bannerLoaded = true;
+          });
       },
     );
 
@@ -139,6 +145,7 @@ class _HomePageState extends State<HomePage> {
               var elements = piante
                   .where((element) => AppLocalizations.of(context)
                       .translate(element.nome)
+                      .toLowerCase()
                       .contains(value))
                   .toList();
 
@@ -148,6 +155,7 @@ class _HomePageState extends State<HomePage> {
                 malattieElements.addAll(element.malattie.where((malattia) =>
                     AppLocalizations.of(context)
                         .translate(malattia.nome)
+                        .toLowerCase()
                         .contains(value)));
               });
 
