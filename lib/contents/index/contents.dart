@@ -67,6 +67,18 @@ import 'package:agronomo/contents/malattie/escoriosivite/sintomi.dart';
 import 'package:agronomo/contents/malattie/fillossera/cure.dart';
 import 'package:agronomo/contents/malattie/fillossera/fonti.dart';
 import 'package:agronomo/contents/malattie/fillossera/generalita.dart';
+import 'package:agronomo/contents/malattie/flavescenza/cure.dart';
+import 'package:agronomo/contents/malattie/flavescenza/fonti.dart';
+import 'package:agronomo/contents/malattie/flavescenza/generalita.dart';
+import 'package:agronomo/contents/malattie/flavescenza/sintomi.dart';
+import 'package:agronomo/contents/malattie/funghi/cure.dart';
+import 'package:agronomo/contents/malattie/funghi/fonti.dart';
+import 'package:agronomo/contents/malattie/funghi/generalita.dart';
+import 'package:agronomo/contents/malattie/funghi/sintomi.dart';
+import 'package:agronomo/contents/malattie/legnoriccio/cure.dart';
+import 'package:agronomo/contents/malattie/legnoriccio/fonti.dart';
+import 'package:agronomo/contents/malattie/legnoriccio/generalita.dart';
+import 'package:agronomo/contents/malattie/legnoriccio/sintomi.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/cure.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/fonti.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/generalita.dart';
@@ -75,6 +87,10 @@ import 'package:agronomo/contents/malattie/maldellesca/cure.dart';
 import 'package:agronomo/contents/malattie/maldellesca/fonti.dart';
 import 'package:agronomo/contents/malattie/maldellesca/generalita.dart';
 import 'package:agronomo/contents/malattie/maldellesca/sintomi.dart';
+import 'package:agronomo/contents/malattie/marciumeacido/cure.dart';
+import 'package:agronomo/contents/malattie/marciumeacido/fonti.dart';
+import 'package:agronomo/contents/malattie/marciumeacido/generalita.dart';
+import 'package:agronomo/contents/malattie/marciumeacido/sintomi.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/cure.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/fonti.dart';
 import 'package:agronomo/contents/malattie/marciumecolletto/generalita.dart';
@@ -105,6 +121,10 @@ import 'package:agronomo/contents/malattie/oidiomelo/cure.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/fonti.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/generalita.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/sintomi.dart';
+import 'package:agronomo/contents/malattie/oidiovite/cure.dart';
+import 'package:agronomo/contents/malattie/oidiovite/fonti.dart';
+import 'package:agronomo/contents/malattie/oidiovite/generalita.dart';
+import 'package:agronomo/contents/malattie/oidiovite/sintomi.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/cure.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/fonti.dart';
 import 'package:agronomo/contents/malattie/oziorrinco/generalita.dart';
@@ -113,6 +133,10 @@ import 'package:agronomo/contents/malattie/peronospora/cure.dart';
 import 'package:agronomo/contents/malattie/peronospora/fonti.dart';
 import 'package:agronomo/contents/malattie/peronospora/generalita.dart';
 import 'package:agronomo/contents/malattie/peronospora/sintomi.dart';
+import 'package:agronomo/contents/malattie/piralide/cure.dart';
+import 'package:agronomo/contents/malattie/piralide/fonti.dart';
+import 'package:agronomo/contents/malattie/piralide/generalita.dart';
+import 'package:agronomo/contents/malattie/piralide/sintomi.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/cure.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/fonti.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/generalita.dart';
@@ -545,6 +569,62 @@ List<Pianta> piante = [
         generalita: MaldellescaViteGeneralita(),
         sintomi: MaldellescaViteSintomi(),
         cure: MaldellescaViteCure(),
-        fonti: MaldellescaViteFonti())
+        fonti: MaldellescaViteFonti()),
+    Malattia(
+        nome: "marciumeacido",
+        nomePianta: "vite",
+        immagine: AssetImage("assets/images/marciume.png"),
+        altImmagine: AssetImage("assets/images/marciume2.jpg"),
+        generalita: MarciumeacidoViteGeneralita(),
+        sintomi: MarciumeacidoViteSintomi(),
+        cure: MarciumeacidoViteCure(),
+        fonti: MarciumeacidoViteFonti()),
+    Malattia(
+        nome: "legnoriccio",
+        nomePianta: "vite",
+        immagine: AssetImage("assets/images/legnoriccio.png"),
+        altImmagine: AssetImage("assets/images/legnoriccio3.jpg"),
+        generalita: LegnoriccioViteGeneralita(),
+        sintomi: LegnoriccioViteSintomi(),
+        cure: LegnoriccioViteCure(),
+        fonti: LegnoriccioViteFonti()),
+    Malattia(
+        nome: "oidiovite",
+        nomePianta: "vite",
+        immagine: AssetImage("assets/images/oidiovite.png"),
+        altImmagine: AssetImage("assets/images/oidiovite4.jpg"),
+        generalita: OidioviteViteGeneralita(),
+        sintomi: OidioviteViteSintomi(),
+        cure: OidioviteViteCure(),
+        fonti: OidioviteViteFonti()),
+    Malattia(
+        nome: "flavescenza",
+        nomePianta: "vite",
+        immagine: AssetImage("assets/images/flavescenza.png"),
+        altImmagine: AssetImage("assets/images/flavescenza4"),
+        generalita: FlavescenzaViteGeneralita(),
+        sintomi: FlavescenzaViteSintomi(),
+        cure: FlavescenzaViteCure(),
+        fonti: FlavescenzaViteFonti())
+  ]),
+  Pianta(nome: "Melograno", immagine: "assets/images/melograno.png", malattie: [
+    Malattia(
+        nome: "funghi",
+        nomePianta: "melograno",
+        immagine: AssetImage("assets/images/funghi.png"),
+        altImmagine: AssetImage("assets/images/funghi1.jpg"),
+        generalita: FunghiMelogranoGeneralita(),
+        sintomi: FunghiMelogranoSintomi(),
+        cure: FunghiMelogranoCure(),
+        fonti: FunghiMelogranoFonti()),
+    Malattia(
+        nome: "piralide",
+        nomePianta: "melograno",
+        immagine: AssetImage("assets/images/piralide.png"),
+        altImmagine: AssetImage("assets/images/piralide1.jpg"),
+        generalita: PiralideMelogranoGeneralita(),
+        sintomi: PiralideMelogranoSintomi(),
+        cure: PiralideMelogranoCure(),
+        fonti: PiralideMelogranoFonti())
   ])
 ];
