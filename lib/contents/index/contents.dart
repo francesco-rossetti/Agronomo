@@ -10,6 +10,10 @@ import 'package:agronomo/contents/malattie/afidenerociliegio/cure.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/fonti.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/generalita.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/sintomi.dart';
+import 'package:agronomo/contents/malattie/afidi/cure.dart';
+import 'package:agronomo/contents/malattie/afidi/fonti.dart';
+import 'package:agronomo/contents/malattie/afidi/generalita.dart';
+import 'package:agronomo/contents/malattie/afidi/sintomi.dart';
 import 'package:agronomo/contents/malattie/antracnosi/cure.dart';
 import 'package:agronomo/contents/malattie/antracnosi/fonti.dart';
 import 'package:agronomo/contents/malattie/antracnosi/generalita.dart';
@@ -52,6 +56,10 @@ import 'package:agronomo/contents/malattie/carpocapsamelo/cure.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/fonti.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/generalita.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/sintomi.dart';
+import 'package:agronomo/contents/malattie/coccinigliaagrumi/cure.dart';
+import 'package:agronomo/contents/malattie/coccinigliaagrumi/fonti.dart';
+import 'package:agronomo/contents/malattie/coccinigliaagrumi/generalita.dart';
+import 'package:agronomo/contents/malattie/coccinigliaagrumi/sintomi.dart';
 import 'package:agronomo/contents/malattie/coccinigliafico/cure.dart';
 import 'package:agronomo/contents/malattie/coccinigliafico/fonti.dart';
 import 'package:agronomo/contents/malattie/coccinigliafico/generalita.dart';
@@ -99,6 +107,10 @@ import 'package:agronomo/contents/malattie/marciumeradicalefibroso/cure.dart';
 import 'package:agronomo/contents/malattie/marciumeradicalefibroso/fonti.dart';
 import 'package:agronomo/contents/malattie/marciumeradicalefibroso/generalita.dart';
 import 'package:agronomo/contents/malattie/marciumeradicalefibroso/sintomi.dart';
+import 'package:agronomo/contents/malattie/marciumeradici/cure.dart';
+import 'package:agronomo/contents/malattie/marciumeradici/fonti.dart';
+import 'package:agronomo/contents/malattie/marciumeradici/generalita.dart';
+import 'package:agronomo/contents/malattie/marciumeradici/sintomi.dart';
 import 'package:agronomo/contents/malattie/monilia/cure.dart';
 import 'package:agronomo/contents/malattie/monilia/fonti.dart';
 import 'package:agronomo/contents/malattie/monilia/generalita.dart';
@@ -626,5 +638,43 @@ List<Pianta> piante = [
         sintomi: PiralideMelogranoSintomi(),
         cure: PiralideMelogranoCure(),
         fonti: PiralideMelogranoFonti())
+  ]),
+  Pianta(nome: "agrumi", immagine: "assets/images/agrumi.png", malattie: [
+    Malattia(
+        nome: "moscadellafrutta",
+        nomePianta: "agrumi",
+        immagine: AssetImage("assets/images/moscamediterranea.png"),
+        altImmagine: AssetImage("assets/images/moscamediterranea1.jpg"),
+        generalita: MoscafruttaActinidiaGeneralita(),
+        sintomi: MoscafruttaActinidiaSintomi(),
+        cure: MoscafruttaActinidiaCure(),
+        fonti: MoscafruttaActinidiaFonti()),
+    Malattia(
+        nome: "afidi",
+        nomePianta: "agrumi",
+        immagine: AssetImage("assets/images/afidi.png"),
+        altImmagine: AssetImage("assets/images/afidi4.jpg"),
+        generalita: AfidiAgrumiGeneralita(),
+        sintomi: AfidiAgrumiSintomi(),
+        cure: AfidiAgrumiCure(),
+        fonti: AfidiAgrumiFonti()),
+    Malattia(
+        nome: "marciumeradici",
+        nomePianta: "agrumi",
+        immagine: AssetImage("assets/images/marciumeradici.png"),
+        altImmagine: AssetImage("assets/images/marciumeradici2.jpg"),
+        generalita: MarciumeradiciAgrumiGeneralita(),
+        sintomi: MarciumeradiciAgrumiSintomi(),
+        cure: MarciumeradiciAgrumiCure(),
+        fonti: MarciumeradiciAgrumiFonti()),
+    Malattia(
+        nome: "coccinigliaagrumi",
+        nomePianta: "agrumi",
+        immagine: AssetImage("assets/images/coccinigliaagrumi.png"),
+        altImmagine: AssetImage("assets/images/coccinigliaagrumi2.jpg"),
+        generalita: CoccinigliaagrumiAgrumiGeneralita(),
+        sintomi: CoccinigliaagrumiAgrumiSintomi(),
+        cure: CoccinigliaagrumiAgrumiCure(),
+        fonti: CoccinigliaagrumiAgrumiFonti())
   ])
 ];
