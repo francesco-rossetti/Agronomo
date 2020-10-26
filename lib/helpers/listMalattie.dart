@@ -7,6 +7,7 @@ import 'package:firebase_admob/firebase_admob.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 
 // ignore: must_be_immutable
 class ListMalattie extends StatefulWidget {
@@ -31,6 +32,7 @@ class ListMalattie extends StatefulWidget {
 class _ListMalattieState extends State<ListMalattie> {
   BannerAd myBanner;
   bool bannerLoaded = false;
+  bool keyboardLoaded = false;
   List<Malattia> myMalattie;
 
   @override
@@ -38,6 +40,12 @@ class _ListMalattieState extends State<ListMalattie> {
     this.myMalattie = widget.malattie;
 
     super.initState();
+
+    KeyboardVisibility.onChange.listen((bool visible) {
+      setState(() {
+        this.keyboardLoaded = visible;
+      });
+    });
 
     myBanner = BannerAd(
       adUnitId: kBannerAds,
@@ -116,7 +124,7 @@ class _ListMalattieState extends State<ListMalattie> {
               ],
             ),
           ),
-          SizedBox(height: 100),
+          !this.keyboardLoaded ? SizedBox(height: 100) : Container(),
         ],
       ),
     );
