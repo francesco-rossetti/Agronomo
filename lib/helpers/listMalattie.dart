@@ -41,12 +41,6 @@ class _ListMalattieState extends State<ListMalattie> {
 
     super.initState();
 
-    KeyboardVisibility.onChange.listen((bool visible) {
-      setState(() {
-        this.keyboardLoaded = visible;
-      });
-    });
-
     myBanner = BannerAd(
       adUnitId: kBannerAds,
       size: AdSize.leaderboard,

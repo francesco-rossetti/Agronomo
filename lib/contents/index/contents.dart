@@ -619,7 +619,7 @@ List<Pianta> piante = [
         cure: FlavescenzaViteCure(),
         fonti: FlavescenzaViteFonti())
   ]),
-  Pianta(nome: "Melograno", immagine: "assets/images/melograno.png", malattie: [
+  Pianta(nome: "melograno", immagine: "assets/images/melograno.png", malattie: [
     Malattia(
         nome: "funghi",
         nomePianta: "melograno",
