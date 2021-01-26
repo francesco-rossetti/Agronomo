@@ -153,10 +153,22 @@ import 'package:agronomo/contents/malattie/punteruolonerofico/cure.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/fonti.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/generalita.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/sintomi.dart';
+import 'package:agronomo/contents/malattie/ragnettorossoagrumi/cure.dart';
+import 'package:agronomo/contents/malattie/ragnettorossoagrumi/fonti.dart';
+import 'package:agronomo/contents/malattie/ragnettorossoagrumi/generalita.dart';
+import 'package:agronomo/contents/malattie/ragnettorossoagrumi/sintomi.dart';
+import 'package:agronomo/contents/malattie/rognaolivo/cure.dart';
+import 'package:agronomo/contents/malattie/rognaolivo/fonti.dart';
+import 'package:agronomo/contents/malattie/rognaolivo/generalita.dart';
+import 'package:agronomo/contents/malattie/rognaolivo/sintomi.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/cure.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/fonti.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/generalita.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/sintomi.dart';
+import 'package:agronomo/contents/malattie/serpentinaagrumi/cure.dart';
+import 'package:agronomo/contents/malattie/serpentinaagrumi/fonti.dart';
+import 'package:agronomo/contents/malattie/serpentinaagrumi/generalita.dart';
+import 'package:agronomo/contents/malattie/serpentinaagrumi/sintomi.dart';
 import 'package:agronomo/contents/malattie/sesia/cure.dart';
 import 'package:agronomo/contents/malattie/sesia/fonti.dart';
 import 'package:agronomo/contents/malattie/sesia/generalita.dart';
@@ -165,6 +177,14 @@ import 'package:agronomo/contents/malattie/ticchiolatura/cure.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/fonti.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/generalita.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/sintomi.dart';
+import 'package:agronomo/contents/malattie/tripideagrumi/cure.dart';
+import 'package:agronomo/contents/malattie/tripideagrumi/fonti.dart';
+import 'package:agronomo/contents/malattie/tripideagrumi/generalita.dart';
+import 'package:agronomo/contents/malattie/tripideagrumi/sintomi.dart';
+import 'package:agronomo/contents/malattie/tristezzaagrumi/cure.dart';
+import 'package:agronomo/contents/malattie/tristezzaagrumi/fonti.dart';
+import 'package:agronomo/contents/malattie/tristezzaagrumi/generalita.dart';
+import 'package:agronomo/contents/malattie/tristezzaagrumi/sintomi.dart';
 import 'package:agronomo/contents/malattie/vaiolaturafragola/cure.dart';
 import 'package:agronomo/contents/malattie/vaiolaturafragola/fonti.dart';
 import 'package:agronomo/contents/malattie/vaiolaturafragola/generalita.dart';
@@ -675,6 +695,53 @@ List<Pianta> piante = [
         generalita: CoccinigliaagrumiAgrumiGeneralita(),
         sintomi: CoccinigliaagrumiAgrumiSintomi(),
         cure: CoccinigliaagrumiAgrumiCure(),
-        fonti: CoccinigliaagrumiAgrumiFonti())
-  ])
+        fonti: CoccinigliaagrumiAgrumiFonti()),
+    Malattia(
+        nome: "tripideagrumi",
+        nomePianta: "agrumi",
+        immagine: AssetImage("assets/images/tripide.png"),
+        altImmagine: AssetImage("assets/images/tripide1.jpg"),
+        generalita: TripideAgrumiGeneralita(),
+        sintomi: TripideAgrumiSintomi(),
+        cure: TripideAgrumiCure(),
+        fonti: TripideAgrumiFonti()),
+    Malattia(
+        nome: "serpentinaagrumi",
+        nomePianta: "agrumi",
+        immagine: AssetImage("assets/images/serpentina.png"),
+        altImmagine: AssetImage("assets/images/serpentina1.jpg"),
+        generalita: SerpentinaAgrumiGeneralita(),
+        sintomi: SerpentinaAgrumiSintomi(),
+        cure: SerpentinaAgrumiCure(),
+        fonti: SerpentinaAgrumiFonti()),
+    Malattia(
+        nome: "ragnettorossoagrumi",
+        nomePianta: "agrumi",
+        immagine: AssetImage("assets/images/ragnettorossoagrumi.png"),
+        altImmagine: AssetImage("assets/images/ragnettorossoagrumi1.jpg"),
+        generalita: RagnettorossoAgrumiGeneralita(),
+        sintomi: RagnettorossoAgrumiSintomi(),
+        cure: RagnettorossoAgrumiCure(),
+        fonti: RagnettorossoagrumiFonti()),
+    Malattia(
+        nome: "tristezzaagrumi",
+        nomePianta: "agrumi",
+        immagine: AssetImage("assets/images/tristezzaagrumi.png"),
+        altImmagine: AssetImage("assets/images/tristezzaagrumi2.jpg"),
+        generalita: TristezzaagrumiAgrumiGeneralita(),
+        sintomi: TristezzaagrumiAgrumiSintomi(),
+        cure: TristezzaagrumiAgrimiCure(),
+        fonti: TristezzaagrumiAgrumiFonti()),
+  ]),
+  Pianta(nome: "olivo", immagine: "assets/images/olive.png", malattie: [
+    Malattia(
+        nome: "rognaolivo",
+        nomePianta: "olivo",
+        immagine: AssetImage("assets/images/rognaolivo.png"),
+        altImmagine: AssetImage("assets/images/rognaolivo2.jpg"),
+        generalita: RognaolivoOlivoGeneralita(),
+        sintomi: RognaolivoOlivoSintomi(),
+        cure: RognaolivoOlivoCure(),
+        fonti: RognaolivoOlivoFonti()),
+  ]),
 ];
