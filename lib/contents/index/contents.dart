@@ -193,6 +193,10 @@ import 'package:agronomo/contents/malattie/vespe/cure.dart';
 import 'package:agronomo/contents/malattie/vespe/fonti.dart';
 import 'package:agronomo/contents/malattie/vespe/generalita.dart';
 import 'package:agronomo/contents/malattie/vespe/sintomi.dart';
+import 'package:agronomo/contents/malattie/xylella/cure.dart';
+import 'package:agronomo/contents/malattie/xylella/fonti.dart';
+import 'package:agronomo/contents/malattie/xylella/generalita.dart';
+import 'package:agronomo/contents/malattie/xylella/sintomi.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:flutter/material.dart';
@@ -743,5 +747,14 @@ List<Pianta> piante = [
         sintomi: RognaolivoOlivoSintomi(),
         cure: RognaolivoOlivoCure(),
         fonti: RognaolivoOlivoFonti()),
+    Malattia(
+        nome: "xylella",
+        nomePianta: "olivo",
+        immagine: AssetImage("assets/images/xylella.png"),
+        altImmagine: AssetImage("assets/images/xylella1.jpg"),
+        generalita: XylellaOlivoGeneralita(),
+        sintomi: XylellaOlivoSintomi(),
+        cure: XylellaOlivoCure(),
+        fonti: XylellaOlivoFonti()),
   ]),
 ];
