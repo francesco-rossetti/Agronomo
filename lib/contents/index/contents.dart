@@ -22,6 +22,10 @@ import 'package:agronomo/contents/malattie/antracnosifragola/cure.dart';
 import 'package:agronomo/contents/malattie/antracnosifragola/fonti.dart';
 import 'package:agronomo/contents/malattie/antracnosifragola/generalita.dart';
 import 'package:agronomo/contents/malattie/antracnosifragola/sintomi.dart';
+import 'package:agronomo/contents/malattie/antracnosiolivo/cure.dart';
+import 'package:agronomo/contents/malattie/antracnosiolivo/fonti.dart';
+import 'package:agronomo/contents/malattie/antracnosiolivo/generalita.dart';
+import 'package:agronomo/contents/malattie/antracnosiolivo/sintomi.dart';
 import 'package:agronomo/contents/malattie/bolla/cure.dart';
 import 'package:agronomo/contents/malattie/bolla/fonti.dart';
 import 'package:agronomo/contents/malattie/bolla/generalita.dart';
@@ -40,6 +44,10 @@ import 'package:agronomo/contents/malattie/botrytisvite/cure.dart';
 import 'package:agronomo/contents/malattie/botrytisvite/fonti.dart';
 import 'package:agronomo/contents/malattie/botrytisvite/generalita.dart';
 import 'package:agronomo/contents/malattie/botrytisvite/sintomi.dart';
+import 'package:agronomo/contents/malattie/bruscaparassitaria/cure.dart';
+import 'package:agronomo/contents/malattie/bruscaparassitaria/fonti.dart';
+import 'package:agronomo/contents/malattie/bruscaparassitaria/generalita.dart';
+import 'package:agronomo/contents/malattie/bruscaparassitaria/sintomi.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/cure.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/fonti.dart';
 import 'package:agronomo/contents/malattie/cancrobatterico/generalita.dart';
@@ -79,6 +87,10 @@ import 'package:agronomo/contents/malattie/flavescenza/cure.dart';
 import 'package:agronomo/contents/malattie/flavescenza/fonti.dart';
 import 'package:agronomo/contents/malattie/flavescenza/generalita.dart';
 import 'package:agronomo/contents/malattie/flavescenza/sintomi.dart';
+import 'package:agronomo/contents/malattie/fumaggineolivo/cure.dart';
+import 'package:agronomo/contents/malattie/fumaggineolivo/fonti.dart';
+import 'package:agronomo/contents/malattie/fumaggineolivo/generalita.dart';
+import 'package:agronomo/contents/malattie/fumaggineolivo/sintomi.dart';
 import 'package:agronomo/contents/malattie/funghi/cure.dart';
 import 'package:agronomo/contents/malattie/funghi/fonti.dart';
 import 'package:agronomo/contents/malattie/funghi/generalita.dart';
@@ -756,5 +768,32 @@ List<Pianta> piante = [
         sintomi: XylellaOlivoSintomi(),
         cure: XylellaOlivoCure(),
         fonti: XylellaOlivoFonti()),
+    Malattia(
+        nome: "fumaggineolivo",
+        nomePianta: "olivo",
+        immagine: AssetImage("assets/images/fumaggine.png"),
+        altImmagine: AssetImage("assets/images/fumaggine1.jpg"),
+        generalita: FumaggineolivoOlivoGeneralita(),
+        sintomi: FumaggineolivoOlivoSintomi(),
+        cure: FumaggineolivoOlivoCure(),
+        fonti: FumaggineolivoOlivoFonti()),
+    Malattia(
+        nome: "bruscaparassitaria",
+        nomePianta: "olivo",
+        immagine: AssetImage("assets/images/bruscaparassitaria.png"),
+        altImmagine: AssetImage("assets/images/bruscaparassitaria.jpg"),
+        generalita: BruscaparassitariaOlivoGeneralita(),
+        sintomi: BruscaparassitariaOlivoSintomi(),
+        cure: BruscaparassitariaOlivoCure(),
+        fonti: BruscaparassitariaOlivoFonti()),
+    Malattia(
+        nome: "antracnosiolivo",
+        nomePianta: "olivo",
+        immagine: AssetImage("assets/images/antracnosiolivo.png"),
+        altImmagine: AssetImage("assets/images/antracnosiolivo1.jpg"),
+        generalita: AntracnosiolivoOlivoGeneralita(),
+        sintomi: AntracnosiolivoOlivoSintomi(),
+        cure: AntracnosiolivoOlivoCure(),
+        fonti: AntracnosiolivoOlivoFonti()),
   ]),
 ];
