@@ -16,7 +16,7 @@ class _RognaolivoOlivoCureState extends State<RognaolivoOlivoCure> {
           children: [
             Text(
               AppLocalizations.of(context)
-                  .translate("curerognaolivo"),
+                  .translate("curetognaolivo"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),

@@ -16,17 +16,7 @@ class _MarciumeradiciAgrumiCureState extends State<MarciumeradiciAgrumiCure> {
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context).translate("curemarciumeradici1"),
-              textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 20),
-            ),
-            Text(
-              AppLocalizations.of(context).translate("curemarciumeradici2"),
-              textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-            ),
-            Text(
-              AppLocalizations.of(context).translate("curemarciumeradici3"),
+              AppLocalizations.of(context).translate("curemarciumeradici"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),

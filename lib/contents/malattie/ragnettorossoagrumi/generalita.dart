@@ -16,7 +16,7 @@ class _RagnettorossoAgrumiGeneralitaState extends State<RagnettorossoAgrumiGener
           children: [
             Text(
               AppLocalizations.of(context)
-                  .translate("generalitaragnettorosso"),
+                  .translate("generalitaragnettorossoagrumi"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),

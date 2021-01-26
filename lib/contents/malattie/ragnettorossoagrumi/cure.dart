@@ -16,7 +16,7 @@ class _RagnettorossoAgrumiCureState extends State<RagnettorossoAgrumiCure> {
           children: [
             Text(
               AppLocalizations.of(context)
-                  .translate("cureragnettorossoagrumui1"),
+                  .translate("cureragnettorossoagrumi1"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
@@ -25,7 +25,7 @@ class _RagnettorossoAgrumiCureState extends State<RagnettorossoAgrumiCure> {
             SizedBox(height: 100),
             Text(
               AppLocalizations.of(context)
-                  .translate("cureragnettorossoagrumui2"),
+                  .translate("cureragnettorossoagrumi2"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),

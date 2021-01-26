@@ -30,7 +30,7 @@ class _AfidiAgrumiCureState extends State<AfidiAgrumiCure> {
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/afide4.jpg"),
+            Image.asset("assets/images/afidi4.jpg"),
             SizedBox(height: 20),
             Text(
               AppLocalizations.of(context).translate("cureafidi4"),
@@ -53,7 +53,7 @@ class _AfidiAgrumiCureState extends State<AfidiAgrumiCure> {
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 20),
-            Image.asset("assets/images/afide5.jpg"),
+            Image.asset("assets/images/afidi5.jpg"),
             SizedBox(height: 100),
           ]),
     );
