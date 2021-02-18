@@ -6,6 +6,10 @@ import 'package:agronomo/contents/malattie/afidelanigero/cure.dart';
 import 'package:agronomo/contents/malattie/afidelanigero/fonti.dart';
 import 'package:agronomo/contents/malattie/afidelanigero/generalita.dart';
 import 'package:agronomo/contents/malattie/afidelanigero/sintomi.dart';
+import 'package:agronomo/contents/malattie/afidelanigeropero/cure.dart';
+import 'package:agronomo/contents/malattie/afidelanigeropero/fonti.dart';
+import 'package:agronomo/contents/malattie/afidelanigeropero/generalita.dart';
+import 'package:agronomo/contents/malattie/afidelanigeropero/sintomi.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/cure.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/fonti.dart';
 import 'package:agronomo/contents/malattie/afidenerociliegio/generalita.dart';
@@ -14,6 +18,10 @@ import 'package:agronomo/contents/malattie/afidi/cure.dart';
 import 'package:agronomo/contents/malattie/afidi/fonti.dart';
 import 'package:agronomo/contents/malattie/afidi/generalita.dart';
 import 'package:agronomo/contents/malattie/afidi/sintomi.dart';
+import 'package:agronomo/contents/malattie/antonomo/cure.dart';
+import 'package:agronomo/contents/malattie/antonomo/fonti.dart';
+import 'package:agronomo/contents/malattie/antonomo/generalita.dart';
+import 'package:agronomo/contents/malattie/antonomo/sintomi.dart';
 import 'package:agronomo/contents/malattie/antracnosi/cure.dart';
 import 'package:agronomo/contents/malattie/antracnosi/fonti.dart';
 import 'package:agronomo/contents/malattie/antracnosi/generalita.dart';
@@ -64,6 +72,10 @@ import 'package:agronomo/contents/malattie/carpocapsamelo/cure.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/fonti.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/generalita.dart';
 import 'package:agronomo/contents/malattie/carpocapsamelo/sintomi.dart';
+import 'package:agronomo/contents/malattie/cercosporiosi/cure.dart';
+import 'package:agronomo/contents/malattie/cercosporiosi/fonti.dart';
+import 'package:agronomo/contents/malattie/cercosporiosi/generalita.dart';
+import 'package:agronomo/contents/malattie/cercosporiosi/sintomi.dart';
 import 'package:agronomo/contents/malattie/coccinigliaagrumi/cure.dart';
 import 'package:agronomo/contents/malattie/coccinigliaagrumi/fonti.dart';
 import 'package:agronomo/contents/malattie/coccinigliaagrumi/generalita.dart';
@@ -99,6 +111,10 @@ import 'package:agronomo/contents/malattie/legnoriccio/cure.dart';
 import 'package:agronomo/contents/malattie/legnoriccio/fonti.dart';
 import 'package:agronomo/contents/malattie/legnoriccio/generalita.dart';
 import 'package:agronomo/contents/malattie/legnoriccio/sintomi.dart';
+import 'package:agronomo/contents/malattie/maculaturabrunapero/cure.dart';
+import 'package:agronomo/contents/malattie/maculaturabrunapero/fonti.dart';
+import 'package:agronomo/contents/malattie/maculaturabrunapero/generalita.dart';
+import 'package:agronomo/contents/malattie/maculaturabrunapero/sintomi.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/cure.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/fonti.dart';
 import 'package:agronomo/contents/malattie/maculaturarossa/generalita.dart';
@@ -135,6 +151,10 @@ import 'package:agronomo/contents/malattie/moscadellafrutta/cure.dart';
 import 'package:agronomo/contents/malattie/moscadellafrutta/fonti.dart';
 import 'package:agronomo/contents/malattie/moscadellafrutta/generalita.dart';
 import 'package:agronomo/contents/malattie/moscadellafrutta/sintomi.dart';
+import 'package:agronomo/contents/malattie/occhiodipavone/cure.dart';
+import 'package:agronomo/contents/malattie/occhiodipavone/fonti.dart';
+import 'package:agronomo/contents/malattie/occhiodipavone/generalita.dart';
+import 'package:agronomo/contents/malattie/occhiodipavone/sintomi.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/cure.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/fonti.dart';
 import 'package:agronomo/contents/malattie/oidioalbicocco/generalita.dart';
@@ -145,6 +165,10 @@ import 'package:agronomo/contents/malattie/oidiomelo/cure.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/fonti.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/generalita.dart';
 import 'package:agronomo/contents/malattie/oidiomelo/sintomi.dart';
+import 'package:agronomo/contents/malattie/oidiopero/cure.dart';
+import 'package:agronomo/contents/malattie/oidiopero/fonti.dart';
+import 'package:agronomo/contents/malattie/oidiopero/generalita.dart';
+import 'package:agronomo/contents/malattie/oidiopero/sintomi.dart';
 import 'package:agronomo/contents/malattie/oidiovite/cure.dart';
 import 'package:agronomo/contents/malattie/oidiovite/fonti.dart';
 import 'package:agronomo/contents/malattie/oidiovite/generalita.dart';
@@ -161,6 +185,10 @@ import 'package:agronomo/contents/malattie/piralide/cure.dart';
 import 'package:agronomo/contents/malattie/piralide/fonti.dart';
 import 'package:agronomo/contents/malattie/piralide/generalita.dart';
 import 'package:agronomo/contents/malattie/piralide/sintomi.dart';
+import 'package:agronomo/contents/malattie/psilla/cure.dart';
+import 'package:agronomo/contents/malattie/psilla/fonti.dart';
+import 'package:agronomo/contents/malattie/psilla/generalita.dart';
+import 'package:agronomo/contents/malattie/psilla/sintomi.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/cure.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/fonti.dart';
 import 'package:agronomo/contents/malattie/punteruolonerofico/generalita.dart';
@@ -177,6 +205,14 @@ import 'package:agronomo/contents/malattie/rugginecigliegio/cure.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/fonti.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/generalita.dart';
 import 'package:agronomo/contents/malattie/rugginecigliegio/sintomi.dart';
+import 'package:agronomo/contents/malattie/ruggineeuropea/cure.dart';
+import 'package:agronomo/contents/malattie/ruggineeuropea/fonti.dart';
+import 'package:agronomo/contents/malattie/ruggineeuropea/generalita.dart';
+import 'package:agronomo/contents/malattie/ruggineeuropea/sintomi.dart';
+import 'package:agronomo/contents/malattie/septoriosi/cure.dart';
+import 'package:agronomo/contents/malattie/septoriosi/fonti.dart';
+import 'package:agronomo/contents/malattie/septoriosi/generalita.dart';
+import 'package:agronomo/contents/malattie/septoriosi/sintomi.dart';
 import 'package:agronomo/contents/malattie/serpentinaagrumi/cure.dart';
 import 'package:agronomo/contents/malattie/serpentinaagrumi/fonti.dart';
 import 'package:agronomo/contents/malattie/serpentinaagrumi/generalita.dart';
@@ -185,10 +221,18 @@ import 'package:agronomo/contents/malattie/sesia/cure.dart';
 import 'package:agronomo/contents/malattie/sesia/fonti.dart';
 import 'package:agronomo/contents/malattie/sesia/generalita.dart';
 import 'package:agronomo/contents/malattie/sesia/sintomi.dart';
+import 'package:agronomo/contents/malattie/tentredine/cure.dart';
+import 'package:agronomo/contents/malattie/tentredine/fonti.dart';
+import 'package:agronomo/contents/malattie/tentredine/generalita.dart';
+import 'package:agronomo/contents/malattie/tentredine/sintomi.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/cure.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/fonti.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/generalita.dart';
 import 'package:agronomo/contents/malattie/ticchiolatura/sintomi.dart';
+import 'package:agronomo/contents/malattie/ticchiolaturapero/cure.dart';
+import 'package:agronomo/contents/malattie/ticchiolaturapero/fonti.dart';
+import 'package:agronomo/contents/malattie/ticchiolaturapero/generalita.dart';
+import 'package:agronomo/contents/malattie/ticchiolaturapero/sintomi.dart';
 import 'package:agronomo/contents/malattie/tripideagrumi/cure.dart';
 import 'package:agronomo/contents/malattie/tripideagrumi/fonti.dart';
 import 'package:agronomo/contents/malattie/tripideagrumi/generalita.dart';
@@ -795,5 +839,106 @@ List<Pianta> piante = [
         sintomi: AntracnosiolivoOlivoSintomi(),
         cure: AntracnosiolivoOlivoCure(),
         fonti: AntracnosiolivoOlivoFonti()),
+    Malattia(
+        nome: "septoriosi",
+        nomePianta: "olivo",
+        immagine: AssetImage("assets/images/septoriosi.png"),
+        altImmagine: AssetImage("assets/images/septoriosi4.jpg"),
+        generalita: SeptoriosiOlivoGeneralita(),
+        sintomi: SeptoriosiOlivoSintomi(),
+        cure: SeptoriosiOlivoCure(),
+        fonti: SeptoriosiOlivoFonti()),
+    Malattia(
+        nome: "occhiodipavone",
+        nomePianta: "olivo",
+        immagine: AssetImage("assets/images/occhiodipavone.png"),
+        altImmagine: AssetImage("assets/images/occhiodipavone3.jpg"),
+        generalita: OcchiodipavoneGeneralita(),
+        sintomi: OcchiodipavoneSintomi(),
+        cure: OcchiodipavoneCure(),
+        fonti: OcchiodipavoneFonti()),
+    Malattia(
+        nome: "cercosporiosi",
+        nomePianta: "olivo",
+        immagine: AssetImage("assets/images/cercosporiosi.png"),
+        altImmagine: AssetImage("assets/images/cercosporiosi5.jpg"),
+        generalita: CercosporiosiGeneralita(),
+        sintomi: CercosporiosiSintomi(),
+        cure: CercosporiosiCure(),
+        fonti: CercosporiosiFonti()),
+  ]),
+  Pianta(nome: "pero", immagine: "assets/images/pera.png", malattie: [
+    Malattia(
+        nome: "ticchiolaturapero",
+        nomePianta: "pero",
+        immagine: AssetImage("assets/images/ticchiolaturapero.png"),
+        altImmagine: AssetImage("assets/images/ticchiolaturapero4.jpg"),
+        generalita: TicchiolaturaPeroGeneralita(),
+        sintomi: TicchiolaturaPeroSintomi(),
+        cure: TicchiolaturaPeroCure(),
+        fonti: TicchiolaturaPeroFonti()),
+    Malattia(
+        nome: "maculaturabrunapero",
+        nomePianta: "pero",
+        immagine: AssetImage("assets/images/maculaturabruna.png"),
+        altImmagine: AssetImage("assets/images/maculaturabruna4.jpg"),
+        generalita: MaculaturabrunaPeroGeneralita(),
+        sintomi: MaculaturabrunaPeroSintomi(),
+        cure: MaculaturabrunaPeroCure(),
+        fonti: MaculaturaBrunaPeroFonti()),
+    Malattia(
+        nome: "oidiopero",
+        nomePianta: "pero",
+        immagine: AssetImage("assets/images/oidiopero.png"),
+        altImmagine: AssetImage("assets/images/oidiopero3.jpg"),
+        generalita: OidioPeroGeneralita(),
+        sintomi: OidioPeroSintomi(),
+        cure: OidioPeroCure(),
+        fonti: OidioPeroFonti()),
+    Malattia(
+        nome: "ruggineeuropea",
+        nomePianta: "pero",
+        immagine: AssetImage("assets/images/ruggineeuropea.png"),
+        altImmagine: AssetImage("assets/images/ruggineeuropea3.jpg"),
+        generalita: RuggineeuropeaGeneralita(),
+        sintomi: RuggineeuropeaSintomi(),
+        cure: RuggineeuropeaCure(),
+        fonti: RuggineeuropeaFonti()),
+    Malattia(
+        nome: "afidelanigeropero",
+        nomePianta: "pero",
+        immagine: AssetImage("assets/images/afidelanigeropero.png"),
+        altImmagine: AssetImage("assets/images/afidelanigeropero3.jpg"),
+        generalita: AfidelanigeroPeroGeneralita(),
+        sintomi: AfidelanigeroPeroSintomi(),
+        cure: AfidelanigeroPeroCure(),
+        fonti: AfidelanigeroPeroFonti()),
+    Malattia(
+        nome: "psilla",
+        nomePianta: "pero",
+        immagine: AssetImage("assets/images/psilla.png"),
+        altImmagine: AssetImage("assets/images/psilla4.jpg"),
+        generalita: PsillaGeneralita(),
+        sintomi: PsillaSintomi(),
+        cure: PsillaCure(),
+        fonti: PsillaFonti()),
+    Malattia(
+        nome: "antonomo",
+        nomePianta: "pero",
+        immagine: AssetImage("assets/images/antonomo.png"),
+        altImmagine: AssetImage("assets/images/antonomo1.jpg"),
+        generalita: AntonomoGeneralita(),
+        sintomi: AntonomoSintomi(),
+        cure: AntonomoCure(),
+        fonti: AntonomoFonti()),
+    Malattia(
+        nome: "tentredine",
+        nomePianta: "pero",
+        immagine: AssetImage("assets/images/tentredine.png"),
+        altImmagine: AssetImage("assets/images/tentredine4.jpg"),
+        generalita: TentredineGeneralita(),
+        sintomi: TentredineSintomi(),
+        cure: TentredineCure(),
+        fonti: TentredineFonti()),
   ]),
 ];
