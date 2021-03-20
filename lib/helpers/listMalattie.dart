@@ -3,26 +3,15 @@ import 'package:agronomo/helpers/detailMalattie.dart';
 import 'package:agronomo/helpers/malattieCard.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
-import 'package:firebase_admob/firebase_admob.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 // ignore: must_be_immutable
 class ListMalattie extends StatefulWidget {
-  final FirebaseAnalytics analytics;
-  final FirebaseAnalyticsObserver observer;
-
   final List<Malattia> malattie;
   final String nomePianta;
 
-  ListMalattie(
-      {Key key,
-      @required this.malattie,
-      @required this.nomePianta,
-      this.analytics,
-      this.observer})
+  ListMalattie({Key key, @required this.malattie, @required this.nomePianta})
       : super(key: key);
 
   @override
@@ -42,23 +31,16 @@ class _ListMalattieState extends State<ListMalattie> {
     super.initState();
 
     myBanner = BannerAd(
-      adUnitId: kBannerAds,
-      size: AdSize.leaderboard,
-      listener: (MobileAdEvent event) {
-        print("BannerAd event is $event");
-
-        if (event == MobileAdEvent.loaded)
-          setState(() {
-            bannerLoaded = true;
-          });
-      },
-    );
-
-    myBanner
-      ..load()
-      ..show(
-        anchorType: AnchorType.bottom,
-      );
+        adUnitId: kBannerAds,
+        size: AdSize.leaderboard,
+        request: AdRequest(),
+        listener: AdListener(
+          onAdLoaded: (ad) {
+            setState(() {
+              bannerLoaded = true;
+            });
+          },
+        ));
   }
 
   @override
@@ -108,9 +90,7 @@ class _ListMalattieState extends State<ListMalattie> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => PaginaMalattia(
-                                malattia: widget.malattie[index],
-                                analytics: widget.analytics,
-                                observer: widget.observer)),
+                                malattia: widget.malattie[index])),
                       );
                     },
                   ),

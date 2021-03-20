@@ -10,20 +10,14 @@ import 'package:agronomo/models/customPopupMenu.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
-import 'package:firebase_admob/firebase_admob.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatefulWidget {
-  final FirebaseAnalytics analytics;
-  final FirebaseAnalyticsObserver observer;
+  List<Widget> myWidget = [];
 
-  List<Widget> myWidget = new List<Widget>();
-
-  HomePage({Key key, this.analytics, this.observer}) : super(key: key);
+  HomePage({Key key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -84,30 +78,18 @@ class _HomePageState extends State<HomePage> {
 
     super.initState();
 
-    KeyboardVisibility.onChange.listen((bool visible) {
-      setState(() {
-        this.keyboardLoaded = visible;
-      });
-    });
-
     myBanner = BannerAd(
-      adUnitId: kBannerAds,
-      size: AdSize.leaderboard,
-      listener: (MobileAdEvent event) {
-        print("BannerAd event is $event");
-
-        if (event == MobileAdEvent.loaded)
-          setState(() {
-            bannerLoaded = true;
-          });
-      },
-    );
-
-    myBanner
-      ..load()
-      ..show(
-        anchorType: AnchorType.bottom,
-      );
+        adUnitId: kBannerAds,
+        size: AdSize.leaderboard,
+        request: AdRequest(),
+        listener: AdListener(
+          onAdLoaded: (ad) {
+            print("BannerAd event is $ad");
+            setState(() {
+              bannerLoaded = true;
+            });
+          },
+        ));
   }
 
   piantePress(Pianta element) {
@@ -115,10 +97,7 @@ class _HomePageState extends State<HomePage> {
       context,
       MaterialPageRoute(
           builder: (context) => ListMalattie(
-              malattie: element.malattie,
-              nomePianta: element.nome,
-              analytics: widget.analytics,
-              observer: widget.observer)),
+              malattie: element.malattie, nomePianta: element.nome)),
     );
   }
 
@@ -126,10 +105,7 @@ class _HomePageState extends State<HomePage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-          builder: (context) => PaginaMalattia(
-              malattia: element,
-              analytics: widget.analytics,
-              observer: widget.observer)),
+          builder: (context) => PaginaMalattia(malattia: element)),
     );
   }
 
@@ -140,7 +116,7 @@ class _HomePageState extends State<HomePage> {
         children: <Widget>[
           SearchBox(onChanged: (value) {
             widget.myWidget.clear();
-            List<Widget> temp = List<Widget>();
+            List<Widget> temp = [];
 
             if (value.toString().isEmpty) {
               piante.forEach((element) {
@@ -157,7 +133,7 @@ class _HomePageState extends State<HomePage> {
                       .contains(value))
                   .toList();
 
-              var malattieElements = new List<Malattia>();
+              var malattieElements;
 
               piante.forEach((element) {
                 malattieElements.addAll(element.malattie.where((malattia) =>

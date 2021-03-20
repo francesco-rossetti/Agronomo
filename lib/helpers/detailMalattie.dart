@@ -2,20 +2,14 @@ import 'package:agronomo/constants.dart';
 import 'package:agronomo/helpers/fontiMalattia.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
-import 'package:firebase_admob/firebase_admob.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class PaginaMalattia extends StatefulWidget {
-  final FirebaseAnalytics analytics;
-  final FirebaseAnalyticsObserver observer;
   final Malattia malattia;
 
-  PaginaMalattia(
-      {Key key, @required this.malattia, this.analytics, this.observer})
-      : super(key: key);
+  PaginaMalattia({Key key, @required this.malattia}) : super(key: key);
 
   @override
   _PaginaMalattiaState createState() => _PaginaMalattiaState();
@@ -41,20 +35,12 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
         _scrollController.offset > (height - kToolbarHeight);
   }
 
-  bannerListener(MobileAdEvent event) {
-    print("InterstitialAd event is $event");
-
-    if (event == MobileAdEvent.closed) {
-      Navigator.of(context).pop();
-    }
-  }
-
   checkAdLoaded() async {
     if (await myInterstitial.isLoaded() == false) {
       Navigator.of(context).pop();
     }
 
-    myInterstitial..show();
+    //myInterstitial..show();
   }
 
   @override
@@ -62,25 +48,6 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
     super.initState();
 
     _scrollController = ScrollController()..addListener(_scrollListener);
-
-    myInterstitial =
-        InterstitialAd(adUnitId: kInterstitialAds, listener: bannerListener);
-
-    myBanner = BannerAd(
-      adUnitId: kBannerAds,
-      size: AdSize.leaderboard,
-      listener: (MobileAdEvent event) {
-        print("BannerAd event is $event");
-      },
-    );
-
-    myBanner
-      ..load()
-      ..show(
-        anchorType: AnchorType.bottom,
-      );
-
-    myInterstitial..load();
   }
 
   @override
@@ -88,8 +55,8 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
     _scrollController.removeListener(_scrollListener);
     _scrollController.dispose();
 
-    myInterstitial.dispose();
-    myBanner.dispose();
+    //myInterstitial.dispose();
+    //myBanner.dispose();
 
     super.dispose();
   }
@@ -98,13 +65,13 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
   Widget build(BuildContext context) {
     return WillPopScope(
         onWillPop: () async {
-          if (await myInterstitial.isLoaded() == false) {
+          //if (await myInterstitial.isLoaded() == false) {
             return true;
-          }
+          //}
 
-          myInterstitial..show();
+          //myInterstitial..show();
 
-          return false;
+          //return false;
         },
         child: Scaffold(
           body: DefaultTabController(

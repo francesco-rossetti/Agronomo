@@ -1,7 +1,7 @@
 import 'package:agronomo/constants.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
-import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class FontiMalattia extends StatefulWidget {
   final Widget fonti;
@@ -20,18 +20,10 @@ class _FontiMalattiaState extends State<FontiMalattia> {
     super.initState();
 
     myBanner = BannerAd(
-      adUnitId: kBannerAds,
-      size: AdSize.leaderboard,
-      listener: (MobileAdEvent event) {
-        print("BannerAd event is $event");
-      },
-    );
-
-    myBanner
-      ..load()
-      ..show(
-        anchorType: AnchorType.bottom,
-      );
+        adUnitId: kBannerAds,
+        size: AdSize.leaderboard,
+        request: AdRequest(),
+        listener: AdListener());
   }
 
   @override

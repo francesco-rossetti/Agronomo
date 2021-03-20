@@ -1,13 +1,10 @@
 import 'package:agronomo/constants.dart';
 import 'package:agronomo/contents/intro/introScreen.dart';
-import 'package:firebase_admob/firebase_admob.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:agronomo/home.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
@@ -15,12 +12,9 @@ void main() async {
 
   await checkFirstSeen();
 
-  Firebase.initializeApp();
-
   runApp(MyApp());
 
-  await FirebaseAdMob.instance
-      .initialize(appId: "ca-app-pub-3318650813130043~3615453717");
+  await MobileAds.instance.initialize();
 }
 
 Widget home = IntroScreen();
@@ -38,10 +32,6 @@ Future<void> checkFirstSeen() async {
 }
 
 class MyApp extends StatelessWidget {
-  static FirebaseAnalytics analytics = FirebaseAnalytics();
-  static FirebaseAnalyticsObserver observer =
-      FirebaseAnalyticsObserver(analytics: analytics);
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -73,7 +63,6 @@ class MyApp extends StatelessWidget {
 
         return supportedLocales.first;
       },
-      navigatorObservers: <NavigatorObserver>[observer],
       home: home,
     );
   }

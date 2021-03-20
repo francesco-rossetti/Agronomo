@@ -1,4 +1,3 @@
-import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 
 class MoscaCiliegioFonti extends StatefulWidget {
