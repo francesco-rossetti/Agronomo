@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-const kBannerAds = "ca-app-pub-3318650813130043/7675206270";
-const kInterstitialAds = "ca-app-pub-3318650813130043/6058872278";
+const kBannerAds =
+    "ca-app-pub-3940256099942544/6300978111"; //"ca-app-pub-3318650813130043/7675206270";
+const kInterstitialAds =
+    "ca-app-pub-3940256099942544/1033173712"; //"ca-app-pub-3318650813130043/6058872278";
 
 const kBackgroundColor = Color(0xFFF1EFF1);
 const kPrimaryColor = Color(0xFF1976D2);

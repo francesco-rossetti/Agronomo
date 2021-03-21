@@ -1,3 +1,4 @@
+import 'package:agronomo/models/fonte.dart';
 import 'package:agronomo/contents/malattie/afide/cure.dart';
 import 'package:agronomo/contents/malattie/afide/fonti.dart';
 import 'package:agronomo/contents/malattie/afide/generalita.dart';
@@ -942,3 +943,5 @@ List<Pianta> piante = [
         fonti: TentredineFonti()),
   ]),
 ];
+
+List<Fonte> fonti = [];

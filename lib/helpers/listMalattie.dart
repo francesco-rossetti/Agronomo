@@ -32,7 +32,7 @@ class _ListMalattieState extends State<ListMalattie> {
 
     myBanner = BannerAd(
         adUnitId: kBannerAds,
-        size: AdSize.leaderboard,
+        size: AdSize.largeBanner,
         request: AdRequest(),
         listener: AdListener(
           onAdLoaded: (ad) {
@@ -41,6 +41,14 @@ class _ListMalattieState extends State<ListMalattie> {
             });
           },
         ));
+
+    myBanner.load();
+  }
+
+  @override
+  void dispose() {
+    myBanner.dispose();
+    super.dispose();
   }
 
   @override
@@ -98,7 +106,14 @@ class _ListMalattieState extends State<ListMalattie> {
               ],
             ),
           ),
-          !this.keyboardLoaded ? SizedBox(height: 100) : Container(),
+          !this.keyboardLoaded || this.bannerLoaded
+              ? Container(
+                  alignment: Alignment.center,
+                  child: AdWidget(ad: this.myBanner),
+                  width: myBanner.size.width.toDouble(),
+                  height: myBanner.size.height.toDouble(),
+                )
+              : Container(),
         ],
       ),
     );

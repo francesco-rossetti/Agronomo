@@ -1,3 +1,4 @@
+import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 
 class CustomPopupMenu {
@@ -20,7 +21,7 @@ class SelectedOption extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              choice.title,
+              AppLocalizations.of(context).translate(choice.title),
               style: TextStyle(color: Colors.white, fontSize: 30),
             ),
             choice.widget != null ? choice.widget : Container()

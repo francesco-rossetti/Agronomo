@@ -1,5 +1,4 @@
 import 'package:agronomo/constants.dart';
-import 'package:agronomo/helpers/fontiMalattia.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +15,6 @@ class PaginaMalattia extends StatefulWidget {
 }
 
 class _PaginaMalattiaState extends State<PaginaMalattia> {
-  BannerAd myBanner;
   InterstitialAd myInterstitial;
   ScrollController _scrollController;
   bool appBarCollapsed = false;
@@ -36,11 +34,11 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
   }
 
   checkAdLoaded() async {
-    //if (await myInterstitial.isLoaded() == false) {
-    Navigator.of(context).pop();
-    //}
+    if (await myInterstitial.isLoaded() == false) {
+      Navigator.of(context).pop();
+    }
 
-    //myInterstitial..show();
+    myInterstitial..show();
   }
 
   @override
@@ -48,6 +46,18 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
     super.initState();
 
     _scrollController = ScrollController()..addListener(_scrollListener);
+
+    myInterstitial = InterstitialAd(
+      adUnitId: kInterstitialAds,
+      request: AdRequest(),
+      listener: AdListener(
+        onAdClosed: (ad) {
+          Navigator.of(context).pop();
+        },
+      ),
+    );
+
+    myInterstitial.load();
   }
 
   @override
@@ -55,8 +65,7 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
     _scrollController.removeListener(_scrollListener);
     _scrollController.dispose();
 
-    //myInterstitial.dispose();
-    //myBanner.dispose();
+    myInterstitial.dispose();
 
     super.dispose();
   }
@@ -65,13 +74,13 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
   Widget build(BuildContext context) {
     return WillPopScope(
         onWillPop: () async {
-          //if (await myInterstitial.isLoaded() == false) {
-          return true;
-          //}
+          if (await myInterstitial.isLoaded() == false) {
+            return true;
+          }
 
-          //myInterstitial..show();
+          myInterstitial..show();
 
-          //return false;
+          return false;
         },
         child: Scaffold(
           body: DefaultTabController(
@@ -89,13 +98,15 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                         icon: Icon(Icons.arrow_back),
                         onPressed: () => checkAdLoaded()),
                     actions: [
-                      IconButton(
+                      /*
+                        IconButton(
                           icon: Icon(Icons.source),
                           onPressed: () => {
                                 Navigator.of(context).push(MaterialPageRoute(
                                     builder: (context) => FontiMalattia(
                                         fonti: widget.malattia.fonti)))
                               })
+                      */
                     ],
                     flexibleSpace: FlexibleSpaceBar(
                         centerTitle: true,

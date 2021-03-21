@@ -6,6 +6,7 @@ import 'package:agronomo/helpers/listMalattie.dart';
 import 'package:agronomo/helpers/malattieCard.dart';
 import 'package:agronomo/helpers/pianteCard.dart';
 import 'package:agronomo/helpers/searchbox.dart';
+import 'package:agronomo/helpers/fonti.dart';
 import 'package:agronomo/models/customPopupMenu.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
@@ -31,8 +32,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     List<CustomPopupMenu> choices = <CustomPopupMenu>[
-      CustomPopupMenu(
-          title: AppLocalizations.of(context).translate("info"), widget: null)
+      CustomPopupMenu(title: "info", widget: null),
+      CustomPopupMenu(title: "fonti", widget: null)
     ];
 
     return Scaffold(
@@ -45,17 +46,23 @@ class _HomePageState extends State<HomePage> {
               elevation: 3.2,
               onCanceled: () {},
               onSelected: (item) {
-                String info = AppLocalizations.of(context).translate("info");
-
-                if (item.title == info)
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => InfoScreen()));
+                switch (item.title) {
+                  case "info":
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => InfoScreen()));
+                    break;
+                  case "fonti":
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => FontiPage()));
+                    break;
+                }
               },
               itemBuilder: (BuildContext context) {
                 return choices.map((CustomPopupMenu choice) {
                   return PopupMenuItem<CustomPopupMenu>(
                     value: choice,
-                    child: Text(choice.title),
+                    child: Text(
+                        AppLocalizations.of(context).translate(choice.title)),
                   );
                 }).toList();
               },
@@ -80,7 +87,7 @@ class _HomePageState extends State<HomePage> {
 
     myBanner = BannerAd(
         adUnitId: kBannerAds,
-        size: AdSize.leaderboard,
+        size: AdSize.largeBanner,
         request: AdRequest(),
         listener: AdListener(
           onAdLoaded: (ad) {
@@ -90,6 +97,14 @@ class _HomePageState extends State<HomePage> {
             });
           },
         ));
+
+    myBanner.load();
+  }
+
+  @override
+  void dispose() {
+    myBanner.dispose();
+    super.dispose();
   }
 
   piantePress(Pianta element) {
@@ -133,7 +148,7 @@ class _HomePageState extends State<HomePage> {
                       .contains(value))
                   .toList();
 
-              var malattieElements;
+              List malattieElements = [];
 
               piante.forEach((element) {
                 malattieElements.addAll(element.malattie.where((malattia) =>
@@ -181,7 +196,14 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          !this.keyboardLoaded ? SizedBox(height: 100) : Container(),
+          !this.keyboardLoaded || this.bannerLoaded
+              ? Container(
+                  alignment: Alignment.center,
+                  child: AdWidget(ad: this.myBanner),
+                  width: myBanner.size.width.toDouble(),
+                  height: myBanner.size.height.toDouble(),
+                )
+              : Container(),
         ],
       ),
     );
