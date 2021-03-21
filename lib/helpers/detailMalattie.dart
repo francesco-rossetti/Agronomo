@@ -36,9 +36,9 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
   }
 
   checkAdLoaded() async {
-    if (await myInterstitial.isLoaded() == false) {
-      Navigator.of(context).pop();
-    }
+    //if (await myInterstitial.isLoaded() == false) {
+    Navigator.of(context).pop();
+    //}
 
     //myInterstitial..show();
   }
@@ -66,7 +66,7 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
     return WillPopScope(
         onWillPop: () async {
           //if (await myInterstitial.isLoaded() == false) {
-            return true;
+          return true;
           //}
 
           //myInterstitial..show();

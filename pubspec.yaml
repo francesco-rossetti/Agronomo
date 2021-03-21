@@ -38,11 +38,12 @@ dev_dependencies:
 flutter_native_splash:
   image: assets/images/icon.png
   color: "#1b5e20"
-  android_disable_fullscreen: false
+  fullscreen: false
 
 flutter_icons:
   android: true
   ios: true
+  remove_alpha_ios: true
   image_path: "assets/images/icon.png"
 
 flutter:
