@@ -20,7 +20,7 @@ class _FontiMalattiaState extends State<FontiMalattia> {
     super.initState();
 
     myBanner = BannerAd(
-        adUnitId: kBannerAds,
+        adUnitId: kBanner2Ads,
         size: AdSize.leaderboard,
         request: AdRequest(),
         listener: AdListener());

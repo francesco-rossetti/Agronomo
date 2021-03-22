@@ -19,7 +19,7 @@ class _FontiPageState extends State<FontiPage> {
     super.initState();
 
     myBanner = BannerAd(
-        adUnitId: kBannerAds,
+        adUnitId: kBanner2Ads,
         size: AdSize.largeBanner,
         request: AdRequest(),
         listener: AdListener(

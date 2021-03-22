@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-// ignore: must_be_immutable
 class ListMalattie extends StatefulWidget {
   final List<Malattia> malattie;
   final String nomePianta;
@@ -44,7 +43,7 @@ class _ListMalattieState extends State<ListMalattie> {
     });
 
     myBanner = BannerAd(
-        adUnitId: kBannerAds,
+        adUnitId: kBanner2Ads,
         size: AdSize.largeBanner,
         request: AdRequest(),
         listener: AdListener(

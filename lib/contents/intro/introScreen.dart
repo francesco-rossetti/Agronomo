@@ -32,30 +32,34 @@ class _IntroScreenState extends State<IntroScreen> {
     slides.add(
       new Slide(
         title: AppLocalizations.of(context).translate("appName"),
-        description: AppLocalizations.of(context).translate("appName"),
+        description: AppLocalizations.of(context).translate("onBoarding1"),
         pathImage: "assets/images/icon.png",
-        backgroundColor: Color(0xffee4949),
+        backgroundColor: Color(0xff1b5e20),
       ),
     );
     slides.add(
       new Slide(
         title: AppLocalizations.of(context).translate("appName"),
-        description: AppLocalizations.of(context).translate("appName"),
-        pathImage: "assets/images/icon.png",
+        description: AppLocalizations.of(context).translate("onBoarding2"),
+        pathImage: "assets/images/onBoarding2.png",
         backgroundColor: Color(0xfffdb03f),
       ),
     );
     slides.add(
       new Slide(
         title: AppLocalizations.of(context).translate("appName"),
-        description: AppLocalizations.of(context).translate("appName"),
-        pathImage: "assets/images/icon.png",
+        description: AppLocalizations.of(context).translate("onBoarding3"),
+        pathImage: "assets/images/onBoarding3.png",
         backgroundColor: Color(0xff009bde),
       ),
     );
 
     return new IntroSlider(
       slides: this.slides,
+      nameNextBtn: AppLocalizations.of(context).translate("avanti"),
+      namePrevBtn: AppLocalizations.of(context).translate("indietro"),
+      nameSkipBtn: AppLocalizations.of(context).translate("salta"),
+      nameDoneBtn: AppLocalizations.of(context).translate("inizia"),
       onDonePress: this.onDonePress,
       onSkipPress: this.onSkipPress,
     );

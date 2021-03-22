@@ -15,14 +15,12 @@ class _SeptoriosiOlivoCureState extends State<SeptoriosiOlivoCure> {
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context)
-                  .translate("ceptoriosicure1"),
+              AppLocalizations.of(context).translate("cureseptoriosi1"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             ),
             Text(
-              AppLocalizations.of(context)
-                  .translate("ceptoriosicure2"),
+              AppLocalizations.of(context).translate("cureseptoriosi2"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
@@ -30,14 +28,12 @@ class _SeptoriosiOlivoCureState extends State<SeptoriosiOlivoCure> {
             Image.asset("assets/images/septoriosi4.jpg"),
             SizedBox(height: 100),
             Text(
-              AppLocalizations.of(context)
-                  .translate("ceptoriosicure3"),
+              AppLocalizations.of(context).translate("cureseptoriosi3"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             ),
             Text(
-              AppLocalizations.of(context)
-                  .translate("ceptoriosicure4"),
+              AppLocalizations.of(context).translate("cureseptoriosi4"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),

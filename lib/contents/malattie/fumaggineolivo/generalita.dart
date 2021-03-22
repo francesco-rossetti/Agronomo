@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 
 class FumaggineolivoOlivoGeneralita extends StatefulWidget {
   @override
-  _FumaggineolivoOlivoGeneralitaState createState() => _FumaggineolivoOlivoGeneralitaState();
+  _FumaggineolivoOlivoGeneralitaState createState() =>
+      _FumaggineolivoOlivoGeneralitaState();
 }
 
-class _FumaggineolivoOlivoGeneralitaState extends State<FumaggineolivoOlivoGeneralita> {
+class _FumaggineolivoOlivoGeneralitaState
+    extends State<FumaggineolivoOlivoGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -32,7 +34,6 @@ class _FumaggineolivoOlivoGeneralitaState extends State<FumaggineolivoOlivoGener
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
-            
             Text(
               AppLocalizations.of(context)
                   .translate("generalitafumaggineolivo4"),
@@ -45,9 +46,8 @@ class _FumaggineolivoOlivoGeneralitaState extends State<FumaggineolivoOlivoGener
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
-
             SizedBox(height: 20),
-            Image.asset("assets/images/fumaggine2.jpg"),
+            Image.asset("assets/images/fumaggine2.png"),
             SizedBox(height: 100),
           ]),
     );

@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 
 class AntracnosiolivoOlivoGeneralita extends StatefulWidget {
   @override
-  _AntracnosiolivoOlivoGeneralitaState createState() => _AntracnosiolivoOlivoGeneralitaState();
+  _AntracnosiolivoOlivoGeneralitaState createState() =>
+      _AntracnosiolivoOlivoGeneralitaState();
 }
 
-class _AntracnosiolivoOlivoGeneralitaState extends State<AntracnosiolivoOlivoGeneralita> {
+class _AntracnosiolivoOlivoGeneralitaState
+    extends State<AntracnosiolivoOlivoGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -16,17 +18,19 @@ class _AntracnosiolivoOlivoGeneralitaState extends State<AntracnosiolivoOlivoGen
           children: [
             Text(
               AppLocalizations.of(context)
-                  .translate("generalitaantracnosi1"),
+                  .translate("generalitaantracnosiolivo1"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),
             Text(
-              AppLocalizations.of(context).translate("generalitaantracnosi2"),
+              AppLocalizations.of(context)
+                  .translate("generalitaantracnosiolivo2"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
             ),
             Text(
-              AppLocalizations.of(context).translate("generalitaantracnosi3"),
+              AppLocalizations.of(context)
+                  .translate("generalitaantracnosiolivo3"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),

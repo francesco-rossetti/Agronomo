@@ -93,7 +93,7 @@ class _HomePageState extends State<HomePage> {
     });
 
     myBanner = BannerAd(
-        adUnitId: kBannerAds,
+        adUnitId: kBanner1Ads,
         size: AdSize.largeBanner,
         request: AdRequest(),
         listener: AdListener(

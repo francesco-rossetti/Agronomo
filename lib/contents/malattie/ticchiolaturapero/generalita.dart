@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 
 class TicchiolaturaPeroGeneralita extends StatefulWidget {
   @override
-  _TicchiolaturaPeroGeneralitaState createState() => _TicchiolaturaPeroGeneralitaState();
+  _TicchiolaturaPeroGeneralitaState createState() =>
+      _TicchiolaturaPeroGeneralitaState();
 }
 
-class _TicchiolaturaPeroGeneralitaState extends State<TicchiolaturaPeroGeneralita> {
+class _TicchiolaturaPeroGeneralitaState
+    extends State<TicchiolaturaPeroGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -16,7 +18,7 @@ class _TicchiolaturaPeroGeneralitaState extends State<TicchiolaturaPeroGeneralit
           children: [
             Text(
               AppLocalizations.of(context)
-                  .translate("ticchiolaturapero"),
+                  .translate("generalitaticchiolaturapero"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),

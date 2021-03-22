@@ -16,7 +16,7 @@ class _BruscaparassitariaOlivoGeneralitaState extends State<BruscaparassitariaOl
           children: [
             Text(
               AppLocalizations.of(context)
-                  .translate("generalitabruscaparassitaria"),
+                  .translate("generalitabruscaoparassitaria"),
               textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 20),
             ),

@@ -1,6 +1,15 @@
 {
     "appName": "Agronomo",
 
+    "onBoarding1": "Trova la malattia di cui soffre la tua pianta",
+    "onBoarding2": "Controlla i sintomi...",
+    "onBoarding3": "...e trova la miglior cura!",
+
+    "avanti": "AVANTI",
+    "indietro": "INDIETRO",
+    "salta": "SALTA",
+    "inizia": "FATTO",
+
     "info": "Info",
     "versione": "Versione",
     "creato_da": "Creato da: ",
@@ -305,7 +314,7 @@
 
     "escoriosivite":"Escoriosi",
     "generalitaescoriosivite":"In primavera a seguito di lunghi periodi di pioggia accompa¬gnati da temperatura ed umidità relativa elevata il micelio ibernante riprende l'attività vegetativa producendo corpi fruttiferi i quali emettono cirri giallastri e viscosi che portano i conidi infettanti. Questi trasportati dalle piogge daranno inizio all'infezione primaverile dalla quale scatu¬riscono danni ben visibili alla base dei tralci.\n\n La vite al germogliamento risulta molto suscettibile alla malattia.\n\n In inverno il fungo si conserva in piccole sfere nere infos¬sate nei tralci e negli organi vegetali dette picnidi o sot¬to forma di micelio nelle gemme.",
-    "sintomiescoriosivite:":"Interessano vari organi della pianta; soltanto le radici, il fusto e nella maggior parte dei casi le branche meglio li¬gnificate sfuggono agli attacchi del patogeno.\n\n Data l'assenza di vegetazione in inverno è possibile notare facilmente lungo i tralci di 1 - 2 anni una serie di marez¬zature brunastre o violacee disposte longitudinalmente con tacche chiare di varie dimensioni. Queste alterazioni sono visibili inizialmente alla base dei tralci, nella zona del primo internodo, per poi estendersi in senso acropeto.\n\n Successivamente si evidenzia la decolorazione dei tralci nelle zone colpite e la comparsa di punti neri che rappre¬sentano i corpi fruttiferi del fungo (picnidi).\n\n In primavera l'aborto delle gemme causato da escoriosi ori¬gina tralci nudi e ben visibili che sono soggetti a frequen¬ti rotture se le tacche presenti nei primi internodi si ap¬profondiscono nei tessuti corticali.\n\n In estate le foglie mostrano piccole macchie necrotiche che confluendo causano un diffuso seccume ed il grappolo che ge¬neralmente non subisce danni diretti può manifestarsi spar¬golo per l'aborto fiorale primaverile.",
+    "sintomiescoriosivite":"Interessano vari organi della pianta; soltanto le radici, il fusto e nella maggior parte dei casi le branche meglio li¬gnificate sfuggono agli attacchi del patogeno.\n\n Data l'assenza di vegetazione in inverno è possibile notare facilmente lungo i tralci di 1 - 2 anni una serie di marez¬zature brunastre o violacee disposte longitudinalmente con tacche chiare di varie dimensioni. Queste alterazioni sono visibili inizialmente alla base dei tralci, nella zona del primo internodo, per poi estendersi in senso acropeto.\n\n Successivamente si evidenzia la decolorazione dei tralci nelle zone colpite e la comparsa di punti neri che rappre¬sentano i corpi fruttiferi del fungo (picnidi).\n\n In primavera l'aborto delle gemme causato da escoriosi ori¬gina tralci nudi e ben visibili che sono soggetti a frequen¬ti rotture se le tacche presenti nei primi internodi si ap¬profondiscono nei tessuti corticali.\n\n In estate le foglie mostrano piccole macchie necrotiche che confluendo causano un diffuso seccume ed il grappolo che ge¬neralmente non subisce danni diretti può manifestarsi spar¬golo per l'aborto fiorale primaverile.",
     "cureescoriosivite1":"Un ruolo importante nella difesa da Escoriosi lo svolgono le misure preventive attuabili ricordando che:\n\n - l'interramento dei sarmenti tagliati con la potatura aumenta il potenziale d'inoculo del patogeno;\n\n - i tralci che si formano vicini al terreno risultano più facilmente aggredibili;\n\n  - i tagli rappresentano una potenziale via di accesso del fungo. Si raccomanda di coprire i più grossi con mastici ci¬catrizzanti addizionati a fungicidi;\n\n - i vigneti impiantati in zone molto umide sono un facile bersaglio della malattia.",
     "cureescoriosivite2":"Nell'eventualità che le misure preventive non risultino suf¬ficienti è possibile attuare la protezione chimica della coltura tramite trattamenti con prodotti di copertura  fino dal germogliamen¬to della pianta.\n\n Risultano efficaci anche gli endoterapici a base di Cimoxa¬nil e Fosetil - Al. usati da soli o in miscela con partner di copertura per cui dalla fioritura in poi la difesa contro questa malattia risulterà generalmente abbinata a quella an¬tiperonosporica.",
 
@@ -565,16 +574,4 @@
     "generalitatentredine3":"Questo insetto compie una sola generazione all’anno ed è presente con popolazioni di sole femmine (a riproduzione partogenetica); queste compaiono a primavera durante la fioritura nutrendosi del nettare e del polline dei fiori. Le femmine procedono poi all’ovodeposizione facendo un incisione nel calice, alla base dei sepali, e deponendovi l’uovo (sul calice dei fiori è possibile vedere una piccola macchia nera). Dopo 8-13 giorni nascono le larve che iniziano a scavare una galleria nella parte distale del calice; dopo qualche giorno (fatta la prima muta) si sposta nella zona centrale del ricettacolo (regione del peduncolo dove sono inserite le appendici fiorali) creandosi una cavità dalle pareti nerastre. Compiuta la seconda muta fuoriesce dal frutto, creando un foro nella zona calicina, e penetra in un nuovo frutto, solo eccezionalmente ne viene infestato un terzo. Raggiunta la maturità, a circa 20 giorni dalla nascita, la larva fuoriesce dal frutto attraverso il foro d’entrata e si lascia cadere al suolo dove si interra a 5-10 cm di profondità; li si imbozzola per trascorrere l’inverno e solo a primavera compie la muta con la formazione dell’adulto. A volte la larva rimane dormiente (diapausa) per un anno comparendo dopo un altro anno.",
     "sintomitentredine":"Il danno si manifesta sui frutti e può essere anche molto grave; infatti ogni larvetta può attaccare, durante il suo sviluppo, diversi frutti uscendo da essi attraverso un caratteristico foro tondeggiante, posto nella prossimità della cavità calicina. I frutti attaccati si riconoscono perché arrestano lievemente, rispetto a quelli sani, il loro sviluppo, evidenziando una leggera deformazione; inoltre presentano segni di rosura, se la larva è ancora dentro, oppure il caratteristico foro di uscita. In ogni caso i frutticini sono perduti e cascolano.",
     "curetentredine":"La lotta contro l'Oplocampa è generalmente guidata e si effettua facendo un monitoraggio della popolazione, mediante l'utilizzazione di trappole cromotropiche (di colore bianco).\n\n Il monitoraggio si esegue in prefioritura facendo un censimento degli adulti appena sfarfallati dalle forme svernanti; la tecnica di esecuzione è la seguente:\n - le trappole vengono installate nella prima metà di marzo (due per appezzamento);\n - si interviene quando le catture superano i 10-20 adulti per trappola. In genere il trattamento viene eseguito comunque a fine fioritura, escluse le varietà molto recettive come l'Abate e la Decana che vengono trattate in prefioritura nel caso in cui la soglia di 20 adulti per trappola venga superata in tale fase. Gli interventi dopo la fioritura si eseguono quando vi è una infestazione dei mazzetti che può considerarsi pericolosa, oltre il 5-10% dei mazzetti infestati, oppure al superamento della soglia di 20 adulti catturati nelle trappole cromotropiche se ciò non era accaduto in prefioritura nelle varietà recettive. Si deve tenere presente che in questo periodo sono presenti anche i ricamatori (Archips e Pandemis) che possono creare problemi; pertanto la scelta dei prodotti dovrà tenere conto anche dell'esigenza di effettuare trattamenti cumulativi. Per varietà particolarmente recettive (es.: Abate Fetel) ed in caso di forti infestazioni negli anni precedenti si consiglia un trattamento preventivo, alla fase di prefioritura, che è anche attivo contro gli Afidi."
-
-
-
-
-
-
-
-
-
-
-
-
 }
