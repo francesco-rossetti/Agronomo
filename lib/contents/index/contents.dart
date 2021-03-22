@@ -944,4 +944,59 @@ List<Pianta> piante = [
   ]),
 ];
 
-List<Fonte> fonti = [];
+List<Fonte> fonti = [
+  Fonte(titolo: "www.ortosemplice.it", url: "https://www.ortosemplice.it"),
+  Fonte(
+      titolo: "agronotizie.imagelinenetwork.com",
+      url: "https://agronotizie.imagelinenetwork.com"),
+  Fonte(titolo: "www.idroponica.it", url: "https://www.idroponica.it"),
+  Fonte(titolo: "www.koppert.it", url: "https://www.koppert.it"),
+  Fonte(
+      titolo: "www.coltivazionebiologica.it",
+      url: "https://www.coltivazionebiologica.it"),
+  Fonte(
+      titolo: "www.ersa.fvg.it",
+      url: "http://www.ersa.fvg.it/cms/aziende/monitoraggi/organismi/schede"),
+  Fonte(titolo: "www.terranuova.it", url: "https://www.terranuova.it"),
+  Fonte(titolo: "www.freshplaza.it", url: "https://www.freshplaza.it"),
+  Fonte(titolo: "www.casaegiardino.it", url: "https://www.casaegiardino.it"),
+  Fonte(titolo: "www.agraria.org", url: "https://www.agraria.org"),
+  Fonte(titolo: "www.perfarelalbero.it", url: "https://www.perfarelalbero.it"),
+  Fonte(titolo: "www.valdiverdura.com", url: "https://www.valdiverdura.com"),
+  Fonte(titolo: "it.wikipedia.org", url: "https://it.wikipedia.org"),
+  Fonte(
+      titolo: "fitogest.imagelinenetwork.com",
+      url: "https://fitogest.imagelinenetwork.com"),
+  Fonte(
+      titolo: "terraevita.edagricole.it",
+      url: "https://terraevita.edagricole.it"),
+  Fonte(titolo: "www.giardinaggio.it", url: "https://www.giardinaggio.it"),
+  Fonte(
+      titolo: "www.noisiamoagricoltura.com",
+      url: "https://www.noisiamoagricoltura.com"),
+  Fonte(titolo: "www.perfarelalbero.it", url: "https://www.perfarelalbero.it"),
+  Fonte(
+      titolo: "www.ortodacoltivare.it", url: "https://www.ortodacoltivare.it"),
+  Fonte(
+      titolo: "aziendafloricoladonetti.wordpress.com",
+      url: "https://aziendafloricoladonetti.wordpress.com"),
+  Fonte(
+      titolo: "www.fruttetobiologico.it",
+      url: "https://www.fruttetobiologico.it"),
+  Fonte(titolo: "www.stockergarden.com", url: "https://www.stockergarden.com"),
+  Fonte(
+      titolo: "agricoltura.regione.emilia-romagna.it",
+      url: "https://agricoltura.regione.emilia-romagna.it"),
+  Fonte(titolo: "info.agrimag.it", url: "https://info.agrimag.it"),
+  Fonte(
+      titolo: "olivoeolio.edagricole.it",
+      url: "https://olivoeolio.edagricole.it"),
+  Fonte(
+      titolo: "www.docenti.unina.it",
+      url:
+          "https://www.docenti.unina.it/webdocenti-be/allegati/materiale-didattico/34082461"),
+  Fonte(titolo: "www.agro.basf.it", url: "https://www.agro.basf.it"),
+  Fonte(
+      titolo: "www.agricoltura.regione.campania.it",
+      url: "https://www.agricoltura.regione.campania.it"),
+];

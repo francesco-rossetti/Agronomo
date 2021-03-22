@@ -28,7 +28,7 @@ class _InfoScreenState extends State<InfoScreen> {
                             "Stefano Del Grosso \n e \n Francesco Rossetti",
                         textAlign: TextAlign.center,
                         style: TextStyle(fontSize: 25))),
-                onTap: () => launch('https://github.com/fraross')),
+                onTap: () => launch('https://github.com/francescorossetti')),
             SizedBox(height: 20),
             FutureBuilder(
                 future: PackageInfo.fromPlatform(),

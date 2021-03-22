@@ -12,6 +12,7 @@ import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 // ignore: must_be_immutable
@@ -84,6 +85,12 @@ class _HomePageState extends State<HomePage> {
     });
 
     super.initState();
+
+    KeyboardVisibilityController().onChange.listen((bool visible) {
+      setState(() {
+        keyboardLoaded = visible;
+      });
+    });
 
     myBanner = BannerAd(
         adUnitId: kBannerAds,
@@ -196,7 +203,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          !this.keyboardLoaded || this.bannerLoaded
+          !this.keyboardLoaded && this.bannerLoaded
               ? Container(
                   alignment: Alignment.center,
                   child: AdWidget(ad: this.myBanner),

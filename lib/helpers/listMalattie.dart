@@ -1,9 +1,12 @@
+import 'dart:async';
+
 import 'package:agronomo/constants.dart';
 import 'package:agronomo/helpers/detailMalattie.dart';
 import 'package:agronomo/helpers/malattieCard.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 // ignore: must_be_immutable
@@ -19,6 +22,9 @@ class ListMalattie extends StatefulWidget {
 }
 
 class _ListMalattieState extends State<ListMalattie> {
+  KeyboardVisibilityController _keyboardController =
+      KeyboardVisibilityController();
+  StreamSubscription<bool> _streamSubscription;
   BannerAd myBanner;
   bool bannerLoaded = false;
   bool keyboardLoaded = false;
@@ -29,6 +35,13 @@ class _ListMalattieState extends State<ListMalattie> {
     this.myMalattie = widget.malattie;
 
     super.initState();
+
+    this._streamSubscription =
+        this._keyboardController.onChange.listen((bool visible) {
+      setState(() {
+        keyboardLoaded = visible;
+      });
+    });
 
     myBanner = BannerAd(
         adUnitId: kBannerAds,
@@ -47,6 +60,7 @@ class _ListMalattieState extends State<ListMalattie> {
 
   @override
   void dispose() {
+    this._streamSubscription.cancel();
     myBanner.dispose();
     super.dispose();
   }
@@ -106,14 +120,14 @@ class _ListMalattieState extends State<ListMalattie> {
               ],
             ),
           ),
-          !this.keyboardLoaded || this.bannerLoaded
+          !this.keyboardLoaded && this.bannerLoaded
               ? Container(
                   alignment: Alignment.center,
                   child: AdWidget(ad: this.myBanner),
                   width: myBanner.size.width.toDouble(),
                   height: myBanner.size.height.toDouble(),
                 )
-              : Container(),
+              : Container(height: 0),
         ],
       ),
     );
