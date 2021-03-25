@@ -14,6 +14,7 @@ import 'package:agronomo/utils/AppLocalizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatefulWidget {
@@ -34,7 +35,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     List<CustomPopupMenu> choices = <CustomPopupMenu>[
       CustomPopupMenu(title: "info", widget: null),
-      CustomPopupMenu(title: "fonti", widget: null)
+      CustomPopupMenu(title: "fonti", widget: null),
+      CustomPopupMenu(title: "suggerimenti", widget: null)
     ];
 
     return Scaffold(
@@ -46,7 +48,7 @@ class _HomePageState extends State<HomePage> {
             PopupMenuButton<CustomPopupMenu>(
               elevation: 3.2,
               onCanceled: () {},
-              onSelected: (item) {
+              onSelected: (item) async {
                 switch (item.title) {
                   case "info":
                     Navigator.push(context,
@@ -55,6 +57,10 @@ class _HomePageState extends State<HomePage> {
                   case "fonti":
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => FontiPage()));
+                    break;
+                  case "suggerimenti":
+                    if (await canLaunch(kSuggerimentiUrl))
+                      launch(kSuggerimentiUrl);
                     break;
                 }
               },

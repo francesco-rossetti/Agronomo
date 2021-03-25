@@ -4,6 +4,9 @@ const kBanner1Ads = "ca-app-pub-3318650813130043/7401469338";
 const kBanner2Ads = "ca-app-pub-3318650813130043/6752756166";
 const kInterstitialAds = "ca-app-pub-3318650813130043/9706222569";
 
+const kSuggerimentiUrl =
+    "https://docs.google.com/forms/d/e/1FAIpQLSdwBVI3chugJgcZiyDUTIzlXqNNRUjrl9M5uY2TOgXZVLsa3Q/viewform?usp=sf_link";
+
 const kBackgroundColor = Color(0xFFF1EFF1);
 const kPrimaryColor = Color(0xFF1976D2);
 const kSecondaryColor = Color(0xFFFF9800);
