@@ -1,16 +1,16 @@
 import 'package:agronomo/constants.dart';
 import 'package:agronomo/contents/index/contents.dart';
 import 'package:agronomo/contents/info/info.dart';
-import 'package:agronomo/helpers/detailMalattie.dart';
-import 'package:agronomo/helpers/listMalattie.dart';
-import 'package:agronomo/helpers/malattieCard.dart';
-import 'package:agronomo/helpers/pianteCard.dart';
-import 'package:agronomo/helpers/searchbox.dart';
+import 'package:agronomo/helpers/detail_malattie.dart';
+import 'package:agronomo/helpers/list_malattie.dart';
+import 'package:agronomo/helpers/malattie_card.dart';
+import 'package:agronomo/helpers/piante_card.dart';
+import 'package:agronomo/helpers/search_box.dart';
 import 'package:agronomo/helpers/fonti.dart';
-import 'package:agronomo/models/customPopupMenu.dart';
+import 'package:agronomo/models/custom_popup_menu.dart';
 import 'package:agronomo/models/malattia.dart';
 import 'package:agronomo/models/pianta.dart';
-import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:agronomo/utils/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -20,14 +20,14 @@ import 'package:url_launcher/url_launcher.dart';
 class HomePage extends StatefulWidget {
   List<Widget> myWidget = [];
 
-  HomePage({Key key}) : super(key: key);
+  HomePage({Key? key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  BannerAd myBanner;
+  BannerAd? myBanner;
   bool bannerLoaded = false;
   bool keyboardLoaded = false;
 
@@ -52,15 +52,16 @@ class _HomePageState extends State<HomePage> {
                 switch (item.title) {
                   case "info":
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => InfoScreen()));
+                        MaterialPageRoute(builder: (context) => const InfoScreen()));
                     break;
                   case "fonti":
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => FontiPage()));
+                        MaterialPageRoute(builder: (context) => const FontiPage()));
                     break;
                   case "suggerimenti":
-                    if (await canLaunch(kSuggerimentiUrl))
+                    if (await canLaunch(kSuggerimentiUrl)) {
                       launch(kSuggerimentiUrl);
+                    }
                     break;
                 }
               },
@@ -69,13 +70,13 @@ class _HomePageState extends State<HomePage> {
                   return PopupMenuItem<CustomPopupMenu>(
                     value: choice,
                     child: Text(
-                        AppLocalizations.of(context).translate(choice.title)),
+                        AppLocalizations.of(context)!.translate(choice.title!)),
                   );
                 }).toList();
               },
             )
           ],
-          title: Text(AppLocalizations.of(context).translate("dashboard"))),
+          title: Text(AppLocalizations.of(context)!.translate("dashboard"))),
       backgroundColor: kPrimaryColor,
       body: body(context),
     );
@@ -83,12 +84,12 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    piante.forEach((element) {
+    for (var element in piante) {
       widget.myWidget.add(PianteCard(
           itemIndex: piante.indexOf(element),
           pianta: element,
           press: () => piantePress(element)));
-    });
+    }
 
     super.initState();
 
@@ -101,22 +102,20 @@ class _HomePageState extends State<HomePage> {
     myBanner = BannerAd(
         adUnitId: kBanner1Ads,
         size: AdSize.largeBanner,
-        request: AdRequest(),
-        listener: AdListener(
+        request: const AdRequest(),
+        listener: BannerAdListener(
           onAdLoaded: (ad) {
-            print("BannerAd event is $ad");
             setState(() {
               bannerLoaded = true;
             });
           },
         ));
 
-    myBanner.load();
+    myBanner!.load();
   }
 
   @override
   void dispose() {
-    myBanner.dispose();
     super.dispose();
   }
 
@@ -125,7 +124,7 @@ class _HomePageState extends State<HomePage> {
       context,
       MaterialPageRoute(
           builder: (context) => ListMalattie(
-              malattie: element.malattie, nomePianta: element.nome)),
+              malattie: element.malattie!, nomePianta: element.nome!)),
     );
   }
 
@@ -147,57 +146,57 @@ class _HomePageState extends State<HomePage> {
             List<Widget> temp = [];
 
             if (value.toString().isEmpty) {
-              piante.forEach((element) {
+              for (var element in piante) {
                 temp.add(PianteCard(
                     itemIndex: piante.indexOf(element),
                     pianta: element,
                     press: () => piantePress(element)));
-              });
+              }
             } else {
               var elements = piante
-                  .where((element) => AppLocalizations.of(context)
-                      .translate(element.nome)
+                  .where((element) => AppLocalizations.of(context)!
+                      .translate(element.nome!)
                       .toLowerCase()
                       .contains(value))
                   .toList();
 
               List malattieElements = [];
 
-              piante.forEach((element) {
-                malattieElements.addAll(element.malattie.where((malattia) =>
-                    AppLocalizations.of(context)
-                        .translate(malattia.nome)
+              for (var element in piante) {
+                malattieElements.addAll(element.malattie!.where((malattia) =>
+                    AppLocalizations.of(context)!
+                        .translate(malattia.nome!)
                         .toLowerCase()
                         .contains(value)));
-              });
+              }
 
-              elements.forEach((element) {
+              for (var element in elements) {
                 temp.add(PianteCard(
                     itemIndex: temp.length,
                     pianta: element,
                     press: () => piantePress(element)));
-              });
+              }
 
-              malattieElements.forEach((element) {
+              for (var element in malattieElements) {
                 temp.add(MalattieCard(
                     itemIndex: temp.length,
                     malattia: element,
                     nomePianta: element.nomePianta,
                     press: () => malattiePress(element)));
-              });
+              }
             }
 
             setState(() {
               widget.myWidget = temp;
             });
           }),
-          SizedBox(height: kDefaultPadding / 2),
+          const SizedBox(height: kDefaultPadding / 2),
           Expanded(
             child: Stack(
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.only(top: 70),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.only(top: 70),
+                  decoration: const BoxDecoration(
                     color: kBackgroundColor,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(40),
@@ -209,12 +208,12 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          !this.keyboardLoaded && this.bannerLoaded
+          !keyboardLoaded && bannerLoaded
               ? Container(
                   alignment: Alignment.center,
-                  child: AdWidget(ad: this.myBanner),
-                  width: myBanner.size.width.toDouble(),
-                  height: myBanner.size.height.toDouble(),
+                  child: AdWidget(ad: myBanner!),
+                  width: myBanner!.size.width.toDouble(),
+                  height: myBanner!.size.height.toDouble(),
                 )
               : Container(),
         ],

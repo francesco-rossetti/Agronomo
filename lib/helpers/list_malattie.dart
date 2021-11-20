@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:agronomo/constants.dart';
-import 'package:agronomo/helpers/detailMalattie.dart';
-import 'package:agronomo/helpers/malattieCard.dart';
+import 'package:agronomo/helpers/detail_malattie.dart';
+import 'package:agronomo/helpers/malattie_card.dart';
 import 'package:agronomo/models/malattia.dart';
-import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:agronomo/utils/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -13,7 +13,8 @@ class ListMalattie extends StatefulWidget {
   final List<Malattia> malattie;
   final String nomePianta;
 
-  ListMalattie({Key key, @required this.malattie, @required this.nomePianta})
+  const ListMalattie(
+      {Key? key, required this.malattie, required this.nomePianta})
       : super(key: key);
 
   @override
@@ -21,22 +22,21 @@ class ListMalattie extends StatefulWidget {
 }
 
 class _ListMalattieState extends State<ListMalattie> {
-  KeyboardVisibilityController _keyboardController =
+  final KeyboardVisibilityController _keyboardController =
       KeyboardVisibilityController();
-  StreamSubscription<bool> _streamSubscription;
-  BannerAd myBanner;
+  StreamSubscription<bool>? _streamSubscription;
+  BannerAd? myBanner;
   bool bannerLoaded = false;
   bool keyboardLoaded = false;
-  List<Malattia> myMalattie;
+  List<Malattia>? myMalattie;
 
   @override
   void initState() {
-    this.myMalattie = widget.malattie;
+    myMalattie = widget.malattie;
 
     super.initState();
 
-    this._streamSubscription =
-        this._keyboardController.onChange.listen((bool visible) {
+    _streamSubscription = _keyboardController.onChange.listen((bool visible) {
       setState(() {
         keyboardLoaded = visible;
       });
@@ -45,8 +45,8 @@ class _ListMalattieState extends State<ListMalattie> {
     myBanner = BannerAd(
         adUnitId: kBanner2Ads,
         size: AdSize.largeBanner,
-        request: AdRequest(),
-        listener: AdListener(
+        request: const AdRequest(),
+        listener: BannerAdListener(
           onAdLoaded: (ad) {
             setState(() {
               bannerLoaded = true;
@@ -54,13 +54,14 @@ class _ListMalattieState extends State<ListMalattie> {
           },
         ));
 
-    myBanner.load();
+    myBanner!.load();
   }
 
   @override
   void dispose() {
-    this._streamSubscription.cancel();
-    myBanner.dispose();
+    _streamSubscription!.cancel();
+    myBanner!.dispose();
+
     super.dispose();
   }
 
@@ -78,7 +79,7 @@ class _ListMalattieState extends State<ListMalattie> {
         elevation: 0,
         backgroundColor: kSecondaryColor,
         centerTitle: false,
-        title: Text(AppLocalizations.of(context).translate("malattie")));
+        title: Text(AppLocalizations.of(context)!.translate("malattie")));
   }
 
   body(BuildContext context) {
@@ -86,13 +87,13 @@ class _ListMalattieState extends State<ListMalattie> {
       bottom: false,
       child: Column(
         children: <Widget>[
-          SizedBox(height: kDefaultPadding / 2),
+          const SizedBox(height: kDefaultPadding / 2),
           Expanded(
             child: Stack(
               children: <Widget>[
                 Container(
-                  margin: EdgeInsets.only(top: 70),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.only(top: 70),
+                  decoration: const BoxDecoration(
                     color: kBackgroundColor,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(40),
@@ -101,10 +102,10 @@ class _ListMalattieState extends State<ListMalattie> {
                   ),
                 ),
                 ListView.builder(
-                  itemCount: myMalattie.length,
+                  itemCount: myMalattie!.length,
                   itemBuilder: (context, index) => MalattieCard(
                     itemIndex: index,
-                    malattia: myMalattie[index],
+                    malattia: myMalattie![index],
                     nomePianta: widget.nomePianta,
                     press: () {
                       Navigator.push(
@@ -119,12 +120,12 @@ class _ListMalattieState extends State<ListMalattie> {
               ],
             ),
           ),
-          !this.keyboardLoaded && this.bannerLoaded
+          !keyboardLoaded && bannerLoaded
               ? Container(
                   alignment: Alignment.center,
-                  child: AdWidget(ad: this.myBanner),
-                  width: myBanner.size.width.toDouble(),
-                  height: myBanner.size.height.toDouble(),
+                  child: AdWidget(ad: myBanner!),
+                  width: myBanner!.size.width.toDouble(),
+                  height: myBanner!.size.height.toDouble(),
                 )
               : Container(height: 0),
         ],

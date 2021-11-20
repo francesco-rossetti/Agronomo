@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CarpocapsaMeloFonti extends StatefulWidget {
+  const CarpocapsaMeloFonti({Key? key}) : super(key: key);
+
   @override
   _CarpocapsaMeloFontiState createState() => _CarpocapsaMeloFontiState();
 }

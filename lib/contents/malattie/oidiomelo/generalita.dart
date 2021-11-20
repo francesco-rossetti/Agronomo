@@ -1,7 +1,9 @@
-import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:agronomo/utils/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class OidioMeloGeneralita extends StatefulWidget {
+  const OidioMeloGeneralita({Key? key}) : super(key: key);
+
   @override
   _OidioMeloGeneralitaState createState() => _OidioMeloGeneralitaState();
 }
@@ -10,28 +12,28 @@ class _OidioMeloGeneralitaState extends State<OidioMeloGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: new ListView(
+      child: ListView(
           shrinkWrap: true,
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context).translate("oidiomelageneralita"),
+              AppLocalizations.of(context)!.translate("oidiomelageneralita"),
               textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 20),
             ),
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
             Text(
-              AppLocalizations.of(context).translate("cause"),
+              AppLocalizations.of(context)!.translate("cause"),
               textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
-              AppLocalizations.of(context).translate("oidiomelacause"),
+              AppLocalizations.of(context)!.translate("oidiomelacause"),
               textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 20),
             ),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
           ]),
     );
   }

@@ -1,22 +1,22 @@
 import 'package:agronomo/constants.dart';
 import 'package:agronomo/models/malattia.dart';
-import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:agronomo/utils/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class PaginaMalattia extends StatefulWidget {
-  final Malattia malattia;
+  final Malattia? malattia;
 
-  PaginaMalattia({Key key, @required this.malattia}) : super(key: key);
+  const PaginaMalattia({Key? key, required this.malattia}) : super(key: key);
 
   @override
   _PaginaMalattiaState createState() => _PaginaMalattiaState();
 }
 
 class _PaginaMalattiaState extends State<PaginaMalattia> {
-  InterstitialAd myInterstitial;
-  ScrollController _scrollController;
+  InterstitialAd? myInterstitial;
+  ScrollController? _scrollController;
   bool appBarCollapsed = false;
   double height = 200;
 
@@ -29,16 +29,12 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
   }
 
   bool get _isShrink {
-    return _scrollController.hasClients &&
-        _scrollController.offset > (height - kToolbarHeight);
+    return _scrollController!.hasClients &&
+        _scrollController!.offset > (height - kToolbarHeight);
   }
 
   checkAdLoaded() async {
-    if (await myInterstitial.isLoaded() == false) {
-      Navigator.of(context).pop();
-    }
-
-    myInterstitial..show();
+    if (myInterstitial != null) myInterstitial!.show();
   }
 
   @override
@@ -47,25 +43,36 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
 
     _scrollController = ScrollController()..addListener(_scrollListener);
 
-    myInterstitial = InterstitialAd(
+    InterstitialAd.load(
       adUnitId: kInterstitialAds,
-      request: AdRequest(),
-      listener: AdListener(
-        onAdClosed: (ad) {
-          Navigator.of(context).pop();
+      request: const AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (InterstitialAd ad) {
+          myInterstitial = ad;
+
+          myInterstitial!.fullScreenContentCallback = FullScreenContentCallback(
+              onAdDismissedFullScreenContent: (InterstitialAd ad) {
+            Navigator.of(context).pop();
+            ad.dispose();
+          }, onAdFailedToShowFullScreenContent:
+                  (InterstitialAd ad, AdError error) {
+            Navigator.of(context).pop();
+            ad.dispose();
+          });
+        },
+        onAdFailedToLoad: (ad) {
+          myInterstitial = null;
         },
       ),
     );
-
-    myInterstitial.load();
   }
 
   @override
   void dispose() {
-    _scrollController.removeListener(_scrollListener);
-    _scrollController.dispose();
+    _scrollController!.removeListener(_scrollListener);
+    _scrollController!.dispose();
 
-    myInterstitial.dispose();
+    if (myInterstitial != null) myInterstitial!.dispose();
 
     super.dispose();
   }
@@ -74,11 +81,11 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
   Widget build(BuildContext context) {
     return WillPopScope(
         onWillPop: () async {
-          if (await myInterstitial.isLoaded() == false) {
+          if (myInterstitial != null) {
+            myInterstitial!.show();
+          } else {
             return true;
           }
-
-          myInterstitial..show();
 
           return false;
         },
@@ -95,24 +102,13 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                     floating: false,
                     pinned: true,
                     leading: IconButton(
-                        icon: Icon(Icons.arrow_back),
+                        icon: const Icon(Icons.arrow_back),
                         onPressed: () => checkAdLoaded()),
-                    actions: [
-                      /*
-                        IconButton(
-                          icon: Icon(Icons.source),
-                          onPressed: () => {
-                                Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => FontiMalattia(
-                                        fonti: widget.malattia.fonti)))
-                              })
-                      */
-                    ],
                     flexibleSpace: FlexibleSpaceBar(
                         centerTitle: true,
                         title: Text(
-                            AppLocalizations.of(context)
-                                .translate(widget.malattia.nome),
+                            AppLocalizations.of(context)!
+                                .translate(widget.malattia!.nome!),
                             style: TextStyle(
                                 color: kBackgroundColor,
                                 fontSize: 16.0,
@@ -120,9 +116,9 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                                     ? Colors.black.withOpacity(0.5)
                                     : Colors.transparent)),
                         background: Image(
-                          image: widget.malattia.altImmagine != null
-                              ? widget.malattia.altImmagine
-                              : widget.malattia.immagine,
+                          image: widget.malattia!.altImmagine != null
+                              ? widget.malattia!.altImmagine!
+                              : widget.malattia!.immagine!,
                           fit: BoxFit.cover,
                         )),
                   ),
@@ -134,16 +130,16 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                         indicatorWeight: 0.1,
                         tabs: [
                           Tab(
-                              icon: Icon(FontAwesomeIcons.lightbulb),
-                              text: AppLocalizations.of(context)
+                              icon: const Icon(FontAwesomeIcons.lightbulb),
+                              text: AppLocalizations.of(context)!
                                   .translate("detailTab1")),
                           Tab(
-                              icon: Icon(FontAwesomeIcons.bug),
-                              text: AppLocalizations.of(context)
+                              icon: const Icon(FontAwesomeIcons.bug),
+                              text: AppLocalizations.of(context)!
                                   .translate("detailTab2")),
                           Tab(
-                              icon: Icon(FontAwesomeIcons.firstAid),
-                              text: AppLocalizations.of(context)
+                              icon: const Icon(FontAwesomeIcons.firstAid),
+                              text: AppLocalizations.of(context)!
                                   .translate("detailTab3")),
                         ],
                       ),
@@ -153,9 +149,9 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                 ];
               },
               body: TabBarView(children: [
-                Center(child: widget.malattia.generalita),
-                Center(child: widget.malattia.sintomi),
-                Center(child: widget.malattia.cure),
+                Center(child: widget.malattia!.generalita),
+                Center(child: widget.malattia!.sintomi),
+                Center(child: widget.malattia!.cure),
               ]),
             ),
           ),
@@ -176,8 +172,8 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   @override
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
-    return new Container(
-      decoration: BoxDecoration(
+    return Container(
+      decoration: const BoxDecoration(
           color: kTabBarColor,
           borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(kDefaultRound),

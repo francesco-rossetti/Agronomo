@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class TicchiolaturaMeloFonti extends StatefulWidget {
+  const TicchiolaturaMeloFonti({Key? key}) : super(key: key);
+
   @override
   _TicchiolaturaMeloFontiState createState() => _TicchiolaturaMeloFontiState();
 }

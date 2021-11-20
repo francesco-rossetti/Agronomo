@@ -1,7 +1,9 @@
-import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:agronomo/utils/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class MaculaturarossaAlbicoccoCure extends StatefulWidget {
+  const MaculaturarossaAlbicoccoCure({Key? key}) : super(key: key);
+
   @override
   _MaculaturarossaAlbicoccoCureState createState() =>
       _MaculaturarossaAlbicoccoCureState();
@@ -12,16 +14,16 @@ class _MaculaturarossaAlbicoccoCureState
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: new ListView(
+      child: ListView(
           shrinkWrap: true,
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context).translate("curemaculatura"),
+              AppLocalizations.of(context)!.translate("curemaculatura"),
               textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 20),
             ),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
           ]),
     );
   }

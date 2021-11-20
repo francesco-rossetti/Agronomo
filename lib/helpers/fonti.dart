@@ -1,17 +1,19 @@
 import 'package:agronomo/constants.dart';
-import 'package:agronomo/helpers/fonteCard.dart';
+import 'package:agronomo/helpers/fonte_card.dart';
 import 'package:agronomo/contents/index/contents.dart';
-import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:agronomo/utils/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class FontiPage extends StatefulWidget {
+  const FontiPage({Key? key}) : super(key: key);
+
   @override
   _FontiPageState createState() => _FontiPageState();
 }
 
 class _FontiPageState extends State<FontiPage> {
-  BannerAd myBanner;
+  BannerAd? myBanner;
   bool bannerLoaded = false;
 
   @override
@@ -21,8 +23,8 @@ class _FontiPageState extends State<FontiPage> {
     myBanner = BannerAd(
         adUnitId: kBanner2Ads,
         size: AdSize.largeBanner,
-        request: AdRequest(),
-        listener: AdListener(
+        request: const AdRequest(),
+        listener: BannerAdListener(
           onAdLoaded: (ad) {
             setState(() {
               bannerLoaded = true;
@@ -30,12 +32,12 @@ class _FontiPageState extends State<FontiPage> {
           },
         ));
 
-    myBanner.load();
+    myBanner!.load();
   }
 
   @override
   void dispose() {
-    myBanner.dispose();
+    myBanner!.dispose();
     super.dispose();
   }
 
@@ -44,7 +46,7 @@ class _FontiPageState extends State<FontiPage> {
       bottom: false,
       child: Column(
         children: <Widget>[
-          SizedBox(height: kDefaultPadding / 2),
+          const SizedBox(height: kDefaultPadding / 2),
           Expanded(
             child: Stack(
               children: <Widget>[
@@ -57,12 +59,12 @@ class _FontiPageState extends State<FontiPage> {
               ],
             ),
           ),
-          this.bannerLoaded
+          bannerLoaded
               ? Container(
                   alignment: Alignment.center,
-                  child: AdWidget(ad: this.myBanner),
-                  width: myBanner.size.width.toDouble(),
-                  height: myBanner.size.height.toDouble(),
+                  child: AdWidget(ad: myBanner!),
+                  width: myBanner!.size.width.toDouble(),
+                  height: myBanner!.size.height.toDouble(),
                 )
               : Container(),
         ],
@@ -77,7 +79,7 @@ class _FontiPageState extends State<FontiPage> {
           elevation: 0,
           backgroundColor: kPrimaryColor,
           centerTitle: false,
-          title: Text(AppLocalizations.of(context).translate("fonti"))),
+          title: Text(AppLocalizations.of(context)!.translate("fonti"))),
       backgroundColor: kBackgroundColor,
       body: body(context),
     );

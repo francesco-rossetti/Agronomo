@@ -1,27 +1,27 @@
 import 'package:agronomo/constants.dart';
 import 'package:agronomo/models/malattia.dart';
-import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:agronomo/utils/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class MalattieCard extends StatelessWidget {
   const MalattieCard({
-    Key key,
+    Key? key,
     this.itemIndex,
-    @required this.malattia,
-    @required this.nomePianta,
+    required this.malattia,
+    required this.nomePianta,
     this.press,
   }) : super(key: key);
 
-  final int itemIndex;
-  final Malattia malattia;
-  final String nomePianta;
-  final Function press;
+  final int? itemIndex;
+  final Malattia? malattia;
+  final String? nomePianta;
+  final VoidCallback? press;
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.symmetric(
+      margin: const EdgeInsets.symmetric(
         horizontal: kDefaultPadding,
         vertical: kDefaultPadding / 2,
       ),
@@ -35,11 +35,11 @@ class MalattieCard extends StatelessWidget {
               height: 136,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(22),
-                color: itemIndex.isEven ? kBlueColor : kOrangeColor,
-                boxShadow: [kDefaultShadow],
+                color: itemIndex!.isEven ? kBlueColor : kOrangeColor,
+                boxShadow: const [kDefaultShadow],
               ),
               child: Container(
-                margin: EdgeInsets.only(right: 10),
+                margin: const EdgeInsets.only(right: 10),
                 decoration: BoxDecoration(
                   color: kBackgroundColor,
                   borderRadius: BorderRadius.circular(22),
@@ -50,12 +50,13 @@ class MalattieCard extends StatelessWidget {
               top: 0,
               right: 0,
               child: Hero(
-                tag: malattia.nome,
+                tag: malattia!.nome!,
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                   height: 140,
                   width: 180,
-                  child: Image(image: malattia.immagine, fit: BoxFit.cover),
+                  child: Image(image: malattia!.immagine!, fit: BoxFit.cover),
                 ),
               ),
             ),
@@ -68,22 +69,23 @@ class MalattieCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Spacer(),
+                    const Spacer(),
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: kDefaultPadding),
                       child: Text(
-                        AppLocalizations.of(context).translate(malattia.nome),
+                        AppLocalizations.of(context)!
+                            .translate(malattia!.nome!),
                         style: Theme.of(context).textTheme.button,
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Container(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         horizontal: kDefaultPadding * 1.5, // 30 padding
                         vertical: kDefaultPadding / 4, // 5 top and bottom
                       ),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: kSecondaryColor,
                         borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(22),
@@ -91,7 +93,7 @@ class MalattieCard extends StatelessWidget {
                         ),
                       ),
                       child: Text(
-                        AppLocalizations.of(context).translate(this.nomePianta),
+                        AppLocalizations.of(context)!.translate(nomePianta!),
                         style: Theme.of(context).textTheme.button,
                       ),
                     ),

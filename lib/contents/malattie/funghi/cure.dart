@@ -1,7 +1,9 @@
-import 'package:agronomo/utils/AppLocalizations.dart';
+import 'package:agronomo/utils/app_localizations.dart';
 import 'package:flutter/material.dart';
 
 class FunghiMelogranoCure extends StatefulWidget {
+  const FunghiMelogranoCure({Key? key}) : super(key: key);
+
   @override
   _FunghiMelogranoCureState createState() => _FunghiMelogranoCureState();
 }
@@ -10,16 +12,16 @@ class _FunghiMelogranoCureState extends State<FunghiMelogranoCure> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: new ListView(
+      child: ListView(
           shrinkWrap: true,
           padding: const EdgeInsets.all(20.0),
           children: [
             Text(
-              AppLocalizations.of(context).translate("curefunghi"),
+              AppLocalizations.of(context)!.translate("curefunghi"),
               textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 20),
             ),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
           ]),
     );
   }

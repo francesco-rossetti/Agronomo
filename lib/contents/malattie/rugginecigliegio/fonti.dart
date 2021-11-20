@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class RuggineCiliegioFonti extends StatefulWidget {
+  const RuggineCiliegioFonti({Key? key}) : super(key: key);
+
   @override
   _RuggineCiliegioFontiState createState() => _RuggineCiliegioFontiState();
 }

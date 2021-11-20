@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MoscaCiliegioFonti extends StatefulWidget {
+  const MoscaCiliegioFonti({Key? key}) : super(key: key);
+
   @override
   _MoscaCiliegioFontiState createState() => _MoscaCiliegioFontiState();
 }
