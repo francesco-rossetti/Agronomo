@@ -5,10 +5,10 @@ class RuggineeuropeaSintomi extends StatefulWidget {
   const RuggineeuropeaSintomi({Key? key}) : super(key: key);
 
   @override
-  _RuggineeuropeaSintomiState createState() => _RuggineeuropeaSintomiState();
+  RuggineeuropeaSintomiState createState() => RuggineeuropeaSintomiState();
 }
 
-class _RuggineeuropeaSintomiState extends State<RuggineeuropeaSintomi> {
+class RuggineeuropeaSintomiState extends State<RuggineeuropeaSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

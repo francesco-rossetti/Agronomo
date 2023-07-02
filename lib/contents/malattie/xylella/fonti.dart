@@ -5,10 +5,10 @@ class XylellaOlivoFonti extends StatefulWidget {
   const XylellaOlivoFonti({Key? key}) : super(key: key);
 
   @override
-  _XylellaOlivoFontiState createState() => _XylellaOlivoFontiState();
+  XylellaOlivoFontiState createState() => XylellaOlivoFontiState();
 }
 
-class _XylellaOlivoFontiState extends State<XylellaOlivoFonti> {
+class XylellaOlivoFontiState extends State<XylellaOlivoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

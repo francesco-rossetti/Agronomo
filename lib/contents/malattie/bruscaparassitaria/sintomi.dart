@@ -5,11 +5,11 @@ class BruscaparassitariaOlivoSintomi extends StatefulWidget {
   const BruscaparassitariaOlivoSintomi({Key? key}) : super(key: key);
 
   @override
-  _BruscaparassitariaOlivoSintomiState createState() =>
-      _BruscaparassitariaOlivoSintomiState();
+  BruscaparassitariaOlivoSintomiState createState() =>
+      BruscaparassitariaOlivoSintomiState();
 }
 
-class _BruscaparassitariaOlivoSintomiState
+class BruscaparassitariaOlivoSintomiState
     extends State<BruscaparassitariaOlivoSintomi> {
   @override
   Widget build(BuildContext context) {

@@ -5,10 +5,10 @@ class OidioFragolaCure extends StatefulWidget {
   const OidioFragolaCure({Key? key}) : super(key: key);
 
   @override
-  _OidioFragolaCureState createState() => _OidioFragolaCureState();
+  OidioFragolaCureState createState() => OidioFragolaCureState();
 }
 
-class _OidioFragolaCureState extends State<OidioFragolaCure> {
+class OidioFragolaCureState extends State<OidioFragolaCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

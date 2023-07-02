@@ -5,10 +5,10 @@ class TicchiolaturaMeloCure extends StatefulWidget {
   const TicchiolaturaMeloCure({Key? key}) : super(key: key);
 
   @override
-  _TicchiolaturaMeloCureState createState() => _TicchiolaturaMeloCureState();
+  TicchiolaturaMeloCureState createState() => TicchiolaturaMeloCureState();
 }
 
-class _TicchiolaturaMeloCureState extends State<TicchiolaturaMeloCure> {
+class TicchiolaturaMeloCureState extends State<TicchiolaturaMeloCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

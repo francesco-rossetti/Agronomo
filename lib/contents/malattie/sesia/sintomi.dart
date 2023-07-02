@@ -5,10 +5,10 @@ class SesiaKakiSintomi extends StatefulWidget {
   const SesiaKakiSintomi({Key? key}) : super(key: key);
 
   @override
-  _SesiaKakiSintomiState createState() => _SesiaKakiSintomiState();
+  SesiaKakiSintomiState createState() => SesiaKakiSintomiState();
 }
 
-class _SesiaKakiSintomiState extends State<SesiaKakiSintomi> {
+class SesiaKakiSintomiState extends State<SesiaKakiSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

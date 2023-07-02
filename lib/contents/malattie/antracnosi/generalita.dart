@@ -5,11 +5,11 @@ class AntracnosiKakiGeneralita extends StatefulWidget {
   const AntracnosiKakiGeneralita({Key? key}) : super(key: key);
 
   @override
-  _AntracnosiKakiGeneralitaState createState() =>
-      _AntracnosiKakiGeneralitaState();
+  AntracnosiKakiGeneralitaState createState() =>
+      AntracnosiKakiGeneralitaState();
 }
 
-class _AntracnosiKakiGeneralitaState extends State<AntracnosiKakiGeneralita> {
+class AntracnosiKakiGeneralitaState extends State<AntracnosiKakiGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

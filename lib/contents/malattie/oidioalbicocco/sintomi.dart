@@ -5,10 +5,10 @@ class OidioAlbicoccoSintomi extends StatefulWidget {
   const OidioAlbicoccoSintomi({Key? key}) : super(key: key);
 
   @override
-  _OidioAlbicoccoSintomiState createState() => _OidioAlbicoccoSintomiState();
+  OidioAlbicoccoSintomiState createState() => OidioAlbicoccoSintomiState();
 }
 
-class _OidioAlbicoccoSintomiState extends State<OidioAlbicoccoSintomi> {
+class OidioAlbicoccoSintomiState extends State<OidioAlbicoccoSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

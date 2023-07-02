@@ -5,10 +5,10 @@ class SeptoriosiOlivoCure extends StatefulWidget {
   const SeptoriosiOlivoCure({Key? key}) : super(key: key);
 
   @override
-  _SeptoriosiOlivoCureState createState() => _SeptoriosiOlivoCureState();
+  SeptoriosiOlivoCureState createState() => SeptoriosiOlivoCureState();
 }
 
-class _SeptoriosiOlivoCureState extends State<SeptoriosiOlivoCure> {
+class SeptoriosiOlivoCureState extends State<SeptoriosiOlivoCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

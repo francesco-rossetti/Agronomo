@@ -4,10 +4,10 @@ class MoscaCiliegioFonti extends StatefulWidget {
   const MoscaCiliegioFonti({Key? key}) : super(key: key);
 
   @override
-  _MoscaCiliegioFontiState createState() => _MoscaCiliegioFontiState();
+  MoscaCiliegioFontiState createState() => MoscaCiliegioFontiState();
 }
 
-class _MoscaCiliegioFontiState extends State<MoscaCiliegioFonti> {
+class MoscaCiliegioFontiState extends State<MoscaCiliegioFonti> {
   @override
   Widget build(BuildContext context) {
     return Container();

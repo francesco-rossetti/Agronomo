@@ -5,10 +5,10 @@ class VespeFicoGeneralita extends StatefulWidget {
   const VespeFicoGeneralita({Key? key}) : super(key: key);
 
   @override
-  _VespeFicoGeneralitaState createState() => _VespeFicoGeneralitaState();
+  VespeFicoGeneralitaState createState() => VespeFicoGeneralitaState();
 }
 
-class _VespeFicoGeneralitaState extends State<VespeFicoGeneralita> {
+class VespeFicoGeneralitaState extends State<VespeFicoGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

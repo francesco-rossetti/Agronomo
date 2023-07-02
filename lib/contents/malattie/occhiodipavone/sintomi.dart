@@ -5,10 +5,10 @@ class OcchiodipavoneSintomi extends StatefulWidget {
   const OcchiodipavoneSintomi({Key? key}) : super(key: key);
 
   @override
-  _OcchiodipavoneSintomiState createState() => _OcchiodipavoneSintomiState();
+  OcchiodipavoneSintomiState createState() => OcchiodipavoneSintomiState();
 }
 
-class _OcchiodipavoneSintomiState extends State<OcchiodipavoneSintomi> {
+class OcchiodipavoneSintomiState extends State<OcchiodipavoneSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

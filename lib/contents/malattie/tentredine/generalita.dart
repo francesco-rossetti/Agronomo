@@ -5,10 +5,10 @@ class TentredineGeneralita extends StatefulWidget {
   const TentredineGeneralita({Key? key}) : super(key: key);
 
   @override
-  _TentredineGeneralitaState createState() => _TentredineGeneralitaState();
+  TentredineGeneralitaState createState() => TentredineGeneralitaState();
 }
 
-class _TentredineGeneralitaState extends State<TentredineGeneralita> {
+class TentredineGeneralitaState extends State<TentredineGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,11 +5,11 @@ class CarenzeActinidiaGeneralita extends StatefulWidget {
   const CarenzeActinidiaGeneralita({Key? key}) : super(key: key);
 
   @override
-  _CarenzeActinidiaGeneralitaState createState() =>
-      _CarenzeActinidiaGeneralitaState();
+  CarenzeActinidiaGeneralitaState createState() =>
+      CarenzeActinidiaGeneralitaState();
 }
 
-class _CarenzeActinidiaGeneralitaState
+class CarenzeActinidiaGeneralitaState
     extends State<CarenzeActinidiaGeneralita> {
   @override
   Widget build(BuildContext context) {

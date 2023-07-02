@@ -7,10 +7,10 @@ class InfoScreen extends StatefulWidget {
   const InfoScreen({Key? key}) : super(key: key);
 
   @override
-  _InfoScreenState createState() => _InfoScreenState();
+  InfoScreenState createState() => InfoScreenState();
 }
 
-class _InfoScreenState extends State<InfoScreen> {
+class InfoScreenState extends State<InfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,11 +26,11 @@ class _InfoScreenState extends State<InfoScreen> {
             InkWell(
                 child: Center(
                     child: Text(
-                        AppLocalizations.of(context)!.translate("creato_da") +
-                            "Stefano Del Grosso \n e \n Francesco Rossetti",
+                        "${AppLocalizations.of(context)!.translate("creato_da")}Stefano Del Grosso \n e \n Francesco Rossetti",
                         textAlign: TextAlign.center,
                         style: const TextStyle(fontSize: 25))),
-                onTap: () => launch('https://github.com/francescorossetti')),
+                onTap: () => launchUrl(
+                    Uri.parse('https://github.com/francescorossetti'))),
             const SizedBox(height: 20),
             FutureBuilder(
                 future: PackageInfo.fromPlatform(),
@@ -39,10 +39,7 @@ class _InfoScreenState extends State<InfoScreen> {
                   if (snapshot.hasData) {
                     return Center(
                         child: Text(
-                            AppLocalizations.of(context)!
-                                    .translate("versione") +
-                                ": " +
-                                snapshot.data!.version,
+                            "${AppLocalizations.of(context)!.translate("versione")}: ${snapshot.data!.version}",
                             style: const TextStyle(fontSize: 20)));
                   } else {
                     return Container();
@@ -53,15 +50,16 @@ class _InfoScreenState extends State<InfoScreen> {
               child: Center(
                   child: Text(AppLocalizations.of(context)!
                       .translate("informativa_privacy"))),
-              onTap: () =>
-                  launch('https://agronomo.flycricket.io/privacy.html'),
+              onTap: () => launchUrl(
+                  Uri.parse('https://agronomo.flycricket.io/privacy.html')),
             ),
             const SizedBox(height: 10),
             InkWell(
               child: Center(
                   child: Text(AppLocalizations.of(context)!
                       .translate("termini_di_servizio"))),
-              onTap: () => launch('https://agronomo.flycricket.io/terms.html'),
+              onTap: () => launchUrl(
+                  Uri.parse('https://agronomo.flycricket.io/terms.html')),
             ),
           ],
         ));

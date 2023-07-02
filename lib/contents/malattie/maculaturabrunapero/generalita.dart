@@ -5,11 +5,11 @@ class MaculaturabrunaPeroGeneralita extends StatefulWidget {
   const MaculaturabrunaPeroGeneralita({Key? key}) : super(key: key);
 
   @override
-  _MaculaturabrunaPeroGeneralitaState createState() =>
-      _MaculaturabrunaPeroGeneralitaState();
+  MaculaturabrunaPeroGeneralitaState createState() =>
+      MaculaturabrunaPeroGeneralitaState();
 }
 
-class _MaculaturabrunaPeroGeneralitaState
+class MaculaturabrunaPeroGeneralitaState
     extends State<MaculaturabrunaPeroGeneralita> {
   @override
   Widget build(BuildContext context) {

@@ -5,10 +5,10 @@ class SesiaKakiFonti extends StatefulWidget {
   const SesiaKakiFonti({Key? key}) : super(key: key);
 
   @override
-  _SesiaKakiFontiState createState() => _SesiaKakiFontiState();
+  SesiaKakiFontiState createState() => SesiaKakiFontiState();
 }
 
-class _SesiaKakiFontiState extends State<SesiaKakiFonti> {
+class SesiaKakiFontiState extends State<SesiaKakiFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

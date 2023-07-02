@@ -5,10 +5,10 @@ class CercosporiosiSintomi extends StatefulWidget {
   const CercosporiosiSintomi({Key? key}) : super(key: key);
 
   @override
-  _CercosporiosiSintomiState createState() => _CercosporiosiSintomiState();
+  CercosporiosiSintomiState createState() => CercosporiosiSintomiState();
 }
 
-class _CercosporiosiSintomiState extends State<CercosporiosiSintomi> {
+class CercosporiosiSintomiState extends State<CercosporiosiSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

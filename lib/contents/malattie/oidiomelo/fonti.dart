@@ -5,10 +5,10 @@ class OidioMeloFonti extends StatefulWidget {
   const OidioMeloFonti({Key? key}) : super(key: key);
 
   @override
-  _OidioMeloFontiState createState() => _OidioMeloFontiState();
+  OidioMeloFontiState createState() => OidioMeloFontiState();
 }
 
-class _OidioMeloFontiState extends State<OidioMeloFonti> {
+class OidioMeloFontiState extends State<OidioMeloFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,11 +5,11 @@ class MoscafruttaActinidiaSintomi extends StatefulWidget {
   const MoscafruttaActinidiaSintomi({Key? key}) : super(key: key);
 
   @override
-  _MoscafruttaActinidiaSintomiState createState() =>
-      _MoscafruttaActinidiaSintomiState();
+  MoscafruttaActinidiaSintomiState createState() =>
+      MoscafruttaActinidiaSintomiState();
 }
 
-class _MoscafruttaActinidiaSintomiState
+class MoscafruttaActinidiaSintomiState
     extends State<MoscafruttaActinidiaSintomi> {
   @override
   Widget build(BuildContext context) {

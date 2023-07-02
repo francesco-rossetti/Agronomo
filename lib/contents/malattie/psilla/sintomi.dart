@@ -5,10 +5,10 @@ class PsillaSintomi extends StatefulWidget {
   const PsillaSintomi({Key? key}) : super(key: key);
 
   @override
-  _PsillaSintomiState createState() => _PsillaSintomiState();
+  PsillaSintomiState createState() => PsillaSintomiState();
 }
 
-class _PsillaSintomiState extends State<PsillaSintomi> {
+class PsillaSintomiState extends State<PsillaSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

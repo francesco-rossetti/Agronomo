@@ -5,11 +5,11 @@ class TripideAgrumiGeneralita extends StatefulWidget {
   const TripideAgrumiGeneralita({Key? key}) : super(key: key);
 
   @override
-  _TripideAgrumiGeneralitaState createState() =>
-      _TripideAgrumiGeneralitaState();
+  TripideAgrumiGeneralitaState createState() =>
+      TripideAgrumiGeneralitaState();
 }
 
-class _TripideAgrumiGeneralitaState extends State<TripideAgrumiGeneralita> {
+class TripideAgrumiGeneralitaState extends State<TripideAgrumiGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

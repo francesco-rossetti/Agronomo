@@ -5,10 +5,10 @@ class FillosseraViteSintomi extends StatefulWidget {
   const FillosseraViteSintomi({Key? key}) : super(key: key);
 
   @override
-  _FillosseraViteSintomiState createState() => _FillosseraViteSintomiState();
+  FillosseraViteSintomiState createState() => FillosseraViteSintomiState();
 }
 
-class _FillosseraViteSintomiState extends State<FillosseraViteSintomi> {
+class FillosseraViteSintomiState extends State<FillosseraViteSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

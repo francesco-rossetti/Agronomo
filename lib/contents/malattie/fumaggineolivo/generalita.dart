@@ -5,11 +5,11 @@ class FumaggineolivoOlivoGeneralita extends StatefulWidget {
   const FumaggineolivoOlivoGeneralita({Key? key}) : super(key: key);
 
   @override
-  _FumaggineolivoOlivoGeneralitaState createState() =>
-      _FumaggineolivoOlivoGeneralitaState();
+  FumaggineolivoOlivoGeneralitaState createState() =>
+      FumaggineolivoOlivoGeneralitaState();
 }
 
-class _FumaggineolivoOlivoGeneralitaState
+class FumaggineolivoOlivoGeneralitaState
     extends State<FumaggineolivoOlivoGeneralita> {
   @override
   Widget build(BuildContext context) {

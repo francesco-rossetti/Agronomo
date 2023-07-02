@@ -5,11 +5,11 @@ class PunteruoloneroFicoGeneralita extends StatefulWidget {
   const PunteruoloneroFicoGeneralita({Key? key}) : super(key: key);
 
   @override
-  _PunteruoloneroFicoGeneralitaState createState() =>
-      _PunteruoloneroFicoGeneralitaState();
+  PunteruoloneroFicoGeneralitaState createState() =>
+      PunteruoloneroFicoGeneralitaState();
 }
 
-class _PunteruoloneroFicoGeneralitaState
+class PunteruoloneroFicoGeneralitaState
     extends State<PunteruoloneroFicoGeneralita> {
   @override
   Widget build(BuildContext context) {

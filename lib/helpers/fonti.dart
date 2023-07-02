@@ -9,10 +9,10 @@ class FontiPage extends StatefulWidget {
   const FontiPage({Key? key}) : super(key: key);
 
   @override
-  _FontiPageState createState() => _FontiPageState();
+  FontiPageState createState() => FontiPageState();
 }
 
-class _FontiPageState extends State<FontiPage> {
+class FontiPageState extends State<FontiPage> {
   BannerAd? myBanner;
   bool bannerLoaded = false;
 
@@ -62,9 +62,9 @@ class _FontiPageState extends State<FontiPage> {
           bannerLoaded
               ? Container(
                   alignment: Alignment.center,
-                  child: AdWidget(ad: myBanner!),
                   width: myBanner!.size.width.toDouble(),
                   height: myBanner!.size.height.toDouble(),
+                  child: AdWidget(ad: myBanner!),
                 )
               : Container(),
         ],

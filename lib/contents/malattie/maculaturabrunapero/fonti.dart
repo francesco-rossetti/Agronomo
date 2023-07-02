@@ -5,11 +5,11 @@ class MaculaturaBrunaPeroFonti extends StatefulWidget {
   const MaculaturaBrunaPeroFonti({Key? key}) : super(key: key);
 
   @override
-  _MaculaturaBrunaPeroFontiState createState() =>
-      _MaculaturaBrunaPeroFontiState();
+  MaculaturaBrunaPeroFontiState createState() =>
+      MaculaturaBrunaPeroFontiState();
 }
 
-class _MaculaturaBrunaPeroFontiState extends State<MaculaturaBrunaPeroFonti> {
+class MaculaturaBrunaPeroFontiState extends State<MaculaturaBrunaPeroFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

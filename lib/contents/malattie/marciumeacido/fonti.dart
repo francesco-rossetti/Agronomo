@@ -5,10 +5,10 @@ class MarciumeacidoViteFonti extends StatefulWidget {
   const MarciumeacidoViteFonti({Key? key}) : super(key: key);
 
   @override
-  _MarciumeacidoViteFontiState createState() => _MarciumeacidoViteFontiState();
+  MarciumeacidoViteFontiState createState() => MarciumeacidoViteFontiState();
 }
 
-class _MarciumeacidoViteFontiState extends State<MarciumeacidoViteFonti> {
+class MarciumeacidoViteFontiState extends State<MarciumeacidoViteFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,10 +5,10 @@ class MaldellescaViteCure extends StatefulWidget {
   const MaldellescaViteCure({Key? key}) : super(key: key);
 
   @override
-  _MaldellescaViteCureState createState() => _MaldellescaViteCureState();
+  MaldellescaViteCureState createState() => MaldellescaViteCureState();
 }
 
-class _MaldellescaViteCureState extends State<MaldellescaViteCure> {
+class MaldellescaViteCureState extends State<MaldellescaViteCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

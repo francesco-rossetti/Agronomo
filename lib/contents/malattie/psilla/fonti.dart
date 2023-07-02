@@ -5,10 +5,10 @@ class PsillaFonti extends StatefulWidget {
   const PsillaFonti({Key? key}) : super(key: key);
 
   @override
-  _PsillaFontiState createState() => _PsillaFontiState();
+  PsillaFontiState createState() => PsillaFontiState();
 }
 
-class _PsillaFontiState extends State<PsillaFonti> {
+class PsillaFontiState extends State<PsillaFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

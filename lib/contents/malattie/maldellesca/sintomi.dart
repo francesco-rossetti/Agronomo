@@ -5,10 +5,10 @@ class MaldellescaViteSintomi extends StatefulWidget {
   const MaldellescaViteSintomi({Key? key}) : super(key: key);
 
   @override
-  _MaldellescaViteSintomiState createState() => _MaldellescaViteSintomiState();
+  MaldellescaViteSintomiState createState() => MaldellescaViteSintomiState();
 }
 
-class _MaldellescaViteSintomiState extends State<MaldellescaViteSintomi> {
+class MaldellescaViteSintomiState extends State<MaldellescaViteSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

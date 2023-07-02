@@ -5,11 +5,11 @@ class MarciumeradiciAgrumiGeneralita extends StatefulWidget {
   const MarciumeradiciAgrumiGeneralita({Key? key}) : super(key: key);
 
   @override
-  _MarciumeradiciAgrumiGeneralitaState createState() =>
-      _MarciumeradiciAgrumiGeneralitaState();
+  MarciumeradiciAgrumiGeneralitaState createState() =>
+      MarciumeradiciAgrumiGeneralitaState();
 }
 
-class _MarciumeradiciAgrumiGeneralitaState
+class MarciumeradiciAgrumiGeneralitaState
     extends State<MarciumeradiciAgrumiGeneralita> {
   @override
   Widget build(BuildContext context) {

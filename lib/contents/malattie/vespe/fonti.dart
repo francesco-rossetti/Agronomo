@@ -5,10 +5,10 @@ class VespeFicoFonti extends StatefulWidget {
   const VespeFicoFonti({Key? key}) : super(key: key);
 
   @override
-  _VespeFicoFontiState createState() => _VespeFicoFontiState();
+  VespeFicoFontiState createState() => VespeFicoFontiState();
 }
 
-class _VespeFicoFontiState extends State<VespeFicoFonti> {
+class VespeFicoFontiState extends State<VespeFicoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

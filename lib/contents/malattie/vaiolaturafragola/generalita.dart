@@ -5,11 +5,11 @@ class VaiolaturaFragolaGeneralita extends StatefulWidget {
   const VaiolaturaFragolaGeneralita({Key? key}) : super(key: key);
 
   @override
-  _VaiolaturaFragolaGeneralitaState createState() =>
-      _VaiolaturaFragolaGeneralitaState();
+  VaiolaturaFragolaGeneralitaState createState() =>
+      VaiolaturaFragolaGeneralitaState();
 }
 
-class _VaiolaturaFragolaGeneralitaState
+class VaiolaturaFragolaGeneralitaState
     extends State<VaiolaturaFragolaGeneralita> {
   @override
   Widget build(BuildContext context) {

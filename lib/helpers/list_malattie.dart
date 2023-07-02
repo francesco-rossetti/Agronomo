@@ -18,10 +18,10 @@ class ListMalattie extends StatefulWidget {
       : super(key: key);
 
   @override
-  _ListMalattieState createState() => _ListMalattieState();
+  ListMalattieState createState() => ListMalattieState();
 }
 
-class _ListMalattieState extends State<ListMalattie> {
+class ListMalattieState extends State<ListMalattie> {
   final KeyboardVisibilityController _keyboardController =
       KeyboardVisibilityController();
   StreamSubscription<bool>? _streamSubscription;
@@ -123,9 +123,9 @@ class _ListMalattieState extends State<ListMalattie> {
           !keyboardLoaded && bannerLoaded
               ? Container(
                   alignment: Alignment.center,
-                  child: AdWidget(ad: myBanner!),
                   width: myBanner!.size.width.toDouble(),
                   height: myBanner!.size.height.toDouble(),
+                  child: AdWidget(ad: myBanner!),
                 )
               : Container(height: 0),
         ],

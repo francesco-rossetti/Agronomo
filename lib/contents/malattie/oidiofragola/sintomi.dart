@@ -5,10 +5,10 @@ class OidioFragolaSintomi extends StatefulWidget {
   const OidioFragolaSintomi({Key? key}) : super(key: key);
 
   @override
-  _OidioFragolaSintomiState createState() => _OidioFragolaSintomiState();
+  OidioFragolaSintomiState createState() => OidioFragolaSintomiState();
 }
 
-class _OidioFragolaSintomiState extends State<OidioFragolaSintomi> {
+class OidioFragolaSintomiState extends State<OidioFragolaSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

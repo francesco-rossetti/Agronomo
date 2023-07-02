@@ -5,10 +5,10 @@ class SeptoriosiOlivoFonti extends StatefulWidget {
   const SeptoriosiOlivoFonti({Key? key}) : super(key: key);
 
   @override
-  _SeptoriosiOlivoFontiState createState() => _SeptoriosiOlivoFontiState();
+  SeptoriosiOlivoFontiState createState() => SeptoriosiOlivoFontiState();
 }
 
-class _SeptoriosiOlivoFontiState extends State<SeptoriosiOlivoFonti> {
+class SeptoriosiOlivoFontiState extends State<SeptoriosiOlivoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

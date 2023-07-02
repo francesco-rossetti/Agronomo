@@ -5,11 +5,10 @@ class RagnettorossoAgrumiCure extends StatefulWidget {
   const RagnettorossoAgrumiCure({Key? key}) : super(key: key);
 
   @override
-  _RagnettorossoAgrumiCureState createState() =>
-      _RagnettorossoAgrumiCureState();
+  RagnettorossoAgrumiCureState createState() => RagnettorossoAgrumiCureState();
 }
 
-class _RagnettorossoAgrumiCureState extends State<RagnettorossoAgrumiCure> {
+class RagnettorossoAgrumiCureState extends State<RagnettorossoAgrumiCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,10 +5,10 @@ class BollaAlbicoccoFonti extends StatefulWidget {
   const BollaAlbicoccoFonti({Key? key}) : super(key: key);
 
   @override
-  _BollaAlbicoccoFontiState createState() => _BollaAlbicoccoFontiState();
+  BollaAlbicoccoFontiState createState() => BollaAlbicoccoFontiState();
 }
 
-class _BollaAlbicoccoFontiState extends State<BollaAlbicoccoFonti> {
+class BollaAlbicoccoFontiState extends State<BollaAlbicoccoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

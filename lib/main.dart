@@ -23,9 +23,9 @@ Widget home = const IntroScreen();
 Future<void> checkFirstSeen() async {
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  bool _seen = (prefs.getBool('Agronomo') ?? false);
+  bool seen = (prefs.getBool('Agronomo') ?? false);
 
-  if (_seen) {
+  if (seen) {
     home = HomePage();
   } else {
     await prefs.setBool('Agronomo', true);

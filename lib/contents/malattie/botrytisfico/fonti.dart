@@ -5,10 +5,10 @@ class BotrytisficoFicoFonti extends StatefulWidget {
   const BotrytisficoFicoFonti({Key? key}) : super(key: key);
 
   @override
-  _BotrytisficoFicoFontiState createState() => _BotrytisficoFicoFontiState();
+  BotrytisficoFicoFontiState createState() => BotrytisficoFicoFontiState();
 }
 
-class _BotrytisficoFicoFontiState extends State<BotrytisficoFicoFonti> {
+class BotrytisficoFicoFontiState extends State<BotrytisficoFicoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

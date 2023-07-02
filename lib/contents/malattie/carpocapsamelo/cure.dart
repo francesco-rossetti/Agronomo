@@ -5,10 +5,10 @@ class CarpocapsaMeloCure extends StatefulWidget {
   const CarpocapsaMeloCure({Key? key}) : super(key: key);
 
   @override
-  _CarpocapsaMeloCureState createState() => _CarpocapsaMeloCureState();
+  CarpocapsaMeloCureState createState() => CarpocapsaMeloCureState();
 }
 
-class _CarpocapsaMeloCureState extends State<CarpocapsaMeloCure> {
+class CarpocapsaMeloCureState extends State<CarpocapsaMeloCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

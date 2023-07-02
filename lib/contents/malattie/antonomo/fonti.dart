@@ -5,10 +5,10 @@ class AntonomoFonti extends StatefulWidget {
   const AntonomoFonti({Key? key}) : super(key: key);
 
   @override
-  _AntonomoFontiState createState() => _AntonomoFontiState();
+  AntonomoFontiState createState() => AntonomoFontiState();
 }
 
-class _AntonomoFontiState extends State<AntonomoFonti> {
+class AntonomoFontiState extends State<AntonomoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,10 +5,10 @@ class OziorrincoMelaCura extends StatefulWidget {
   const OziorrincoMelaCura({Key? key}) : super(key: key);
 
   @override
-  _OziorrincoMelaCuraState createState() => _OziorrincoMelaCuraState();
+  OziorrincoMelaCuraState createState() => OziorrincoMelaCuraState();
 }
 
-class _OziorrincoMelaCuraState extends State<OziorrincoMelaCura> {
+class OziorrincoMelaCuraState extends State<OziorrincoMelaCura> {
   @override
   Widget build(BuildContext context) {
     return Center(

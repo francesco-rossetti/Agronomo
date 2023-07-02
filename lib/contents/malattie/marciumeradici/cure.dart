@@ -5,11 +5,11 @@ class MarciumeradiciAgrumiCure extends StatefulWidget {
   const MarciumeradiciAgrumiCure({Key? key}) : super(key: key);
 
   @override
-  _MarciumeradiciAgrumiCureState createState() =>
-      _MarciumeradiciAgrumiCureState();
+  MarciumeradiciAgrumiCureState createState() =>
+      MarciumeradiciAgrumiCureState();
 }
 
-class _MarciumeradiciAgrumiCureState extends State<MarciumeradiciAgrumiCure> {
+class MarciumeradiciAgrumiCureState extends State<MarciumeradiciAgrumiCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

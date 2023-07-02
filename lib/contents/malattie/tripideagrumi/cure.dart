@@ -5,10 +5,10 @@ class TripideAgrumiCure extends StatefulWidget {
   const TripideAgrumiCure({Key? key}) : super(key: key);
 
   @override
-  _TripideAgrumiCureState createState() => _TripideAgrumiCureState();
+  TripideAgrumiCureState createState() => TripideAgrumiCureState();
 }
 
-class _TripideAgrumiCureState extends State<TripideAgrumiCure> {
+class TripideAgrumiCureState extends State<TripideAgrumiCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

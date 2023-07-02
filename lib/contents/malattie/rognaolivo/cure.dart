@@ -5,10 +5,10 @@ class RognaolivoOlivoCure extends StatefulWidget {
   const RognaolivoOlivoCure({Key? key}) : super(key: key);
 
   @override
-  _RognaolivoOlivoCureState createState() => _RognaolivoOlivoCureState();
+  RognaolivoOlivoCureState createState() => RognaolivoOlivoCureState();
 }
 
-class _RognaolivoOlivoCureState extends State<RognaolivoOlivoCure> {
+class RognaolivoOlivoCureState extends State<RognaolivoOlivoCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

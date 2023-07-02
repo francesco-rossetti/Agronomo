@@ -5,10 +5,10 @@ class MoniliaAlbicoccoCure extends StatefulWidget {
   const MoniliaAlbicoccoCure({Key? key}) : super(key: key);
 
   @override
-  _MoniliaAlbicoccoCureState createState() => _MoniliaAlbicoccoCureState();
+  MoniliaAlbicoccoCureState createState() => MoniliaAlbicoccoCureState();
 }
 
-class _MoniliaAlbicoccoCureState extends State<MoniliaAlbicoccoCure> {
+class MoniliaAlbicoccoCureState extends State<MoniliaAlbicoccoCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

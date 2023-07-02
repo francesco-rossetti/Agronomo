@@ -5,11 +5,10 @@ class OidioviteViteGeneralita extends StatefulWidget {
   const OidioviteViteGeneralita({Key? key}) : super(key: key);
 
   @override
-  _OidioviteViteGeneralitaState createState() =>
-      _OidioviteViteGeneralitaState();
+  OidioviteViteGeneralitaState createState() => OidioviteViteGeneralitaState();
 }
 
-class _OidioviteViteGeneralitaState extends State<OidioviteViteGeneralita> {
+class OidioviteViteGeneralitaState extends State<OidioviteViteGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

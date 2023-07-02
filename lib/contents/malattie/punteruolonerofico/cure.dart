@@ -5,10 +5,10 @@ class PunteruoloneroFicoCure extends StatefulWidget {
   const PunteruoloneroFicoCure({Key? key}) : super(key: key);
 
   @override
-  _PunteruoloneroFicoCureState createState() => _PunteruoloneroFicoCureState();
+  PunteruoloneroFicoCureState createState() => PunteruoloneroFicoCureState();
 }
 
-class _PunteruoloneroFicoCureState extends State<PunteruoloneroFicoCure> {
+class PunteruoloneroFicoCureState extends State<PunteruoloneroFicoCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

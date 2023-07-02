@@ -5,11 +5,11 @@ class AntracnosiFragolaSintomi extends StatefulWidget {
   const AntracnosiFragolaSintomi({Key? key}) : super(key: key);
 
   @override
-  _AntracnosiFragolaSintomiState createState() =>
-      _AntracnosiFragolaSintomiState();
+  AntracnosiFragolaSintomiState createState() =>
+      AntracnosiFragolaSintomiState();
 }
 
-class _AntracnosiFragolaSintomiState extends State<AntracnosiFragolaSintomi> {
+class AntracnosiFragolaSintomiState extends State<AntracnosiFragolaSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

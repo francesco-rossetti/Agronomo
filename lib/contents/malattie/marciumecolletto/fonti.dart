@@ -5,11 +5,11 @@ class MarciumecollettoActinidiaFonti extends StatefulWidget {
   const MarciumecollettoActinidiaFonti({Key? key}) : super(key: key);
 
   @override
-  _MarciumecollettoActinidiaFontiState createState() =>
-      _MarciumecollettoActinidiaFontiState();
+  MarciumecollettoActinidiaFontiState createState() =>
+      MarciumecollettoActinidiaFontiState();
 }
 
-class _MarciumecollettoActinidiaFontiState
+class MarciumecollettoActinidiaFontiState
     extends State<MarciumecollettoActinidiaFonti> {
   @override
   Widget build(BuildContext context) {

@@ -5,11 +5,10 @@ class SerpentinaAgrumiSintomi extends StatefulWidget {
   const SerpentinaAgrumiSintomi({Key? key}) : super(key: key);
 
   @override
-  _SerpentinaAgrumiSintomiState createState() =>
-      _SerpentinaAgrumiSintomiState();
+  SerpentinaAgrumiSintomiState createState() => SerpentinaAgrumiSintomiState();
 }
 
-class _SerpentinaAgrumiSintomiState extends State<SerpentinaAgrumiSintomi> {
+class SerpentinaAgrumiSintomiState extends State<SerpentinaAgrumiSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

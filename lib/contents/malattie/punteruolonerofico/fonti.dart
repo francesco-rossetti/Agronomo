@@ -5,11 +5,10 @@ class PunteruoloneroFicoFonti extends StatefulWidget {
   const PunteruoloneroFicoFonti({Key? key}) : super(key: key);
 
   @override
-  _PunteruoloneroFicoFontiState createState() =>
-      _PunteruoloneroFicoFontiState();
+  PunteruoloneroFicoFontiState createState() => PunteruoloneroFicoFontiState();
 }
 
-class _PunteruoloneroFicoFontiState extends State<PunteruoloneroFicoFonti> {
+class PunteruoloneroFicoFontiState extends State<PunteruoloneroFicoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,11 +5,11 @@ class MoscafruttaActinidiaFonti extends StatefulWidget {
   const MoscafruttaActinidiaFonti({Key? key}) : super(key: key);
 
   @override
-  _MoscafruttaActinidiaFontiState createState() =>
-      _MoscafruttaActinidiaFontiState();
+  MoscafruttaActinidiaFontiState createState() =>
+      MoscafruttaActinidiaFontiState();
 }
 
-class _MoscafruttaActinidiaFontiState extends State<MoscafruttaActinidiaFonti> {
+class MoscafruttaActinidiaFontiState extends State<MoscafruttaActinidiaFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

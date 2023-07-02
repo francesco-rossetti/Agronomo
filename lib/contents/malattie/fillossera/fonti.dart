@@ -5,10 +5,10 @@ class FillosseraViteFonti extends StatefulWidget {
   const FillosseraViteFonti({Key? key}) : super(key: key);
 
   @override
-  _FillosseraViteFontiState createState() => _FillosseraViteFontiState();
+  FillosseraViteFontiState createState() => FillosseraViteFontiState();
 }
 
-class _FillosseraViteFontiState extends State<FillosseraViteFonti> {
+class FillosseraViteFontiState extends State<FillosseraViteFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

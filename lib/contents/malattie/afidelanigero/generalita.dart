@@ -5,11 +5,11 @@ class AfideLanigeroMeloGeneralita extends StatefulWidget {
   const AfideLanigeroMeloGeneralita({Key? key}) : super(key: key);
 
   @override
-  _AfideLanigeroMeloGeneralitaState createState() =>
-      _AfideLanigeroMeloGeneralitaState();
+  AfideLanigeroMeloGeneralitaState createState() =>
+      AfideLanigeroMeloGeneralitaState();
 }
 
-class _AfideLanigeroMeloGeneralitaState
+class AfideLanigeroMeloGeneralitaState
     extends State<AfideLanigeroMeloGeneralita> {
   @override
   Widget build(BuildContext context) {

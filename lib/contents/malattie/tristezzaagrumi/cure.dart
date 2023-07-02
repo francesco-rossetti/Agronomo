@@ -5,11 +5,11 @@ class TristezzaagrumiAgrimiCure extends StatefulWidget {
   const TristezzaagrumiAgrimiCure({Key? key}) : super(key: key);
 
   @override
-  _TristezzaagrumiAgrimiCureState createState() =>
-      _TristezzaagrumiAgrimiCureState();
+  TristezzaagrumiAgrimiCureState createState() =>
+      TristezzaagrumiAgrimiCureState();
 }
 
-class _TristezzaagrumiAgrimiCureState extends State<TristezzaagrumiAgrimiCure> {
+class TristezzaagrumiAgrimiCureState extends State<TristezzaagrumiAgrimiCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

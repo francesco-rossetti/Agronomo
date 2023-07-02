@@ -5,10 +5,10 @@ class TentredineSintomi extends StatefulWidget {
   const TentredineSintomi({Key? key}) : super(key: key);
 
   @override
-  _TentredineSintomiState createState() => _TentredineSintomiState();
+  TentredineSintomiState createState() => TentredineSintomiState();
 }
 
-class _TentredineSintomiState extends State<TentredineSintomi> {
+class TentredineSintomiState extends State<TentredineSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

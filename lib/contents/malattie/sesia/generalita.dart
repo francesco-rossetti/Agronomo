@@ -5,10 +5,10 @@ class SesiaKakiGeneralita extends StatefulWidget {
   const SesiaKakiGeneralita({Key? key}) : super(key: key);
 
   @override
-  _SesiaKakiGeneralitaState createState() => _SesiaKakiGeneralitaState();
+  SesiaKakiGeneralitaState createState() => SesiaKakiGeneralitaState();
 }
 
-class _SesiaKakiGeneralitaState extends State<SesiaKakiGeneralita> {
+class SesiaKakiGeneralitaState extends State<SesiaKakiGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

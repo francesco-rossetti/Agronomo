@@ -5,10 +5,10 @@ class PeronosporaViteSintomi extends StatefulWidget {
   const PeronosporaViteSintomi({Key? key}) : super(key: key);
 
   @override
-  _PeronosporaViteSintomiState createState() => _PeronosporaViteSintomiState();
+  PeronosporaViteSintomiState createState() => PeronosporaViteSintomiState();
 }
 
-class _PeronosporaViteSintomiState extends State<PeronosporaViteSintomi> {
+class PeronosporaViteSintomiState extends State<PeronosporaViteSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

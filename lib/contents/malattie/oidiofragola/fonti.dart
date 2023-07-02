@@ -4,10 +4,10 @@ class OidioFragolaFonti extends StatefulWidget {
   const OidioFragolaFonti({Key? key}) : super(key: key);
 
   @override
-  _OidioFragolaFontiState createState() => _OidioFragolaFontiState();
+  OidioFragolaFontiState createState() => OidioFragolaFontiState();
 }
 
-class _OidioFragolaFontiState extends State<OidioFragolaFonti> {
+class OidioFragolaFontiState extends State<OidioFragolaFonti> {
   @override
   Widget build(BuildContext context) {
     return Container();

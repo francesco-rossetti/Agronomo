@@ -4,10 +4,10 @@ class AfideNeroFonti extends StatefulWidget {
   const AfideNeroFonti({Key? key}) : super(key: key);
 
   @override
-  _AfideNeroFontiState createState() => _AfideNeroFontiState();
+  AfideNeroFontiState createState() => AfideNeroFontiState();
 }
 
-class _AfideNeroFontiState extends State<AfideNeroFonti> {
+class AfideNeroFontiState extends State<AfideNeroFonti> {
   @override
   Widget build(BuildContext context) {
     return Container();

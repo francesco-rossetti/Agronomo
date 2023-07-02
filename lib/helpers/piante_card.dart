@@ -76,7 +76,7 @@ class PianteCard extends StatelessWidget {
                           horizontal: kDefaultPadding),
                       child: Text(
                         AppLocalizations.of(context)!.translate(pianta!.nome!),
-                        style: Theme.of(context).textTheme.button,
+                        style: Theme.of(context).textTheme.labelLarge,
                       ),
                     ),
                     const Spacer()

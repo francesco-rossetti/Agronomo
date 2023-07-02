@@ -5,10 +5,10 @@ class TentredineCure extends StatefulWidget {
   const TentredineCure({Key? key}) : super(key: key);
 
   @override
-  _TentredineCureState createState() => _TentredineCureState();
+  TentredineCureState createState() => TentredineCureState();
 }
 
-class _TentredineCureState extends State<TentredineCure> {
+class TentredineCureState extends State<TentredineCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

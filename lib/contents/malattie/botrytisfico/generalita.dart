@@ -5,11 +5,11 @@ class BotrytisficoFicoGeneralita extends StatefulWidget {
   const BotrytisficoFicoGeneralita({Key? key}) : super(key: key);
 
   @override
-  _BotrytisficoFicoGeneralitaState createState() =>
-      _BotrytisficoFicoGeneralitaState();
+  BotrytisficoFicoGeneralitaState createState() =>
+      BotrytisficoFicoGeneralitaState();
 }
 
-class _BotrytisficoFicoGeneralitaState
+class BotrytisficoFicoGeneralitaState
     extends State<BotrytisficoFicoGeneralita> {
   @override
   Widget build(BuildContext context) {

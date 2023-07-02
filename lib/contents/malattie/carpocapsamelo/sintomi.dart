@@ -5,10 +5,10 @@ class CarpocapsaMeloSintomi extends StatefulWidget {
   const CarpocapsaMeloSintomi({Key? key}) : super(key: key);
 
   @override
-  _CarpocapsaMeloSintomiState createState() => _CarpocapsaMeloSintomiState();
+  CarpocapsaMeloSintomiState createState() => CarpocapsaMeloSintomiState();
 }
 
-class _CarpocapsaMeloSintomiState extends State<CarpocapsaMeloSintomi> {
+class CarpocapsaMeloSintomiState extends State<CarpocapsaMeloSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

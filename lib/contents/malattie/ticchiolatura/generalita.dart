@@ -5,11 +5,11 @@ class TicchiolaturaMeloGeneralita extends StatefulWidget {
   const TicchiolaturaMeloGeneralita({Key? key}) : super(key: key);
 
   @override
-  _TicchiolaturaMeloGeneralitaState createState() =>
-      _TicchiolaturaMeloGeneralitaState();
+  TicchiolaturaMeloGeneralitaState createState() =>
+      TicchiolaturaMeloGeneralitaState();
 }
 
-class _TicchiolaturaMeloGeneralitaState
+class TicchiolaturaMeloGeneralitaState
     extends State<TicchiolaturaMeloGeneralita> {
   @override
   Widget build(BuildContext context) {

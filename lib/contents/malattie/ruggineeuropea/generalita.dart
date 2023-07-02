@@ -5,11 +5,11 @@ class RuggineeuropeaGeneralita extends StatefulWidget {
   const RuggineeuropeaGeneralita({Key? key}) : super(key: key);
 
   @override
-  _RuggineeuropeaGeneralitaState createState() =>
-      _RuggineeuropeaGeneralitaState();
+  RuggineeuropeaGeneralitaState createState() =>
+      RuggineeuropeaGeneralitaState();
 }
 
-class _RuggineeuropeaGeneralitaState extends State<RuggineeuropeaGeneralita> {
+class RuggineeuropeaGeneralitaState extends State<RuggineeuropeaGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

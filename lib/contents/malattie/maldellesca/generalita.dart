@@ -5,11 +5,11 @@ class MaldellescaViteGeneralita extends StatefulWidget {
   const MaldellescaViteGeneralita({Key? key}) : super(key: key);
 
   @override
-  _MaldellescaViteGeneralitaState createState() =>
-      _MaldellescaViteGeneralitaState();
+  MaldellescaViteGeneralitaState createState() =>
+      MaldellescaViteGeneralitaState();
 }
 
-class _MaldellescaViteGeneralitaState extends State<MaldellescaViteGeneralita> {
+class MaldellescaViteGeneralitaState extends State<MaldellescaViteGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

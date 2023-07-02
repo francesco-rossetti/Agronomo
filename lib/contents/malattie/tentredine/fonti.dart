@@ -5,10 +5,10 @@ class TentredineFonti extends StatefulWidget {
   const TentredineFonti({Key? key}) : super(key: key);
 
   @override
-  _TentredineFontiState createState() => _TentredineFontiState();
+  TentredineFontiState createState() => TentredineFontiState();
 }
 
-class _TentredineFontiState extends State<TentredineFonti> {
+class TentredineFontiState extends State<TentredineFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

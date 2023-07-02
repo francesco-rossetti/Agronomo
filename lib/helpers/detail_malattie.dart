@@ -11,10 +11,10 @@ class PaginaMalattia extends StatefulWidget {
   const PaginaMalattia({Key? key, required this.malattia}) : super(key: key);
 
   @override
-  _PaginaMalattiaState createState() => _PaginaMalattiaState();
+  PaginaMalattiaState createState() => PaginaMalattiaState();
 }
 
-class _PaginaMalattiaState extends State<PaginaMalattia> {
+class PaginaMalattiaState extends State<PaginaMalattia> {
   InterstitialAd? myInterstitial;
   ScrollController? _scrollController;
   bool appBarCollapsed = false;
@@ -138,7 +138,7 @@ class _PaginaMalattiaState extends State<PaginaMalattia> {
                               text: AppLocalizations.of(context)!
                                   .translate("detailTab2")),
                           Tab(
-                              icon: const Icon(FontAwesomeIcons.firstAid),
+                              icon: const Icon(FontAwesomeIcons.kitMedical),
                               text: AppLocalizations.of(context)!
                                   .translate("detailTab3")),
                         ],

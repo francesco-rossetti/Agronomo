@@ -5,10 +5,10 @@ class FlavescenzaViteFonti extends StatefulWidget {
   const FlavescenzaViteFonti({Key? key}) : super(key: key);
 
   @override
-  _FlavescenzaViteFontiState createState() => _FlavescenzaViteFontiState();
+  FlavescenzaViteFontiState createState() => FlavescenzaViteFontiState();
 }
 
-class _FlavescenzaViteFontiState extends State<FlavescenzaViteFonti> {
+class FlavescenzaViteFontiState extends State<FlavescenzaViteFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,11 +5,11 @@ class CoccinigliaagrumiAgrumiSintomi extends StatefulWidget {
   const CoccinigliaagrumiAgrumiSintomi({Key? key}) : super(key: key);
 
   @override
-  _CoccinigliaagrumiAgrumiSintomiState createState() =>
-      _CoccinigliaagrumiAgrumiSintomiState();
+  CoccinigliaagrumiAgrumiSintomiState createState() =>
+      CoccinigliaagrumiAgrumiSintomiState();
 }
 
-class _CoccinigliaagrumiAgrumiSintomiState
+class CoccinigliaagrumiAgrumiSintomiState
     extends State<CoccinigliaagrumiAgrumiSintomi> {
   @override
   Widget build(BuildContext context) {

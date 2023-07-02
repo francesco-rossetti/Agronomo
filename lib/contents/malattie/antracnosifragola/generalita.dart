@@ -5,11 +5,11 @@ class AntracnosiFragolaGeneralita extends StatefulWidget {
   const AntracnosiFragolaGeneralita({Key? key}) : super(key: key);
 
   @override
-  _AntracnosiFragolaGeneralitaState createState() =>
-      _AntracnosiFragolaGeneralitaState();
+  AntracnosiFragolaGeneralitaState createState() =>
+      AntracnosiFragolaGeneralitaState();
 }
 
-class _AntracnosiFragolaGeneralitaState
+class AntracnosiFragolaGeneralitaState
     extends State<AntracnosiFragolaGeneralita> {
   @override
   Widget build(BuildContext context) {

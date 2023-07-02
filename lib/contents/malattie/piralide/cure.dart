@@ -5,10 +5,10 @@ class PiralideMelogranoCure extends StatefulWidget {
   const PiralideMelogranoCure({Key? key}) : super(key: key);
 
   @override
-  _PiralideMelogranoCureState createState() => _PiralideMelogranoCureState();
+  PiralideMelogranoCureState createState() => PiralideMelogranoCureState();
 }
 
-class _PiralideMelogranoCureState extends State<PiralideMelogranoCure> {
+class PiralideMelogranoCureState extends State<PiralideMelogranoCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

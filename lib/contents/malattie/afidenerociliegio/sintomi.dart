@@ -5,10 +5,10 @@ class AfideNeroSintomi extends StatefulWidget {
   const AfideNeroSintomi({Key? key}) : super(key: key);
 
   @override
-  _AfideNeroSintomiState createState() => _AfideNeroSintomiState();
+  AfideNeroSintomiState createState() => AfideNeroSintomiState();
 }
 
-class _AfideNeroSintomiState extends State<AfideNeroSintomi> {
+class AfideNeroSintomiState extends State<AfideNeroSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

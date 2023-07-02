@@ -5,11 +5,11 @@ class MarciumeRadicaleFibrosoFonti extends StatefulWidget {
   const MarciumeRadicaleFibrosoFonti({Key? key}) : super(key: key);
 
   @override
-  _MarciumeRadicaleFibrosoFontiState createState() =>
-      _MarciumeRadicaleFibrosoFontiState();
+  MarciumeRadicaleFibrosoFontiState createState() =>
+      MarciumeRadicaleFibrosoFontiState();
 }
 
-class _MarciumeRadicaleFibrosoFontiState
+class MarciumeRadicaleFibrosoFontiState
     extends State<MarciumeRadicaleFibrosoFonti> {
   @override
   Widget build(BuildContext context) {

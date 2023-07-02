@@ -5,11 +5,11 @@ class CoccinigliaficoFicoGeneralita extends StatefulWidget {
   const CoccinigliaficoFicoGeneralita({Key? key}) : super(key: key);
 
   @override
-  _CoccinigliaficoFicoGeneralitaState createState() =>
-      _CoccinigliaficoFicoGeneralitaState();
+  CoccinigliaficoFicoGeneralitaState createState() =>
+      CoccinigliaficoFicoGeneralitaState();
 }
 
-class _CoccinigliaficoFicoGeneralitaState
+class CoccinigliaficoFicoGeneralitaState
     extends State<CoccinigliaficoFicoGeneralita> {
   @override
   Widget build(BuildContext context) {

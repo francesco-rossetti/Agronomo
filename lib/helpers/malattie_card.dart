@@ -76,7 +76,7 @@ class MalattieCard extends StatelessWidget {
                       child: Text(
                         AppLocalizations.of(context)!
                             .translate(malattia!.nome!),
-                        style: Theme.of(context).textTheme.button,
+                        style: Theme.of(context).textTheme.labelLarge,
                       ),
                     ),
                     const Spacer(),
@@ -94,7 +94,7 @@ class MalattieCard extends StatelessWidget {
                       ),
                       child: Text(
                         AppLocalizations.of(context)!.translate(nomePianta!),
-                        style: Theme.of(context).textTheme.button,
+                        style: Theme.of(context).textTheme.labelLarge,
                       ),
                     ),
                   ],

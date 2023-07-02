@@ -5,11 +5,11 @@ class PeronosporaViteGeneralita extends StatefulWidget {
   const PeronosporaViteGeneralita({Key? key}) : super(key: key);
 
   @override
-  _PeronosporaViteGeneralitaState createState() =>
-      _PeronosporaViteGeneralitaState();
+  PeronosporaViteGeneralitaState createState() =>
+      PeronosporaViteGeneralitaState();
 }
 
-class _PeronosporaViteGeneralitaState extends State<PeronosporaViteGeneralita> {
+class PeronosporaViteGeneralitaState extends State<PeronosporaViteGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

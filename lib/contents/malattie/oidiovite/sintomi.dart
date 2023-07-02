@@ -5,10 +5,10 @@ class OidioviteViteSintomi extends StatefulWidget {
   const OidioviteViteSintomi({Key? key}) : super(key: key);
 
   @override
-  _OidioviteViteSintomiState createState() => _OidioviteViteSintomiState();
+  OidioviteViteSintomiState createState() => OidioviteViteSintomiState();
 }
 
-class _OidioviteViteSintomiState extends State<OidioviteViteSintomi> {
+class OidioviteViteSintomiState extends State<OidioviteViteSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -4,10 +4,10 @@ class AfideLanigeroFonti extends StatefulWidget {
   const AfideLanigeroFonti({Key? key}) : super(key: key);
 
   @override
-  _AfideLanigeroFontiState createState() => _AfideLanigeroFontiState();
+  AfideLanigeroFontiState createState() => AfideLanigeroFontiState();
 }
 
-class _AfideLanigeroFontiState extends State<AfideLanigeroFonti> {
+class AfideLanigeroFontiState extends State<AfideLanigeroFonti> {
   @override
   Widget build(BuildContext context) {
     return Container();

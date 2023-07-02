@@ -5,10 +5,10 @@ class PsillaCure extends StatefulWidget {
   const PsillaCure({Key? key}) : super(key: key);
 
   @override
-  _PsillaCureState createState() => _PsillaCureState();
+  PsillaCureState createState() => PsillaCureState();
 }
 
-class _PsillaCureState extends State<PsillaCure> {
+class PsillaCureState extends State<PsillaCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

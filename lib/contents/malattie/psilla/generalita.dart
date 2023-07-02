@@ -5,10 +5,10 @@ class PsillaGeneralita extends StatefulWidget {
   const PsillaGeneralita({Key? key}) : super(key: key);
 
   @override
-  _PsillaGeneralitaState createState() => _PsillaGeneralitaState();
+  PsillaGeneralitaState createState() => PsillaGeneralitaState();
 }
 
-class _PsillaGeneralitaState extends State<PsillaGeneralita> {
+class PsillaGeneralitaState extends State<PsillaGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

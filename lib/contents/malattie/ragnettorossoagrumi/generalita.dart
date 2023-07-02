@@ -5,11 +5,11 @@ class RagnettorossoAgrumiGeneralita extends StatefulWidget {
   const RagnettorossoAgrumiGeneralita({Key? key}) : super(key: key);
 
   @override
-  _RagnettorossoAgrumiGeneralitaState createState() =>
-      _RagnettorossoAgrumiGeneralitaState();
+  RagnettorossoAgrumiGeneralitaState createState() =>
+      RagnettorossoAgrumiGeneralitaState();
 }
 
-class _RagnettorossoAgrumiGeneralitaState
+class RagnettorossoAgrumiGeneralitaState
     extends State<RagnettorossoAgrumiGeneralita> {
   @override
   Widget build(BuildContext context) {

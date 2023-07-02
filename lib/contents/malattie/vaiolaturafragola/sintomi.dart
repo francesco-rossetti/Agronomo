@@ -5,11 +5,11 @@ class VaiolaturaFragolaSintomi extends StatefulWidget {
   const VaiolaturaFragolaSintomi({Key? key}) : super(key: key);
 
   @override
-  _VaiolaturaFragolaSintomiState createState() =>
-      _VaiolaturaFragolaSintomiState();
+  VaiolaturaFragolaSintomiState createState() =>
+      VaiolaturaFragolaSintomiState();
 }
 
-class _VaiolaturaFragolaSintomiState extends State<VaiolaturaFragolaSintomi> {
+class VaiolaturaFragolaSintomiState extends State<VaiolaturaFragolaSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

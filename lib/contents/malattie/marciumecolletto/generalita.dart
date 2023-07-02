@@ -5,11 +5,11 @@ class MarciumecollettoActinidiaGeneralita extends StatefulWidget {
   const MarciumecollettoActinidiaGeneralita({Key? key}) : super(key: key);
 
   @override
-  _MarciumecollettoActinidiaGeneralitaState createState() =>
-      _MarciumecollettoActinidiaGeneralitaState();
+  MarciumecollettoActinidiaGeneralitaState createState() =>
+      MarciumecollettoActinidiaGeneralitaState();
 }
 
-class _MarciumecollettoActinidiaGeneralitaState
+class MarciumecollettoActinidiaGeneralitaState
     extends State<MarciumecollettoActinidiaGeneralita> {
   @override
   Widget build(BuildContext context) {

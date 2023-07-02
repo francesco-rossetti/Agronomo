@@ -5,10 +5,10 @@ class OziorrincoMelaSintomi extends StatefulWidget {
   const OziorrincoMelaSintomi({Key? key}) : super(key: key);
 
   @override
-  _OziorrincoMelaSintomiState createState() => _OziorrincoMelaSintomiState();
+  OziorrincoMelaSintomiState createState() => OziorrincoMelaSintomiState();
 }
 
-class _OziorrincoMelaSintomiState extends State<OziorrincoMelaSintomi> {
+class OziorrincoMelaSintomiState extends State<OziorrincoMelaSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

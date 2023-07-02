@@ -5,10 +5,10 @@ class AntracnosiKakiFonti extends StatefulWidget {
   const AntracnosiKakiFonti({Key? key}) : super(key: key);
 
   @override
-  _AntracnosiKakiFontiState createState() => _AntracnosiKakiFontiState();
+  AntracnosiKakiFontiState createState() => AntracnosiKakiFontiState();
 }
 
-class _AntracnosiKakiFontiState extends State<AntracnosiKakiFonti> {
+class AntracnosiKakiFontiState extends State<AntracnosiKakiFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

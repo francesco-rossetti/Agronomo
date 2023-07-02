@@ -5,10 +5,10 @@ class OidioviteViteFonti extends StatefulWidget {
   const OidioviteViteFonti({Key? key}) : super(key: key);
 
   @override
-  _OidioviteViteFontiState createState() => _OidioviteViteFontiState();
+  OidioviteViteFontiState createState() => OidioviteViteFontiState();
 }
 
-class _OidioviteViteFontiState extends State<OidioviteViteFonti> {
+class OidioviteViteFontiState extends State<OidioviteViteFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,10 +5,10 @@ class EscoriosiviteViteFonti extends StatefulWidget {
   const EscoriosiviteViteFonti({Key? key}) : super(key: key);
 
   @override
-  _EscoriosiviteViteFontiState createState() => _EscoriosiviteViteFontiState();
+  EscoriosiviteViteFontiState createState() => EscoriosiviteViteFontiState();
 }
 
-class _EscoriosiviteViteFontiState extends State<EscoriosiviteViteFonti> {
+class EscoriosiviteViteFontiState extends State<EscoriosiviteViteFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

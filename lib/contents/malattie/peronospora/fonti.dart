@@ -5,10 +5,10 @@ class PeronosporaViteFonti extends StatefulWidget {
   const PeronosporaViteFonti({Key? key}) : super(key: key);
 
   @override
-  _PeronosporaViteFontiState createState() => _PeronosporaViteFontiState();
+  PeronosporaViteFontiState createState() => PeronosporaViteFontiState();
 }
 
-class _PeronosporaViteFontiState extends State<PeronosporaViteFonti> {
+class PeronosporaViteFontiState extends State<PeronosporaViteFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

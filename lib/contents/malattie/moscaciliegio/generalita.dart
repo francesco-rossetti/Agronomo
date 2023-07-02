@@ -5,11 +5,10 @@ class MoscaCiliegioGeneralita extends StatefulWidget {
   const MoscaCiliegioGeneralita({Key? key}) : super(key: key);
 
   @override
-  _MoscaCiliegioGeneralitaState createState() =>
-      _MoscaCiliegioGeneralitaState();
+  MoscaCiliegioGeneralitaState createState() => MoscaCiliegioGeneralitaState();
 }
 
-class _MoscaCiliegioGeneralitaState extends State<MoscaCiliegioGeneralita> {
+class MoscaCiliegioGeneralitaState extends State<MoscaCiliegioGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

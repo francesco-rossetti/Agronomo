@@ -5,10 +5,10 @@ class PiralideMelogranoFonti extends StatefulWidget {
   const PiralideMelogranoFonti({Key? key}) : super(key: key);
 
   @override
-  _PiralideMelogranoFontiState createState() => _PiralideMelogranoFontiState();
+  PiralideMelogranoFontiState createState() => PiralideMelogranoFontiState();
 }
 
-class _PiralideMelogranoFontiState extends State<PiralideMelogranoFonti> {
+class PiralideMelogranoFontiState extends State<PiralideMelogranoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

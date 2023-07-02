@@ -5,11 +5,11 @@ class CoccinigliaagrumiAgrumiCure extends StatefulWidget {
   const CoccinigliaagrumiAgrumiCure({Key? key}) : super(key: key);
 
   @override
-  _CoccinigliaagrumiAgrumiCureState createState() =>
-      _CoccinigliaagrumiAgrumiCureState();
+  CoccinigliaagrumiAgrumiCureState createState() =>
+      CoccinigliaagrumiAgrumiCureState();
 }
 
-class _CoccinigliaagrumiAgrumiCureState
+class CoccinigliaagrumiAgrumiCureState
     extends State<CoccinigliaagrumiAgrumiCure> {
   @override
   Widget build(BuildContext context) {

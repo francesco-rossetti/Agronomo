@@ -5,11 +5,11 @@ class PiralideMelogranoSintomi extends StatefulWidget {
   const PiralideMelogranoSintomi({Key? key}) : super(key: key);
 
   @override
-  _PiralideMelogranoSintomiState createState() =>
-      _PiralideMelogranoSintomiState();
+  PiralideMelogranoSintomiState createState() =>
+      PiralideMelogranoSintomiState();
 }
 
-class _PiralideMelogranoSintomiState extends State<PiralideMelogranoSintomi> {
+class PiralideMelogranoSintomiState extends State<PiralideMelogranoSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

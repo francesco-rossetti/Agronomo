@@ -5,10 +5,10 @@ class RuggineCiliegioSintomi extends StatefulWidget {
   const RuggineCiliegioSintomi({Key? key}) : super(key: key);
 
   @override
-  _RuggineCiliegioSintomiState createState() => _RuggineCiliegioSintomiState();
+  RuggineCiliegioSintomiState createState() => RuggineCiliegioSintomiState();
 }
 
-class _RuggineCiliegioSintomiState extends State<RuggineCiliegioSintomi> {
+class RuggineCiliegioSintomiState extends State<RuggineCiliegioSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

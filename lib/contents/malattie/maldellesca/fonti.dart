@@ -5,10 +5,10 @@ class MaldellescaViteFonti extends StatefulWidget {
   const MaldellescaViteFonti({Key? key}) : super(key: key);
 
   @override
-  _MaldellescaViteFontiState createState() => _MaldellescaViteFontiState();
+  MaldellescaViteFontiState createState() => MaldellescaViteFontiState();
 }
 
-class _MaldellescaViteFontiState extends State<MaldellescaViteFonti> {
+class MaldellescaViteFontiState extends State<MaldellescaViteFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

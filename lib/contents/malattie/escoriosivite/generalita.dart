@@ -5,11 +5,11 @@ class EscoriosiviteViteGeneralita extends StatefulWidget {
   const EscoriosiviteViteGeneralita({Key? key}) : super(key: key);
 
   @override
-  _EscoriosiviteViteGeneralitaState createState() =>
-      _EscoriosiviteViteGeneralitaState();
+  EscoriosiviteViteGeneralitaState createState() =>
+      EscoriosiviteViteGeneralitaState();
 }
 
-class _EscoriosiviteViteGeneralitaState
+class EscoriosiviteViteGeneralitaState
     extends State<EscoriosiviteViteGeneralita> {
   @override
   Widget build(BuildContext context) {

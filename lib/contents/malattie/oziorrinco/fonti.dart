@@ -5,10 +5,10 @@ class OziorrincoMeloFonti extends StatefulWidget {
   const OziorrincoMeloFonti({Key? key}) : super(key: key);
 
   @override
-  _OziorrincoMeloFontiState createState() => _OziorrincoMeloFontiState();
+  OziorrincoMeloFontiState createState() => OziorrincoMeloFontiState();
 }
 
-class _OziorrincoMeloFontiState extends State<OziorrincoMeloFonti> {
+class OziorrincoMeloFontiState extends State<OziorrincoMeloFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

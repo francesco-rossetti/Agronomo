@@ -5,10 +5,10 @@ class VaiolaturaFragolaCure extends StatefulWidget {
   const VaiolaturaFragolaCure({Key? key}) : super(key: key);
 
   @override
-  _VaiolaturaFragolaCureState createState() => _VaiolaturaFragolaCureState();
+  VaiolaturaFragolaCureState createState() => VaiolaturaFragolaCureState();
 }
 
-class _VaiolaturaFragolaCureState extends State<VaiolaturaFragolaCure> {
+class VaiolaturaFragolaCureState extends State<VaiolaturaFragolaCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,10 +5,10 @@ class OidioFragolaGeneralita extends StatefulWidget {
   const OidioFragolaGeneralita({Key? key}) : super(key: key);
 
   @override
-  _OidioFragolaGeneralitaState createState() => _OidioFragolaGeneralitaState();
+  OidioFragolaGeneralitaState createState() => OidioFragolaGeneralitaState();
 }
 
-class _OidioFragolaGeneralitaState extends State<OidioFragolaGeneralita> {
+class OidioFragolaGeneralitaState extends State<OidioFragolaGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

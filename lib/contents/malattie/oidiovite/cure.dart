@@ -5,10 +5,10 @@ class OidioviteViteCure extends StatefulWidget {
   const OidioviteViteCure({Key? key}) : super(key: key);
 
   @override
-  _OidioviteViteCureState createState() => _OidioviteViteCureState();
+  OidioviteViteCureState createState() => OidioviteViteCureState();
 }
 
-class _OidioviteViteCureState extends State<OidioviteViteCure> {
+class OidioviteViteCureState extends State<OidioviteViteCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

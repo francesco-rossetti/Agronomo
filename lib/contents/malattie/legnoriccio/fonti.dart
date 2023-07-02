@@ -5,10 +5,10 @@ class LegnoriccioViteFonti extends StatefulWidget {
   const LegnoriccioViteFonti({Key? key}) : super(key: key);
 
   @override
-  _LegnoriccioViteFontiState createState() => _LegnoriccioViteFontiState();
+  LegnoriccioViteFontiState createState() => LegnoriccioViteFontiState();
 }
 
-class _LegnoriccioViteFontiState extends State<LegnoriccioViteFonti> {
+class LegnoriccioViteFontiState extends State<LegnoriccioViteFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

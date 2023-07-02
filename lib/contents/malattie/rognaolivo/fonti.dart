@@ -5,10 +5,10 @@ class RognaolivoOlivoFonti extends StatefulWidget {
   const RognaolivoOlivoFonti({Key? key}) : super(key: key);
 
   @override
-  _RognaolivoOlivoFontiState createState() => _RognaolivoOlivoFontiState();
+  RognaolivoOlivoFontiState createState() => RognaolivoOlivoFontiState();
 }
 
-class _RognaolivoOlivoFontiState extends State<RognaolivoOlivoFonti> {
+class RognaolivoOlivoFontiState extends State<RognaolivoOlivoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,10 +5,10 @@ class AntonomoGeneralita extends StatefulWidget {
   const AntonomoGeneralita({Key? key}) : super(key: key);
 
   @override
-  _AntonomoGeneralitaState createState() => _AntonomoGeneralitaState();
+  AntonomoGeneralitaState createState() => AntonomoGeneralitaState();
 }
 
-class _AntonomoGeneralitaState extends State<AntonomoGeneralita> {
+class AntonomoGeneralitaState extends State<AntonomoGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

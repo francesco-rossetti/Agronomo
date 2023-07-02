@@ -4,10 +4,10 @@ class CarpocapsaMeloFonti extends StatefulWidget {
   const CarpocapsaMeloFonti({Key? key}) : super(key: key);
 
   @override
-  _CarpocapsaMeloFontiState createState() => _CarpocapsaMeloFontiState();
+  CarpocapsaMeloFontiState createState() => CarpocapsaMeloFontiState();
 }
 
-class _CarpocapsaMeloFontiState extends State<CarpocapsaMeloFonti> {
+class CarpocapsaMeloFontiState extends State<CarpocapsaMeloFonti> {
   @override
   Widget build(BuildContext context) {
     return Container();

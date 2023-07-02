@@ -5,11 +5,11 @@ class MoscafruttaActinidiaGeneralita extends StatefulWidget {
   const MoscafruttaActinidiaGeneralita({Key? key}) : super(key: key);
 
   @override
-  _MoscafruttaActinidiaGeneralitaState createState() =>
-      _MoscafruttaActinidiaGeneralitaState();
+  MoscafruttaActinidiaGeneralitaState createState() =>
+      MoscafruttaActinidiaGeneralitaState();
 }
 
-class _MoscafruttaActinidiaGeneralitaState
+class MoscafruttaActinidiaGeneralitaState
     extends State<MoscafruttaActinidiaGeneralita> {
   @override
   Widget build(BuildContext context) {

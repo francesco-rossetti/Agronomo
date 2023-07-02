@@ -5,11 +5,11 @@ class SerpentinaAgrumiGeneralita extends StatefulWidget {
   const SerpentinaAgrumiGeneralita({Key? key}) : super(key: key);
 
   @override
-  _SerpentinaAgrumiGeneralitaState createState() =>
-      _SerpentinaAgrumiGeneralitaState();
+  SerpentinaAgrumiGeneralitaState createState() =>
+      SerpentinaAgrumiGeneralitaState();
 }
 
-class _SerpentinaAgrumiGeneralitaState
+class SerpentinaAgrumiGeneralitaState
     extends State<SerpentinaAgrumiGeneralita> {
   @override
   Widget build(BuildContext context) {

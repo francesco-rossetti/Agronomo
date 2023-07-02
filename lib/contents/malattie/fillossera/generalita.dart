@@ -5,11 +5,11 @@ class FillosseraViteGeneralita extends StatefulWidget {
   const FillosseraViteGeneralita({Key? key}) : super(key: key);
 
   @override
-  _FillosseraViteGeneralitaState createState() =>
-      _FillosseraViteGeneralitaState();
+  FillosseraViteGeneralitaState createState() =>
+      FillosseraViteGeneralitaState();
 }
 
-class _FillosseraViteGeneralitaState extends State<FillosseraViteGeneralita> {
+class FillosseraViteGeneralitaState extends State<FillosseraViteGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

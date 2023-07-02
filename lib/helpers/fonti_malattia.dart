@@ -9,10 +9,10 @@ class FontiMalattia extends StatefulWidget {
   const FontiMalattia({Key? key, this.fonti}) : super(key: key);
 
   @override
-  _FontiMalattiaState createState() => _FontiMalattiaState();
+  FontiMalattiaState createState() => FontiMalattiaState();
 }
 
-class _FontiMalattiaState extends State<FontiMalattia> {
+class FontiMalattiaState extends State<FontiMalattia> {
   BannerAd? myBanner;
 
   @override

@@ -5,10 +5,10 @@ class MoniliaAlbicoccoFonti extends StatefulWidget {
   const MoniliaAlbicoccoFonti({Key? key}) : super(key: key);
 
   @override
-  _MoniliaAlbicoccoFontiState createState() => _MoniliaAlbicoccoFontiState();
+  MoniliaAlbicoccoFontiState createState() => MoniliaAlbicoccoFontiState();
 }
 
-class _MoniliaAlbicoccoFontiState extends State<MoniliaAlbicoccoFonti> {
+class MoniliaAlbicoccoFontiState extends State<MoniliaAlbicoccoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

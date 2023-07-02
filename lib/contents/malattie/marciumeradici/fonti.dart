@@ -5,11 +5,11 @@ class MarciumeradiciAgrumiFonti extends StatefulWidget {
   const MarciumeradiciAgrumiFonti({Key? key}) : super(key: key);
 
   @override
-  _MarciumeradiciAgrumiFontiState createState() =>
-      _MarciumeradiciAgrumiFontiState();
+  MarciumeradiciAgrumiFontiState createState() =>
+      MarciumeradiciAgrumiFontiState();
 }
 
-class _MarciumeradiciAgrumiFontiState extends State<MarciumeradiciAgrumiFonti> {
+class MarciumeradiciAgrumiFontiState extends State<MarciumeradiciAgrumiFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

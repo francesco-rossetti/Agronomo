@@ -5,10 +5,10 @@ class RuggineeuropeaFonti extends StatefulWidget {
   const RuggineeuropeaFonti({Key? key}) : super(key: key);
 
   @override
-  _RuggineeuropeaFontiState createState() => _RuggineeuropeaFontiState();
+  RuggineeuropeaFontiState createState() => RuggineeuropeaFontiState();
 }
 
-class _RuggineeuropeaFontiState extends State<RuggineeuropeaFonti> {
+class RuggineeuropeaFontiState extends State<RuggineeuropeaFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

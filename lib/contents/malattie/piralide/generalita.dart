@@ -5,11 +5,11 @@ class PiralideMelogranoGeneralita extends StatefulWidget {
   const PiralideMelogranoGeneralita({Key? key}) : super(key: key);
 
   @override
-  _PiralideMelogranoGeneralitaState createState() =>
-      _PiralideMelogranoGeneralitaState();
+  PiralideMelogranoGeneralitaState createState() =>
+      PiralideMelogranoGeneralitaState();
 }
 
-class _PiralideMelogranoGeneralitaState
+class PiralideMelogranoGeneralitaState
     extends State<PiralideMelogranoGeneralita> {
   @override
   Widget build(BuildContext context) {

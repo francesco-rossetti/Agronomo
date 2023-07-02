@@ -4,10 +4,10 @@ class BotrytisFragolaFonti extends StatefulWidget {
   const BotrytisFragolaFonti({Key? key}) : super(key: key);
 
   @override
-  _BotrytisFragolaFontiState createState() => _BotrytisFragolaFontiState();
+  BotrytisFragolaFontiState createState() => BotrytisFragolaFontiState();
 }
 
-class _BotrytisFragolaFontiState extends State<BotrytisFragolaFonti> {
+class BotrytisFragolaFontiState extends State<BotrytisFragolaFonti> {
   @override
   Widget build(BuildContext context) {
     return Container();

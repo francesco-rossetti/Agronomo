@@ -5,11 +5,11 @@ class MaculaturarossaAlbicoccoSintomi extends StatefulWidget {
   const MaculaturarossaAlbicoccoSintomi({Key? key}) : super(key: key);
 
   @override
-  _MaculaturarossaAlbicoccoSintomiState createState() =>
-      _MaculaturarossaAlbicoccoSintomiState();
+  MaculaturarossaAlbicoccoSintomiState createState() =>
+      MaculaturarossaAlbicoccoSintomiState();
 }
 
-class _MaculaturarossaAlbicoccoSintomiState
+class MaculaturarossaAlbicoccoSintomiState
     extends State<MaculaturarossaAlbicoccoSintomi> {
   @override
   Widget build(BuildContext context) {

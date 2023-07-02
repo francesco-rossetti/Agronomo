@@ -5,10 +5,10 @@ class AfidiAgrumiFonti extends StatefulWidget {
   const AfidiAgrumiFonti({Key? key}) : super(key: key);
 
   @override
-  _AfidiAgrumiFontiState createState() => _AfidiAgrumiFontiState();
+  AfidiAgrumiFontiState createState() => AfidiAgrumiFontiState();
 }
 
-class _AfidiAgrumiFontiState extends State<AfidiAgrumiFonti> {
+class AfidiAgrumiFontiState extends State<AfidiAgrumiFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

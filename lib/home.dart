@@ -23,10 +23,10 @@ class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  HomePageState createState() => HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class HomePageState extends State<HomePage> {
   BannerAd? myBanner;
   bool bannerLoaded = false;
   bool keyboardLoaded = false;
@@ -59,8 +59,8 @@ class _HomePageState extends State<HomePage> {
                         MaterialPageRoute(builder: (context) => const FontiPage()));
                     break;
                   case "suggerimenti":
-                    if (await canLaunch(kSuggerimentiUrl)) {
-                      launch(kSuggerimentiUrl);
+                    if (await canLaunchUrl(Uri.parse(kSuggerimentiUrl))) {
+                      launchUrl(Uri.parse(kSuggerimentiUrl));
                     }
                     break;
                 }
@@ -211,9 +211,9 @@ class _HomePageState extends State<HomePage> {
           !keyboardLoaded && bannerLoaded
               ? Container(
                   alignment: Alignment.center,
-                  child: AdWidget(ad: myBanner!),
                   width: myBanner!.size.width.toDouble(),
                   height: myBanner!.size.height.toDouble(),
+                  child: AdWidget(ad: myBanner!),
                 )
               : Container(),
         ],

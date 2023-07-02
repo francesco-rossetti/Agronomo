@@ -5,10 +5,10 @@ class LegnoriccioViteCure extends StatefulWidget {
   const LegnoriccioViteCure({Key? key}) : super(key: key);
 
   @override
-  _LegnoriccioViteCureState createState() => _LegnoriccioViteCureState();
+  LegnoriccioViteCureState createState() => LegnoriccioViteCureState();
 }
 
-class _LegnoriccioViteCureState extends State<LegnoriccioViteCure> {
+class LegnoriccioViteCureState extends State<LegnoriccioViteCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

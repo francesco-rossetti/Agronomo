@@ -5,10 +5,10 @@ class FillosseraViteCure extends StatefulWidget {
   const FillosseraViteCure({Key? key}) : super(key: key);
 
   @override
-  _FillosseraViteCureState createState() => _FillosseraViteCureState();
+  FillosseraViteCureState createState() => FillosseraViteCureState();
 }
 
-class _FillosseraViteCureState extends State<FillosseraViteCure> {
+class FillosseraViteCureState extends State<FillosseraViteCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

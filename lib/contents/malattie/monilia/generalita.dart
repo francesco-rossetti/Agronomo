@@ -5,11 +5,11 @@ class MoniliaAlbicoccoGeneralita extends StatefulWidget {
   const MoniliaAlbicoccoGeneralita({Key? key}) : super(key: key);
 
   @override
-  _MoniliaAlbicoccoGeneralitaState createState() =>
-      _MoniliaAlbicoccoGeneralitaState();
+  MoniliaAlbicoccoGeneralitaState createState() =>
+      MoniliaAlbicoccoGeneralitaState();
 }
 
-class _MoniliaAlbicoccoGeneralitaState
+class MoniliaAlbicoccoGeneralitaState
     extends State<MoniliaAlbicoccoGeneralita> {
   @override
   Widget build(BuildContext context) {

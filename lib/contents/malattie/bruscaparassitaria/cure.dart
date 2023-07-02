@@ -5,11 +5,11 @@ class BruscaparassitariaOlivoCure extends StatefulWidget {
   const BruscaparassitariaOlivoCure({Key? key}) : super(key: key);
 
   @override
-  _BruscaparassitariaOlivoCureState createState() =>
-      _BruscaparassitariaOlivoCureState();
+  BruscaparassitariaOlivoCureState createState() =>
+      BruscaparassitariaOlivoCureState();
 }
 
-class _BruscaparassitariaOlivoCureState
+class BruscaparassitariaOlivoCureState
     extends State<BruscaparassitariaOlivoCure> {
   @override
   Widget build(BuildContext context) {

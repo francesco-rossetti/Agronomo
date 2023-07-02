@@ -5,10 +5,10 @@ class BollaAlbicoccoCure extends StatefulWidget {
   const BollaAlbicoccoCure({Key? key}) : super(key: key);
 
   @override
-  _BollaAlbicoccoCureState createState() => _BollaAlbicoccoCureState();
+  BollaAlbicoccoCureState createState() => BollaAlbicoccoCureState();
 }
 
-class _BollaAlbicoccoCureState extends State<BollaAlbicoccoCure> {
+class BollaAlbicoccoCureState extends State<BollaAlbicoccoCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,11 +5,11 @@ class CorineopescoAlbicoccoSintomi extends StatefulWidget {
   const CorineopescoAlbicoccoSintomi({Key? key}) : super(key: key);
 
   @override
-  _CorineopescoAlbicoccoSintomiState createState() =>
-      _CorineopescoAlbicoccoSintomiState();
+  CorineopescoAlbicoccoSintomiState createState() =>
+      CorineopescoAlbicoccoSintomiState();
 }
 
-class _CorineopescoAlbicoccoSintomiState
+class CorineopescoAlbicoccoSintomiState
     extends State<CorineopescoAlbicoccoSintomi> {
   @override
   Widget build(BuildContext context) {

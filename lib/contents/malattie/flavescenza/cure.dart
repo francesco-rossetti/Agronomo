@@ -5,10 +5,10 @@ class FlavescenzaViteCure extends StatefulWidget {
   const FlavescenzaViteCure({Key? key}) : super(key: key);
 
   @override
-  _FlavescenzaViteCureState createState() => _FlavescenzaViteCureState();
+  FlavescenzaViteCureState createState() => FlavescenzaViteCureState();
 }
 
-class _FlavescenzaViteCureState extends State<FlavescenzaViteCure> {
+class FlavescenzaViteCureState extends State<FlavescenzaViteCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,10 +5,10 @@ class BotrytisActinidiaCure extends StatefulWidget {
   const BotrytisActinidiaCure({Key? key}) : super(key: key);
 
   @override
-  _BotrytisActinidiaCureState createState() => _BotrytisActinidiaCureState();
+  BotrytisActinidiaCureState createState() => BotrytisActinidiaCureState();
 }
 
-class _BotrytisActinidiaCureState extends State<BotrytisActinidiaCure> {
+class BotrytisActinidiaCureState extends State<BotrytisActinidiaCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

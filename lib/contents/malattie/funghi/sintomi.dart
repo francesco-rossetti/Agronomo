@@ -5,10 +5,10 @@ class FunghiMelogranoSintomi extends StatefulWidget {
   const FunghiMelogranoSintomi({Key? key}) : super(key: key);
 
   @override
-  _FunghiMelogranoSintomiState createState() => _FunghiMelogranoSintomiState();
+  FunghiMelogranoSintomiState createState() => FunghiMelogranoSintomiState();
 }
 
-class _FunghiMelogranoSintomiState extends State<FunghiMelogranoSintomi> {
+class FunghiMelogranoSintomiState extends State<FunghiMelogranoSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

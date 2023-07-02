@@ -4,10 +4,10 @@ class VaiolaturaFragolaFonti extends StatefulWidget {
   const VaiolaturaFragolaFonti({Key? key}) : super(key: key);
 
   @override
-  _VaiolaturaFragolaFontiState createState() => _VaiolaturaFragolaFontiState();
+  VaiolaturaFragolaFontiState createState() => VaiolaturaFragolaFontiState();
 }
 
-class _VaiolaturaFragolaFontiState extends State<VaiolaturaFragolaFonti> {
+class VaiolaturaFragolaFontiState extends State<VaiolaturaFragolaFonti> {
   @override
   Widget build(BuildContext context) {
     return Container();

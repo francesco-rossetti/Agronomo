@@ -5,11 +5,11 @@ class CancrobattericoActinidiaFonti extends StatefulWidget {
   const CancrobattericoActinidiaFonti({Key? key}) : super(key: key);
 
   @override
-  _CancrobattericoActinidiaFontiState createState() =>
-      _CancrobattericoActinidiaFontiState();
+  CancrobattericoActinidiaFontiState createState() =>
+      CancrobattericoActinidiaFontiState();
 }
 
-class _CancrobattericoActinidiaFontiState
+class CancrobattericoActinidiaFontiState
     extends State<CancrobattericoActinidiaFonti> {
   @override
   Widget build(BuildContext context) {

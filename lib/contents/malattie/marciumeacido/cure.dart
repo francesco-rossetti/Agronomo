@@ -5,10 +5,10 @@ class MarciumeacidoViteCure extends StatefulWidget {
   const MarciumeacidoViteCure({Key? key}) : super(key: key);
 
   @override
-  _MarciumeacidoViteCureState createState() => _MarciumeacidoViteCureState();
+  MarciumeacidoViteCureState createState() => MarciumeacidoViteCureState();
 }
 
-class _MarciumeacidoViteCureState extends State<MarciumeacidoViteCure> {
+class MarciumeacidoViteCureState extends State<MarciumeacidoViteCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

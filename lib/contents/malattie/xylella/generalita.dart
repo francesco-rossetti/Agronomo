@@ -5,10 +5,10 @@ class XylellaOlivoGeneralita extends StatefulWidget {
   const XylellaOlivoGeneralita({Key? key}) : super(key: key);
 
   @override
-  _XylellaOlivoGeneralitaState createState() => _XylellaOlivoGeneralitaState();
+  XylellaOlivoGeneralitaState createState() => XylellaOlivoGeneralitaState();
 }
 
-class _XylellaOlivoGeneralitaState extends State<XylellaOlivoGeneralita> {
+class XylellaOlivoGeneralitaState extends State<XylellaOlivoGeneralita> {
   @override
   Widget build(BuildContext context) {
     return Center(

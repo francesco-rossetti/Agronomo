@@ -5,10 +5,10 @@ class CercosporiosiFonti extends StatefulWidget {
   const CercosporiosiFonti({Key? key}) : super(key: key);
 
   @override
-  _CercosporiosiFontiState createState() => _CercosporiosiFontiState();
+  CercosporiosiFontiState createState() => CercosporiosiFontiState();
 }
 
-class _CercosporiosiFontiState extends State<CercosporiosiFonti> {
+class CercosporiosiFontiState extends State<CercosporiosiFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

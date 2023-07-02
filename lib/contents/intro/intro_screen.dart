@@ -2,17 +2,16 @@ import 'package:agronomo/home.dart';
 import 'package:agronomo/utils/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:intro_slider/intro_slider.dart';
-import 'package:intro_slider/slide_object.dart';
 
 class IntroScreen extends StatefulWidget {
   const IntroScreen({Key? key}) : super(key: key);
 
   @override
-  _IntroScreenState createState() => _IntroScreenState();
+  IntroScreenState createState() => IntroScreenState();
 }
 
-class _IntroScreenState extends State<IntroScreen> {
-  List<Slide> slides = [];
+class IntroScreenState extends State<IntroScreen> {
+  List<ContentConfig> slides = [];
 
   @override
   void initState() {
@@ -32,7 +31,7 @@ class _IntroScreenState extends State<IntroScreen> {
   @override
   Widget build(BuildContext context) {
     slides.add(
-      Slide(
+      ContentConfig(
         title: AppLocalizations.of(context)!.translate("appName"),
         description: AppLocalizations.of(context)!.translate("onBoarding1"),
         pathImage: "assets/images/icon.png",
@@ -40,7 +39,7 @@ class _IntroScreenState extends State<IntroScreen> {
       ),
     );
     slides.add(
-      Slide(
+      ContentConfig(
         title: AppLocalizations.of(context)!.translate("appName"),
         description: AppLocalizations.of(context)!.translate("onBoarding2"),
         pathImage: "assets/images/onBoarding2.png",
@@ -48,7 +47,7 @@ class _IntroScreenState extends State<IntroScreen> {
       ),
     );
     slides.add(
-      Slide(
+      ContentConfig(
         title: AppLocalizations.of(context)!.translate("appName"),
         description: AppLocalizations.of(context)!.translate("onBoarding3"),
         pathImage: "assets/images/onBoarding3.png",
@@ -57,11 +56,19 @@ class _IntroScreenState extends State<IntroScreen> {
     );
 
     return IntroSlider(
-      slides: slides,
+      listContentConfig: slides,
       renderNextBtn: Text(AppLocalizations.of(context)!.translate("avanti")),
       renderPrevBtn: Text(AppLocalizations.of(context)!.translate("indietro")),
       renderSkipBtn: Text(AppLocalizations.of(context)!.translate("salta")),
       renderDoneBtn: Text(AppLocalizations.of(context)!.translate("inizia")),
+      skipButtonStyle: ButtonStyle(
+          foregroundColor: MaterialStateProperty.all<Color>(Colors.white)),
+      nextButtonStyle: ButtonStyle(
+          foregroundColor: MaterialStateProperty.all<Color>(Colors.white)),
+      doneButtonStyle: ButtonStyle(
+          foregroundColor: MaterialStateProperty.all<Color>(Colors.white)),
+      prevButtonStyle: ButtonStyle(
+          foregroundColor: MaterialStateProperty.all<Color>(Colors.white)),
       onDonePress: onDonePress,
       onSkipPress: onSkipPress,
     );

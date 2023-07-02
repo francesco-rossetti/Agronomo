@@ -5,10 +5,10 @@ class FlavescenzaViteSintomi extends StatefulWidget {
   const FlavescenzaViteSintomi({Key? key}) : super(key: key);
 
   @override
-  _FlavescenzaViteSintomiState createState() => _FlavescenzaViteSintomiState();
+  FlavescenzaViteSintomiState createState() => FlavescenzaViteSintomiState();
 }
 
-class _FlavescenzaViteSintomiState extends State<FlavescenzaViteSintomi> {
+class FlavescenzaViteSintomiState extends State<FlavescenzaViteSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

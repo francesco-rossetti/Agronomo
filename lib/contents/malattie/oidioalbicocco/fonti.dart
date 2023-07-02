@@ -5,10 +5,10 @@ class OidioAlbicoccoFonti extends StatefulWidget {
   const OidioAlbicoccoFonti({Key? key}) : super(key: key);
 
   @override
-  _OidioAlbicoccoFontiState createState() => _OidioAlbicoccoFontiState();
+  OidioAlbicoccoFontiState createState() => OidioAlbicoccoFontiState();
 }
 
-class _OidioAlbicoccoFontiState extends State<OidioAlbicoccoFonti> {
+class OidioAlbicoccoFontiState extends State<OidioAlbicoccoFonti> {
   @override
   Widget build(BuildContext context) {
     return Center(

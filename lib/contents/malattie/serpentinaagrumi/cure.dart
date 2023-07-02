@@ -5,10 +5,10 @@ class SerpentinaAgrumiCure extends StatefulWidget {
   const SerpentinaAgrumiCure({Key? key}) : super(key: key);
 
   @override
-  _SerpentinaAgrumiCureState createState() => _SerpentinaAgrumiCureState();
+  SerpentinaAgrumiCureState createState() => SerpentinaAgrumiCureState();
 }
 
-class _SerpentinaAgrumiCureState extends State<SerpentinaAgrumiCure> {
+class SerpentinaAgrumiCureState extends State<SerpentinaAgrumiCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

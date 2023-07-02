@@ -5,10 +5,10 @@ class OidioPeroSintomi extends StatefulWidget {
   const OidioPeroSintomi({Key? key}) : super(key: key);
 
   @override
-  _OidioPeroSintomiState createState() => _OidioPeroSintomiState();
+  OidioPeroSintomiState createState() => OidioPeroSintomiState();
 }
 
-class _OidioPeroSintomiState extends State<OidioPeroSintomi> {
+class OidioPeroSintomiState extends State<OidioPeroSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(

@@ -5,10 +5,10 @@ class BotrytisficoFicoCure extends StatefulWidget {
   const BotrytisficoFicoCure({Key? key}) : super(key: key);
 
   @override
-  _BotrytisficoFicoCureState createState() => _BotrytisficoFicoCureState();
+  BotrytisficoFicoCureState createState() => BotrytisficoFicoCureState();
 }
 
-class _BotrytisficoFicoCureState extends State<BotrytisficoFicoCure> {
+class BotrytisficoFicoCureState extends State<BotrytisficoFicoCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

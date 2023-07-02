@@ -5,10 +5,10 @@ class AfideMeloCure extends StatefulWidget {
   const AfideMeloCure({Key? key}) : super(key: key);
 
   @override
-  _AfideMeloCureState createState() => _AfideMeloCureState();
+  AfideMeloCureState createState() => AfideMeloCureState();
 }
 
-class _AfideMeloCureState extends State<AfideMeloCure> {
+class AfideMeloCureState extends State<AfideMeloCure> {
   @override
   Widget build(BuildContext context) {
     return Center(

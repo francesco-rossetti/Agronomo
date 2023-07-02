@@ -5,11 +5,11 @@ class TicchiolaturaMeloSintomi extends StatefulWidget {
   const TicchiolaturaMeloSintomi({Key? key}) : super(key: key);
 
   @override
-  _TicchiolaturaMeloSintomiState createState() =>
-      _TicchiolaturaMeloSintomiState();
+  TicchiolaturaMeloSintomiState createState() =>
+      TicchiolaturaMeloSintomiState();
 }
 
-class _TicchiolaturaMeloSintomiState extends State<TicchiolaturaMeloSintomi> {
+class TicchiolaturaMeloSintomiState extends State<TicchiolaturaMeloSintomi> {
   @override
   Widget build(BuildContext context) {
     return Center(
